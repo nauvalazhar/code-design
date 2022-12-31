@@ -1,8 +1,8 @@
 import 'tailwindcss/tailwind.css';
-import Header from '../components/Header';
+import Header from 'components/Header';
 import { Fredoka_One, Patrick_Hand } from '@next/font/google';
 import clsx from 'clsx';
-import { Analytics } from '@vercel/analytics/react';
+import { AnalyticsWrapper } from 'components/analytics';
 
 const fontDisplay = Fredoka_One({
   variable: '--font-display',
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
             </a>
           </footer>
         </main>
-        <Analytics />
+        <AnalyticsWrapper />
       </body>
     </html>
   );
