@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Interfaces, Logos } from 'doodle-icons';
+import { Interfaces, Logos, Files } from 'doodle-icons';
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 
@@ -42,10 +42,10 @@ function Header() {
           Challenges
         </NavItem>
         <NavItem
-          href="/help"
-          icon={Interfaces.Bulb}
-          active={pathname === '/help'}>
-          Help
+          href="/manual"
+          icon={Files.FileContract}
+          active={pathname === '/manual'}>
+          Manual
         </NavItem>
         <NavItem href="https://twitter.com/mhdnauvalazhar" icon={Logos.Twitter}>
           @mhdnauvalazhar
