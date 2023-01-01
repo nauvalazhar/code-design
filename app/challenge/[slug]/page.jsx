@@ -1,8 +1,8 @@
-import clsx from 'clsx';
-import FigmaPreview from 'components/FigmaPreview';
-import Meta from 'components/Meta';
-import challenges from 'data/challenges.json';
-import { Interfaces } from 'doodle-icons';
+import clsx from "clsx";
+import FigmaPreview from "components/FigmaPreview";
+import Meta from "components/Meta";
+import challenges from "data/challenges.json";
+import { Interfaces } from "doodle-icons";
 
 export async function generateStaticParams() {
   return challenges.map((challenge) => ({
@@ -22,18 +22,20 @@ async function Page({ params: { slug } }) {
   return (
     <div
       style={{
-        '--accent': challenge.accent,
-      }}>
+        "--accent": challenge.accent,
+      }}
+    >
       <FigmaPreview src={challenge.figma} />
 
       <div className="flex gap-10">
         <div className="w-8/12">
           <div
             className={clsx(
-              'px-20 py-20 relative',
-              'bg-[var(--accent)] border-4 border-black',
-              'shadow-solid'
-            )}>
+              "px-20 py-20 relative",
+              "bg-[var(--accent)] border-4 border-black",
+              "shadow-solid"
+            )}
+          >
             <h1 className="text-4xl font-display">{challenge.name}</h1>
             <p className="mt-3 text-lg text-black/60 leading-relaxed">
               {challenge.description}
@@ -56,23 +58,25 @@ async function Page({ params: { slug } }) {
               fonts, and other elements that you will need to use in your code.
               <br />
               <br />
-              Finally, it's time to start implementing the design into code! Use
-              your exported assets and the design file as a reference as you
-              work to create a functional and visually appealing implementation
-              of the design.
+              Finally, it&apos;s time to start implementing the design into
+              code! Use your exported assets and the design file as a reference
+              as you work to create a functional and visually appealing
+              implementation of the design.
             </p>
           </div>
         </div>
         <div className="w-4/12 space-y-10">
           <div
             className={clsx(
-              'px-10 py-10 relative',
-              'bg-brand border-4 border-black',
-              'shadow-solid'
-            )}>
+              "px-10 py-10 relative",
+              "bg-brand border-4 border-black",
+              "shadow-solid"
+            )}
+          >
             <a
               href={challenge.figma}
-              className="flex justify-center items-center border-2 border-black py-4 text-2xl bg-[#2AE876] gap-4">
+              className="flex justify-center items-center border-2 border-black py-4 text-2xl bg-[#2AE876] gap-4"
+            >
               <Interfaces.Download
                 width={24}
                 height={24}
@@ -84,18 +88,21 @@ async function Page({ params: { slug } }) {
             <p className="mt-4 text-center text-lg">
               <a
                 href="https://creativecommons.org/licenses/by/4.0/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer"
+              >
                 Read The License
               </a>
             </p>
           </div>
           <div
             className={clsx(
-              'px-10 py-10 relative',
-              'bg-[#00FABE] border-4 border-black',
-              'space-y-8',
-              'shadow-solid'
-            )}>
+              "px-10 py-10 relative",
+              "bg-[#00FABE] border-4 border-black",
+              "space-y-8",
+              "shadow-solid"
+            )}
+          >
             <Meta
               icon={Interfaces.Dashboard2}
               name="Difficulty"

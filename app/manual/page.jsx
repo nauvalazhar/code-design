@@ -1,43 +1,44 @@
-import clsx from 'clsx';
+import clsx from "clsx";
 
 export default function Page() {
   return (
     <div
       className={clsx(
-        'px-20 py-20 relative',
-        'bg-brand border-4 border-black',
-        'shadow-solid'
-      )}>
+        "px-20 py-20 relative",
+        "bg-brand border-4 border-black",
+        "shadow-solid"
+      )}
+    >
       <h1 className="text-4xl font-display">Manual</h1>
       <div className="text-2xl mt-4 space-y-6">
         <h2 className="text-2xl font-display">Motivation</h2>
         <p>
-          As a developer, it's important to continually challenge yourself and
-          improve your skills. Code The Design was created with this goal in
+          As a developer, it&apos;s important to continually challenge yourself
+          and improve your skills. Code The Design was created with this goal in
           mind. We believe that the best way to learn and grow is by tackling
           real-life projects and challenges, rather than just following along
           with tutorials or practicing with contrived exercises.
         </p>
         <p>
-          That's why we've created a platform that offers a wide variety of
-          challenges, inspired by real-world designs and use cases. These
-          challenges are meant to push you to think creatively, problem-solve,
-          and develop your skills as a developer.
+          That&apos;s why we&apos;ve created a platform that offers a wide
+          variety of challenges, inspired by real-world designs and use cases.
+          These challenges are meant to push you to think creatively,
+          problem-solve, and develop your skills as a developer.
         </p>
         <p>
           We understand that everyone has different levels of experience and
-          expertise, which is why we've included a subjective difficulty rating
-          for each challenge. This allows you to choose challenges that are
-          appropriate for your current skill level, and gradually work your way
-          up as you improve.
+          expertise, which is why we&apos;ve included a subjective difficulty
+          rating for each challenge. This allows you to choose challenges that
+          are appropriate for your current skill level, and gradually work your
+          way up as you improve.
         </p>
         <p>
           We also understand that the website is in a very early stage and far
           from being stable. Our focus is on getting the website visible as soon
-          as possible, which is why we don't currently offer pre-exported assets
-          and specific objectives for the challenges. However, we provide Figma
-          design files for each challenge, which you can learn how the designs
-          work and use to export any assets you need.
+          as possible, which is why we don&apos;t currently offer pre-exported
+          assets and specific objectives for the challenges. However, we provide
+          Figma design files for each challenge, which you can learn how the
+          designs work and use to export any assets you need.
         </p>
         <p>
           We hope that Code The Design will serve as a valuable resource for you
@@ -68,7 +69,7 @@ export default function Page() {
           We believe that open source projects thrive when there is a diverse
           range of perspectives and skillsets involved. Whether you are a
           developer, designer, or simply have an idea that you think could
-          improve the project, we encourage you to reach out and get involved.{' '}
+          improve the project, we encourage you to reach out and get involved.{" "}
         </p>
         <p>
           There are many ways you can contribute to our project. You can submit
