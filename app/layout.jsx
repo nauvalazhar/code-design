@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
               className="border-b-2 border-brand">
               Nauval
             </a>
+            <p>Powered by Vercel</p>
           </footer>
         </main>
         <AnalyticsWrapper />

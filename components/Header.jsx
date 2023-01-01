@@ -36,6 +36,14 @@ function Header() {
         <div className="w-7/12 leading-relaxed text-2xl">
           Level up your coding skills with hands-on design challenges.
         </div>
+        <p className="mt-4">
+          <a
+            className="text-xl text-brand underline"
+            href="https://github.com/nauvalazhar/code-design"
+            target="_blank">
+            Source on Github
+          </a>
+        </p>
       </div>
       <nav className="ml-auto flex gap-10">
         <NavItem href="/" icon={Interfaces.Transform} active={pathname === '/'}>
