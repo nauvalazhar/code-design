@@ -10,6 +10,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
     "@next/font": "13.1.1",
     "@vercel/analytics": "^0.1.6",
     "autoprefixer": "^10.4.13",
