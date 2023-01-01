@@ -1,8 +1,8 @@
-import clsx from 'clsx';
-import { Arrow, Interfaces } from 'doodle-icons';
-import Image from 'next/image';
-import Link from 'next/link';
-import Meta from './Meta';
+import clsx from "clsx";
+import { Arrow, Interfaces } from "doodle-icons";
+import Image from "next/image";
+import Link from "next/link";
+import Meta from "./Meta";
 
 function Challenge({
   name,
@@ -20,14 +20,15 @@ function Challenge({
   return (
     <article
       className={clsx(
-        'px-20 py-20 relative',
-        'bg-[var(--accent)] border-4 border-black',
-        'shadow-solid'
+        "px-20 py-20 relative",
+        "bg-[var(--accent)] border-4 border-black",
+        "shadow-solid"
       )}
       style={{
-        '--accent': accent,
-        '--accent-2': accent2,
-      }}>
+        "--accent": accent,
+        "--accent-2": accent2,
+      }}
+    >
       <div className="flex -mx-4">
         <div className="w-5/12 px-4">
           <h2 className="text-4xl mb-2 font-display">{name}</h2>
@@ -37,10 +38,11 @@ function Challenge({
           <Link
             href={`/challenge/${slug}`}
             className={clsx(
-              'inline-flex items-center px-8 py-4',
-              'font-display',
-              'border-2 border-black bg-[var(--accent-2)]'
-            )}>
+              "inline-flex items-center px-8 py-4",
+              "font-display",
+              "border-2 border-black bg-[var(--accent-2)]"
+            )}
+          >
             View Challenge
             <Arrow.ArrowRight width="20" className="ml-4" />
           </Link>
@@ -61,9 +63,10 @@ function Challenge({
           <div
             className="relative"
             style={{
-              boxShadow: '10px 10px 0px var(--accent-2)',
+              boxShadow: "10px 10px 0px var(--accent-2)",
               transform: `rotate(${rotation}deg)`,
-            }}>
+            }}
+          >
             <div className="w-3 h-3 border-2 border-black bg-white absolute -top-1 -left-1 z-10" />
             <div className="w-3 h-3 border-2 border-black bg-white absolute -top-1 -right-1 z-10" />
             <div className="w-3 h-3 border-2 border-black bg-white absolute -bottom-1 -left-1 z-10" />
@@ -75,7 +78,7 @@ function Challenge({
               height={338}
               placeholder="blur"
               className="border-4 border-black h-[338px] object-cover object-top"
-              blurDataURL={image.replace(/^\//g, '/thumbs/')}
+              blurDataURL={image.replace(/^\//g, "/thumbs/")}
             />
           </div>
         </div>
