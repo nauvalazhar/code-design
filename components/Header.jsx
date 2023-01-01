@@ -40,7 +40,8 @@ function Header() {
           <a
             className="text-xl text-brand underline"
             href="https://github.com/nauvalazhar/code-design"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             Source on Github
           </a>
         </p>
