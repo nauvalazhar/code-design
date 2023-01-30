@@ -6,7 +6,11 @@ export default function Head() {
         name="description"
         content="Level up your coding skills with hands-on design challenges."
       />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/code-the-design.svg" />
+      <meta
+        name="keywords"
+        content="code the design, design with figma, design web, design challange"
+      />
     </>
   );
 }
