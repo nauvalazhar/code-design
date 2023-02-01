@@ -19,17 +19,17 @@ export default function Home() {
         <p className="text-2xl leading-relaxed text-brand">Difficulty</p>
         <Listbox value={difficultyFilter} onChange={setDifficultyFilter}>
           <div className="relative mt-1 w-[20%]">
-            <Listbox.Button className="cursor-default bg-white py-2 px-3 text-left text-lg focus:outline-none focus-visible:ring-0 border-4 border-black flex items-center justify-between gap-10 w-full">
+            <Listbox.Button className="flex w-full cursor-default items-center justify-between gap-10 border-4 border-black bg-white py-2 px-3 text-left text-lg focus:outline-none focus-visible:ring-0">
               <span className="block truncate">{difficultyFilter}</span>
               <ChevronDown />
             </Listbox.Button>
-            <Listbox.Options className="absolute w-full mt-1 max-h-60 overflow-auto bg-white py-1 text-base ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm z-50 border-4 border-black">
+            <Listbox.Options className="absolute z-50 mt-1 max-h-60 w-full overflow-auto border-4 border-black bg-white py-1 text-base ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
               {difficulty.map((diff, i) => (
                 <Listbox.Option
                   key={i}
                   className={`${
                     diff === difficultyFilter && "bg-brand/50"
-                  } relative cursor-default select-none py-2 px-4 text-black/80 hover:bg-brand/20 text-lg truncate`}
+                  } relative cursor-default select-none truncate py-2 px-4 text-lg text-black/80 hover:bg-brand/20`}
                   value={diff}
                 >
                   {diff}
@@ -38,6 +38,15 @@ export default function Home() {
             </Listbox.Options>
           </div>
         </Listbox>
+        <p className="text-2xl leading-relaxed text-brand">
+          /
+          {difficultyFilter !== "All"
+            ? challenges.filter((data) =>
+                difficultyFilter.includes(data.difficulty)
+              ).length
+            : challenges.length}{" "}
+          challanges
+        </p>
       </div>
       {difficultyFilter !== "All"
         ? challenges
