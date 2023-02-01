@@ -10,6 +10,17 @@ We also understand that the website is in a very early stage and far from being 
 
 We hope that Code The Design will serve as a valuable resource for you as you work to improve your skills and become a more confident and capable developer. Happy coding!
 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## 🤝 Contributing
 
 First of all, thank you for taking your valuable time to contribute.
