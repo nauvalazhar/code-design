@@ -33,4 +33,4 @@ yarn dev
 - Radix UI
 
 ## License
-MIT License
+[MIT License](https://github.com/nauvalazhar/code-design/blob/main/LICENSE)
