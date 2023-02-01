@@ -17,6 +17,16 @@
         "ideas",
         "doc"
       ]
+    },
+    {
+      "login": "wiscaksono",
+      "name": "Wisnu Wicaksono",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63142229?v=4",
+      "profile": "https://wiscaksono.me/",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
