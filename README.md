@@ -1,8 +1,10 @@
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 # codedesign.dev
+
+![License](https://img.shields.io/github/license/nauvalazhar/code-design?style=flat-square) ![top](https://img.shields.io/github/languages/top/nauvalazhar/code-design?style=flat-square) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END --> 
+
+
 As a developer, it's important to continually challenge yourself and improve your skills. Code The Design was created with this goal in mind. We believe that the best way to learn and grow is by tackling real-life projects and challenges, rather than just following along with tutorials or practicing with contrived exercises.
 
 That's why we've created a platform that offers a wide variety of challenges, inspired by real-world designs and use cases. These challenges are meant to push you to think creatively, problem-solve, and develop your skills as a developer.
