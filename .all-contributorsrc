@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "nauvalazhar",
+      "name": "Nauval",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14899175?v=4",
+      "profile": "http://nauv.al",
+      "contributions": [
+        "code",
+        "design",
+        "ideas",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "code-design",
+  "projectOwner": "nauvalazhar"
+}
