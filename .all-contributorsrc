@@ -45,6 +45,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "perdiDev",
+      "name": "Perdi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108800230?v=4",
+      "profile": "http://perdidev.github.io",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
