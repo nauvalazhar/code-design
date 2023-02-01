@@ -15,7 +15,7 @@ export default function FigmaPreview({ src }) {
   return (
     <div
       className={clsx(
-        'relative mb-20 bg-black',
+        'relative mb-10 bg-black lg:mb-20',
         'border-4 border-black',
         'shadow-solid'
       )}
