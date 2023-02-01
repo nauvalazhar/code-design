@@ -15,23 +15,24 @@ export default function FigmaPreview({ src }) {
   return (
     <div
       className={clsx(
-        'bg-black relative mb-20',
+        'relative mb-20 bg-black',
         'border-4 border-black',
         'shadow-solid'
-      )}>
+      )}
+    >
       {loading && (
         <div
           className={clsx(
             'absolute inset-0',
-            'flex flex-col justify-center items-center gap-10',
+            'flex flex-col items-center justify-center gap-6 lg:gap-10',
             'text-brand'
-          )}>
+          )}
+        >
           <Interfaces.Zap
-            width={80}
-            className="z-10 animate-pulse"
+            className="z-10 w-10 animate-pulse lg:w-40"
             fill="currentColor"
           />
-          <span className="text-4xl">Loading Figma Preview</span>
+          <span className="text-2xl lg:text-4xl">Loading Figma Preview</span>
         </div>
       )}
       <iframe

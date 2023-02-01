@@ -19,8 +19,8 @@ export default function Home() {
   );
 
   return (
-    <section className="flex flex-col space-y-20">
-      <div className="flex items-center gap-5">
+    <section className="flex flex-col space-y-10">
+      <div className="flex flex-wrap items-center gap-3 lg:gap-5">
         <p className="text-brand text-2xl leading-relaxed">Difficulty</p>
         <DropdownDifficulties onChange={setDifficultyFilter} />
         <p className="text-brand text-2xl leading-relaxed">

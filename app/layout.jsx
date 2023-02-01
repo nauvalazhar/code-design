@@ -20,23 +20,26 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={clsx(fontDisplay.variable, fontSans.variable, 'bg-[#1F4290]')}
+      className={clsx(fontDisplay.variable, fontSans.variable)}
+      style={{
+        '--primary-blue': '#1F4290',
+      }}
     >
       {/*
         <head /> will contain the components returned by the nearest parent
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
-        <main className="w-[1140px] mx-auto py-20 px-10 lg:px-0">
+      <body className="bg-[var(--primary-blue)]">
+        <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 lg:px-0 xl:w-[1140px]">
           <Header />
-          <main className="py-20">{children}</main>
+          <main className="py-10">{children}</main>
           <footer className="text-brand text-center text-xl">
             <p>Copyright &copy; {new Date().getFullYear()} </p>
             <a
               href="https://twitter.com/mhdnauvalazhar"
               target="_blank"
-              className="border-b-2 border-brand"
+              className="border-brand border-b-2"
               rel="noreferrer"
             >
               Nauval

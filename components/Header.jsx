@@ -10,12 +10,12 @@ function NavItem({ href, icon: Icon, children, active }) {
     <Link
       href={href}
       className={clsx(
-        'flex flex-col items-center gap-2',
-        'text-2xl hover:text-[var(--accent)]',
+        'flex flex-1 flex-col items-center gap-2 lg:flex-auto',
+        'text-lg hover:text-[var(--accent)] lg:text-2xl',
         active && 'text-[var(--accent)]'
       )}
     >
-      <Icon width={40} height={40} fill="currentColor" />
+      <Icon fill="currentColor" className="h-6 w-6 lg:h-10 lg:w-10" />
       {children}
     </Link>
   );
@@ -26,19 +26,19 @@ function Header() {
 
   return (
     <header
-      className="text-brand flex items-center"
+      className="text-brand flex flex-wrap items-center"
       style={{
         '--accent': '#02FD2A',
       }}
     >
-      <div>
+      <div className="w-full lg:w-auto">
         <Link
           href={'/'}
-          className="font-display mb-2 text-5xl uppercase italic"
+          className="font-display mb-2 text-3xl uppercase italic lg:text-5xl"
         >
           Code The Design
         </Link>
-        <div className="w-7/12 text-2xl leading-relaxed">
+        <div className="mt-1 text-xl leading-relaxed lg:w-7/12 lg:text-2xl">
           Level up your coding skills with hands-on design challenges.
         </div>
         <p className="mt-4">
@@ -52,7 +52,14 @@ function Header() {
           </a>
         </p>
       </div>
-      <nav className="ml-auto flex gap-10">
+      <nav
+        className={clsx(
+          'z-10 flex gap-10 lg:ml-auto',
+          'fixed bottom-0 left-0 w-full lg:static lg:w-auto',
+          'bg-[var(--primary-blue)] p-4 lg:bg-transparent lg:p-0',
+          'border-t-4 border-black lg:border-none'
+        )}
+      >
         <NavItem href="/" icon={Interfaces.Transform} active={pathname === '/'}>
           Challenges
         </NavItem>

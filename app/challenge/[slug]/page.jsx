@@ -1,8 +1,8 @@
-import clsx from "clsx";
-import FigmaPreview from "components/FigmaPreview";
-import Meta from "components/Meta";
-import challenges from "data/challenges.json";
-import { Interfaces } from "doodle-icons";
+import clsx from 'clsx';
+import FigmaPreview from 'components/FigmaPreview';
+import Meta from 'components/Meta';
+import challenges from 'data/challenges.json';
+import { Interfaces } from 'doodle-icons';
 
 export async function generateStaticParams() {
   return challenges.map((challenge) => ({
@@ -22,26 +22,30 @@ async function Page({ params: { slug } }) {
   return (
     <div
       style={{
-        "--accent": challenge.accent,
+        '--accent': challenge.accent,
       }}
     >
       <FigmaPreview src={challenge.figma} />
 
-      <div className="flex gap-10">
-        <div className="w-8/12">
+      <div className="flex flex-wrap gap-10 lg:flex-nowrap">
+        <div className="w-full lg:w-8/12">
           <div
             className={clsx(
-              "px-20 py-20 relative",
-              "bg-[var(--accent)] border-4 border-black",
-              "shadow-solid"
+              'relative p-10 lg:p-20',
+              'border-4 border-black bg-[var(--accent)]',
+              'shadow-solid'
             )}
           >
-            <h1 className="text-4xl font-display">{challenge.name}</h1>
-            <p className="mt-3 text-lg text-black/60 leading-relaxed">
+            <h1 className="font-display text-2xl lg:text-4xl">
+              {challenge.name}
+            </h1>
+            <p className="mt-3 text-lg leading-relaxed text-black/60">
               {challenge.description}
             </p>
-            <h2 className="text-2xl font-display mt-10 mb-2">How to Start</h2>
-            <p className="text-xl leading-relaxed">
+            <h2 className="font-display mt-10 mb-2 text-xl lg:text-2xl">
+              How to Start
+            </h2>
+            <p className="text-lg leading-relaxed lg:text-xl">
               To begin the challenge, you will first need to download the design
               file from the provided link. This will give you access to all of
               the necessary design elements and assets that you will need to
@@ -65,17 +69,17 @@ async function Page({ params: { slug } }) {
             </p>
           </div>
         </div>
-        <div className="w-4/12 space-y-10">
+        <div className="w-full space-y-10 lg:w-4/12">
           <div
             className={clsx(
-              "px-10 py-10 relative",
-              "bg-brand border-4 border-black",
-              "shadow-solid"
+              'relative px-10 py-10',
+              'bg-brand border-4 border-black',
+              'shadow-solid'
             )}
           >
             <a
               href={challenge.figma}
-              className="flex justify-center items-center border-2 border-black py-4 text-2xl bg-[#2AE876] gap-4"
+              className="flex items-center justify-center gap-4 border-2 border-black bg-[#2AE876] py-4 text-2xl"
             >
               <Interfaces.Download
                 width={24}
@@ -97,10 +101,10 @@ async function Page({ params: { slug } }) {
           </div>
           <div
             className={clsx(
-              "px-10 py-10 relative",
-              "bg-[#00FABE] border-4 border-black",
-              "space-y-8",
-              "shadow-solid"
+              'relative px-10 py-10',
+              'border-4 border-black bg-[#00FABE]',
+              'space-y-8',
+              'shadow-solid'
             )}
           >
             <Meta

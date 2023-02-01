@@ -2,6 +2,7 @@ export default function Head() {
   return (
     <>
       <title>Code The Design</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
         name="description"
         content="Level up your coding skills with hands-on design challenges."

@@ -1,17 +1,17 @@
-import clsx from "clsx";
+import clsx from 'clsx';
 
 export default function Page() {
   return (
     <div
       className={clsx(
-        "px-20 py-20 relative",
-        "bg-brand border-4 border-black",
-        "shadow-solid"
+        'relative p-10 lg:p-20',
+        'bg-brand border-4 border-black',
+        'shadow-solid'
       )}
     >
-      <h1 className="text-4xl font-display">Manual</h1>
-      <div className="text-2xl mt-4 space-y-6">
-        <h2 className="text-2xl font-display">Motivation</h2>
+      <h1 className="font-display text-4xl">Manual</h1>
+      <div className="mt-4 space-y-6 text-2xl">
+        <h2 className="font-display text-2xl">Motivation</h2>
         <p>
           As a developer, it&apos;s important to continually challenge yourself
           and improve your skills. Code The Design was created with this goal in
@@ -45,7 +45,7 @@ export default function Page() {
           as you work to improve your skills and become a more confident and
           capable developer. Happy coding!
         </p>
-        <h2 className="text-2xl font-display">Technologies</h2>
+        <h2 className="font-display text-2xl">Technologies</h2>
         <p>
           You have the freedom to choose the technologies that you feel
           comfortable using in order to complete the challenges on our website.
@@ -59,7 +59,7 @@ export default function Page() {
           we believe that the best way to do this is by giving you the freedom
           to choose the technologies that work best for you.
         </p>
-        <h2 className="text-2xl font-display">Contribution</h2>
+        <h2 className="font-display text-2xl">Contribution</h2>
         <p>
           We are glad that you are interested in contributing to our project. As
           a reminder, our project is open source and we welcome contributions
@@ -69,7 +69,7 @@ export default function Page() {
           We believe that open source projects thrive when there is a diverse
           range of perspectives and skillsets involved. Whether you are a
           developer, designer, or simply have an idea that you think could
-          improve the project, we encourage you to reach out and get involved.{" "}
+          improve the project, we encourage you to reach out and get involved.{' '}
         </p>
         <p>
           There are many ways you can contribute to our project. You can submit
