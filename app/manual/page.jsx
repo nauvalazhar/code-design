@@ -5,7 +5,7 @@ export default function Page() {
     <div
       className={clsx(
         'relative p-10 lg:p-20',
-        'bg-brand border-4 border-black',
+        'border-4 border-black bg-brand',
         'shadow-solid'
       )}
     >

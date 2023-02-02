@@ -1,9 +1,11 @@
 'use client';
 
-import Challenge from 'components/Challenge';
-import challengesData from 'data/challenges.json';
-import DropdownDifficulties from 'components/DropdownDifficulties';
 import { useMemo, useState } from 'react';
+
+import challengesData from 'data/challenges.json';
+
+import Challenge from 'components/Challenge';
+import DropdownDifficulties from 'components/DropdownDifficulties';
 
 export default function Home() {
   const [difficultyFilter, setDifficultyFilter] = useState('All');
@@ -12,7 +14,7 @@ export default function Home() {
     () =>
       difficultyFilter === 'All'
         ? challengesData
-        : challengesData.filter((challenge) =>
+        : challengesData.filter(challenge =>
             difficultyFilter.includes(challenge.difficulty)
           ),
     [difficultyFilter]
@@ -21,9 +23,9 @@ export default function Home() {
   return (
     <section className="flex flex-col space-y-10">
       <div className="flex flex-wrap items-center gap-3 lg:gap-5">
-        <p className="text-brand text-2xl leading-relaxed">Difficulty</p>
+        <p className="text-2xl leading-relaxed text-brand">Difficulty</p>
         <DropdownDifficulties onChange={setDifficultyFilter} />
-        <p className="text-brand text-2xl leading-relaxed">
+        <p className="text-2xl leading-relaxed text-brand">
           /{challenges.length} challanges
         </p>
       </div>
@@ -36,7 +38,7 @@ export default function Home() {
           category,
           accent,
           accent2,
-          slug,
+          slug
         }) => (
           <Challenge
             key={name}

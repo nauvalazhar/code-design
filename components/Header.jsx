@@ -1,8 +1,8 @@
 'use client';
 
-import Link from 'next/link';
-import { Interfaces, Logos, Files } from 'doodle-icons';
 import clsx from 'clsx';
+import { Files, Interfaces, Logos } from 'doodle-icons';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 function NavItem({ href, icon: Icon, children, active }) {
@@ -26,15 +26,15 @@ function Header() {
 
   return (
     <header
-      className="text-brand flex flex-wrap items-center"
+      className="flex flex-wrap items-center text-brand"
       style={{
-        '--accent': '#02FD2A',
+        '--accent': '#02FD2A'
       }}
     >
       <div className="w-full lg:w-auto">
         <Link
           href={'/'}
-          className="font-display mb-2 text-3xl uppercase italic lg:text-5xl"
+          className="mb-2 font-display text-3xl uppercase italic lg:text-5xl"
         >
           Code The Design
         </Link>
@@ -43,7 +43,7 @@ function Header() {
         </div>
         <p className="mt-4">
           <a
-            className="text-brand text-xl underline"
+            className="text-xl text-brand underline"
             href="https://github.com/nauvalazhar/code-design"
             target="_blank"
             rel="noreferrer"
