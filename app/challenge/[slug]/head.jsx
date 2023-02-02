@@ -1,20 +1,15 @@
-export default function Head({ params }) {
-  const titleize = (slug) =>
-    slug
-      .split("-")
-      .map(
-        (word) => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase()
-      )
-      .join(" ");
+import challangeData from "../../../data/challenges.json";
+
+export default async function Head({ params }) {
+  const { name, description } = challangeData.find(
+    (challange) => challange.slug === params.slug
+  );
 
   return (
     <>
-      <title>{` The Code Design | ${titleize(params.slug)}`}</title>
+      <title>{` The Code Design | ${name}`}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta
-        name="description"
-        content="Level up your coding skills with hands-on design challenges."
-      />
+      <meta name="description" content={description.slice(0, 155)} />
       <link rel="icon" href="/code-the-design.svg" />
       <meta
         name="keywords"
