@@ -2,7 +2,6 @@ import 'tailwindcss/tailwind.css';
 
 import { Fredoka_One, Patrick_Hand } from '@next/font/google';
 import clsx from 'clsx';
-import { SessionProvider } from 'next-auth/react';
 
 import { AnalyticsWrapper } from 'components/Analytics';
 import Header from 'components/Header';
