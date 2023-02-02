@@ -72,13 +72,13 @@ function Challenge({
             <div className="absolute -top-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -left-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
-            <div className="aspect-[1.48/1] w-full border-4 border-black">
+            <div className="aspect-[1.48/1] w-full">
               <Image
                 alt={name}
                 src={image}
                 placeholder="blur"
                 fill
-                className="object-cover object-top"
+                className="border-4 border-black object-cover object-top"
                 blurDataURL={image.replace(/^\//g, '/thumbs/')}
               />
             </div>
