@@ -1,8 +1,9 @@
 "use client";
 
-import clsx from "clsx";
-import { useState } from "react";
-import { Interfaces } from "doodle-icons";
+
+import clsx from 'clsx';
+import { Interfaces } from 'doodle-icons';
+import { useState } from 'react';
 
 export default function FigmaPreview({ src }) {
   const [loading, setLoading] = useState(true);
