@@ -80,7 +80,7 @@ async function Page({ params: { slug } }) {
             <a
               href={challenge.figma}
               target="_blank"
-              rel=”noopener noreferrer”
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-4 border-2 border-black bg-[#2AE876] py-4 text-2xl"
             >
               <Interfaces.Download
