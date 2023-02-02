@@ -2,6 +2,7 @@ import 'tailwindcss/tailwind.css';
 
 import { Fredoka_One, Patrick_Hand } from '@next/font/google';
 import clsx from 'clsx';
+import { SessionProvider } from 'next-auth/react';
 
 import { AnalyticsWrapper } from 'components/Analytics';
 import Header from 'components/Header';
@@ -33,22 +34,24 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className="bg-[var(--primary-blue)]">
-        <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 lg:px-0 xl:w-[1140px]">
-          <Header />
-          <main className="py-10">{children}</main>
-          <footer className="text-center text-xl text-brand">
-            <p>Copyright &copy; {new Date().getFullYear()} </p>
-            <a
-              href="https://twitter.com/mhdnauvalazhar"
-              target="_blank"
-              className="border-b-2 border-brand"
-              rel="noreferrer"
-            >
-              Nauval
-            </a>
-            <p>Powered by Vercel</p>
-          </footer>
-        </main>
+        <SessionProvider session={session}>
+          <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 lg:px-0 xl:w-[1140px]">
+            <Header />
+            <main className="py-10">{children}</main>
+            <footer className="text-brand text-center text-xl">
+              <p>Copyright &copy; {new Date().getFullYear()} </p>
+              <a
+                href="https://twitter.com/mhdnauvalazhar"
+                target="_blank"
+                className="border-brand border-b-2"
+                rel="noreferrer"
+              >
+                Nauval
+              </a>
+              <p>Powered by Vercel</p>
+            </footer>
+          </main>
+        </SessionProvider>
         <AnalyticsWrapper />
       </body>
     </html>
