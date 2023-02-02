@@ -1,7 +1,7 @@
 # codedesign.dev
 
 ![License](https://img.shields.io/github/license/nauvalazhar/code-design?style=flat-square) ![top](https://img.shields.io/github/languages/top/nauvalazhar/code-design?style=flat-square) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
 
@@ -28,6 +28,7 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <td align="center" valign="top" width="14.28%"><a href="http://fiqry.dev"><img src="https://avatars.githubusercontent.com/u/25787603?v=4?s=100" width="100px;" alt="Fiqry choerudin"/><br /><sub><b>Fiqry choerudin</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=fiqryq" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://mrtampan.github.io/"><img src="https://avatars.githubusercontent.com/u/33930946?v=4?s=100" width="100px;" alt="Achmad Rivaldi"/><br /><sub><b>Achmad Rivaldi</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=mrtampan" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://perdidev.github.io"><img src="https://avatars.githubusercontent.com/u/108800230?v=4?s=100" width="100px;" alt="Perdi"/><br /><sub><b>Perdi</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=perdiDev" title="Code">💻</a> <a href="#design-perdiDev" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://hendraaagil.dev"><img src="https://avatars.githubusercontent.com/u/54741166?v=4?s=100" width="100px;" alt="Hendra Agil"/><br /><sub><b>Hendra Agil</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=hendraaagil" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
