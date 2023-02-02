@@ -33,24 +33,22 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className="bg-[var(--primary-blue)]">
-        <SessionProvider session={session}>
-          <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 lg:px-0 xl:w-[1140px]">
-            <Header />
-            <main className="py-10">{children}</main>
-            <footer className="text-brand text-center text-xl">
-              <p>Copyright &copy; {new Date().getFullYear()} </p>
-              <a
-                href="https://twitter.com/mhdnauvalazhar"
-                target="_blank"
-                className="border-brand border-b-2"
-                rel="noreferrer"
-              >
-                Nauval
-              </a>
-              <p>Powered by Vercel</p>
-            </footer>
-          </main>
-        </SessionProvider>
+        <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 lg:px-0 xl:w-[1140px]">
+          <Header />
+          <main className="py-10">{children}</main>
+          <footer className="text-brand text-center text-xl">
+            <p>Copyright &copy; {new Date().getFullYear()} </p>
+            <a
+              href="https://twitter.com/mhdnauvalazhar"
+              target="_blank"
+              className="border-brand border-b-2"
+              rel="noreferrer"
+            >
+              Nauval
+            </a>
+            <p>Powered by Vercel</p>
+          </footer>
+        </main>
         <AnalyticsWrapper />
       </body>
     </html>
