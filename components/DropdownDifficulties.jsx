@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
-import difficulties from '../data/difficulties.json';
+import difficulties from 'data/difficulties.json';
 
 function DropdownDifficulties({ onChange }) {
   const difficulty = ['All', ...difficulties.map(d => d.name)];
@@ -32,7 +32,7 @@ function DropdownDifficulties({ onChange }) {
             <Dropdown.Item
               key={i}
               className={clsx(
-                'relative cursor-default select-none truncate py-2 px-4 text-lg text-black/80 hover:bg-brand/20 focus:bg-brand/50 focus:outline-none',
+                'hover:bg-brand/20 focus:bg-brand/50 relative cursor-default select-none truncate py-2 px-4 text-lg text-black/80 focus:outline-none',
                 diff === difficultyFilter && 'bg-brand/50'
               )}
               onClick={() => clickHandle(diff)}

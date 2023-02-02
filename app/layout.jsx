@@ -36,12 +36,12 @@ export default function RootLayout({ children }) {
         <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 lg:px-0 xl:w-[1140px]">
           <Header />
           <main className="py-10">{children}</main>
-          <footer className="text-center text-xl text-brand">
+          <footer className="text-brand text-center text-xl">
             <p>Copyright &copy; {new Date().getFullYear()} </p>
             <a
               href="https://twitter.com/mhdnauvalazhar"
               target="_blank"
-              className="border-b-2 border-brand"
+              className="border-brand border-b-2"
               rel="noreferrer"
             >
               Nauval
