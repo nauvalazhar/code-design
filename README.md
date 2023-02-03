@@ -1,7 +1,7 @@
 # codedesign.dev
 
 ![License](https://img.shields.io/github/license/nauvalazhar/code-design?style=flat-square) ![top](https://img.shields.io/github/languages/top/nauvalazhar/code-design?style=flat-square) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
 
@@ -30,6 +30,9 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <td align="center" valign="top" width="14.28%"><a href="http://perdidev.github.io"><img src="https://avatars.githubusercontent.com/u/108800230?v=4?s=100" width="100px;" alt="Perdi"/><br /><sub><b>Perdi</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=perdiDev" title="Code">💻</a> <a href="#design-perdiDev" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://hendraaagil.dev"><img src="https://avatars.githubusercontent.com/u/54741166?v=4?s=100" width="100px;" alt="Hendra Agil"/><br /><sub><b>Hendra Agil</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=hendraaagil" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://up2dul.com"><img src="https://avatars.githubusercontent.com/u/36098718?v=4?s=100" width="100px;" alt="Abdul Malik"/><br /><sub><b>Abdul Malik</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=up2dul" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://haikel.my.id"><img src="https://avatars.githubusercontent.com/u/77146709?v=4?s=100" width="100px;" alt="ハキム"/><br /><sub><b>ハキム</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=haikelz" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
