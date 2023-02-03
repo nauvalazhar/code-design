@@ -1,8 +1,8 @@
-import challangeData from 'data/challenges.json';
+import challengesData from 'data/challenges.json';
 
 export default async function Head({ params }) {
-  const { name, description } = challangeData.find(
-    challange => challange.slug === params.slug
+  const { name, description } = challengesData.find(
+    challenge => challenge.slug === params.slug
   );
 
   return (
@@ -13,7 +13,7 @@ export default async function Head({ params }) {
       <link rel="icon" href="/code-the-design.svg" />
       <meta
         name="keywords"
-        content="code the design, design with figma, design web, design challange"
+        content="code the design, design with figma, design web, design challenge"
       />
     </>
   );
