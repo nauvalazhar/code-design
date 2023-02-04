@@ -67,9 +67,9 @@ yarn dev
 ```
 
 ### Tech-stack
-- Next JS
-- Tailwind
-- Radix UI
+- [Next JS](https://beta.nextjs.org/docs) - The React Framework for the Web
+- [Tailwind](https://tailwindcss.com/) - A utility-first CSS framework packed with classes
+- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components for building high‑quality design systems and web apps in React.
 
 ## License
 [MIT License](https://github.com/nauvalazhar/code-design/blob/main/LICENSE)
