@@ -1,19 +1,21 @@
 import 'tailwindcss/tailwind.css';
-import Header from 'components/Header';
+
 import { Fredoka_One, Patrick_Hand } from '@next/font/google';
 import clsx from 'clsx';
+
 import { AnalyticsWrapper } from 'components/Analytics';
+import Header from 'components/Header';
 
 const fontDisplay = Fredoka_One({
   variable: '--font-display',
   weight: '400',
-  subsets: ['latin'],
+  subsets: ['latin']
 });
 
 const fontSans = Patrick_Hand({
   variable: '--font-sans',
   weight: '400',
-  subsets: ['latin'],
+  subsets: ['latin']
 });
 
 export default function RootLayout({ children }) {
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={clsx(fontDisplay.variable, fontSans.variable)}
       style={{
-        '--primary-blue': '#1F4290',
+        '--primary-blue': '#1F4290'
       }}
     >
       {/*

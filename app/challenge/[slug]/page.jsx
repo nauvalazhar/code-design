@@ -1,17 +1,19 @@
 import clsx from 'clsx';
-import FigmaPreview from 'components/FigmaPreview';
-import Meta from 'components/Meta';
-import challenges from 'data/challenges.json';
 import { Interfaces } from 'doodle-icons';
 
+import challenges from 'data/challenges.json';
+
+import FigmaPreview from 'components/FigmaPreview';
+import Meta from 'components/Meta';
+
 export async function generateStaticParams() {
-  return challenges.map((challenge) => ({
-    slug: challenge.slug,
+  return challenges.map(challenge => ({
+    slug: challenge.slug
   }));
 }
 
 async function getChallenge(slug) {
-  const challenge = challenges.find((c) => c.slug === slug);
+  const challenge = challenges.find(c => c.slug === slug);
 
   return challenge;
 }
@@ -22,7 +24,7 @@ async function Page({ params: { slug } }) {
   return (
     <div
       style={{
-        '--accent': challenge.accent,
+        '--accent': challenge.accent
       }}
     >
       <FigmaPreview src={challenge.figma} />
@@ -42,7 +44,7 @@ async function Page({ params: { slug } }) {
             <p className="mt-3 text-lg leading-relaxed text-black/60">
               {challenge.description}
             </p>
-            <h2 className="font-display mt-10 mb-2 text-xl lg:text-2xl">
+            <h2 className="mt-10 mb-2 font-display text-xl lg:text-2xl">
               How to Start
             </h2>
             <p className="text-lg leading-relaxed lg:text-xl">
@@ -73,12 +75,14 @@ async function Page({ params: { slug } }) {
           <div
             className={clsx(
               'relative px-10 py-10',
-              'bg-brand border-4 border-black',
+              'border-4 border-black bg-brand',
               'shadow-solid'
             )}
           >
             <a
               href={challenge.figma}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-4 border-2 border-black bg-[#2AE876] py-4 text-2xl"
             >
               <Interfaces.Download

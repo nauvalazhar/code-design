@@ -1,8 +1,10 @@
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 # codedesign.dev
+
+![License](https://img.shields.io/github/license/nauvalazhar/code-design?style=flat-square) ![top](https://img.shields.io/github/languages/top/nauvalazhar/code-design?style=flat-square) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END --> 
+
+
 As a developer, it's important to continually challenge yourself and improve your skills. Code The Design was created with this goal in mind. We believe that the best way to learn and grow is by tackling real-life projects and challenges, rather than just following along with tutorials or practicing with contrived exercises.
 
 That's why we've created a platform that offers a wide variety of challenges, inspired by real-world designs and use cases. These challenges are meant to push you to think creatively, problem-solve, and develop your skills as a developer.
@@ -26,6 +28,11 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <td align="center" valign="top" width="14.28%"><a href="http://fiqry.dev"><img src="https://avatars.githubusercontent.com/u/25787603?v=4?s=100" width="100px;" alt="Fiqry choerudin"/><br /><sub><b>Fiqry choerudin</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=fiqryq" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://mrtampan.github.io/"><img src="https://avatars.githubusercontent.com/u/33930946?v=4?s=100" width="100px;" alt="Achmad Rivaldi"/><br /><sub><b>Achmad Rivaldi</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=mrtampan" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://perdidev.github.io"><img src="https://avatars.githubusercontent.com/u/108800230?v=4?s=100" width="100px;" alt="Perdi"/><br /><sub><b>Perdi</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=perdiDev" title="Code">💻</a> <a href="#design-perdiDev" title="Design">🎨</a> <a href="https://github.com/nauvalazhar/code-design/commits?author=perdiDev" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://hendraaagil.dev"><img src="https://avatars.githubusercontent.com/u/54741166?v=4?s=100" width="100px;" alt="Hendra Agil"/><br /><sub><b>Hendra Agil</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=hendraaagil" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://up2dul.com"><img src="https://avatars.githubusercontent.com/u/36098718?v=4?s=100" width="100px;" alt="Abdul Malik"/><br /><sub><b>Abdul Malik</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=up2dul" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://haikel.my.id"><img src="https://avatars.githubusercontent.com/u/77146709?v=4?s=100" width="100px;" alt="ハキム"/><br /><sub><b>ハキム</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=haikelz" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
@@ -60,9 +67,9 @@ yarn dev
 ```
 
 ### Tech-stack
-- Next JS
-- Tailwind
-- Radix UI
+- [Next JS](https://beta.nextjs.org/docs) - The React Framework for the Web
+- [Tailwind](https://tailwindcss.com/) - A utility-first CSS framework packed with classes
+- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components for building high‑quality design systems and web apps in React.
 
 ## License
 [MIT License](https://github.com/nauvalazhar/code-design/blob/main/LICENSE)

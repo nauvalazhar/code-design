@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { Arrow, Interfaces } from 'doodle-icons';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import Meta from './Meta';
 
 function Challenge({
@@ -12,7 +13,7 @@ function Challenge({
   accent,
   accent2,
   image,
-  slug,
+  slug
 }) {
   const rotation =
     Math.ceil(Math.random() * 3) * (Math.round(Math.random()) ? 1 : -1);
@@ -26,12 +27,12 @@ function Challenge({
       )}
       style={{
         '--accent': accent,
-        '--accent-2': accent2,
+        '--accent-2': accent2
       }}
     >
       <div className="flex flex-wrap gap-8 lg:gap-3">
         <div className="order-2 w-full lg:order-1 lg:w-5/12">
-          <h2 className="font-display mb-2 text-2xl lg:text-4xl">{name}</h2>
+          <h2 className="mb-2 font-display text-2xl lg:text-4xl">{name}</h2>
           <p className="mb-10 text-xl leading-tight text-black/60">
             {shortDescription}
           </p>
@@ -64,20 +65,20 @@ function Challenge({
             className="relative"
             style={{
               boxShadow: '10px 10px 0px var(--accent-2)',
-              transform: `rotate(${rotation}deg)`,
+              transform: `rotate(${rotation}deg)`
             }}
           >
             <div className="absolute -top-1 -left-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -top-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -left-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
-            <div className="aspect-[1.48/1] w-full border-4 border-black">
+            <div className="aspect-[1.48/1] w-full">
               <Image
                 alt={name}
                 src={image}
                 placeholder="blur"
                 fill
-                className="object-cover object-top"
+                className="border-4 border-black object-cover object-top"
                 blurDataURL={image.replace(/^\//g, '/thumbs/')}
               />
             </div>

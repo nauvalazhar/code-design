@@ -56,6 +56,33 @@
         "design",
         "doc"
       ]
+    },
+    {
+      "login": "hendraaagil",
+      "name": "Hendra Agil",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54741166?v=4",
+      "profile": "https://hendraaagil.dev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "up2dul",
+      "name": "Abdul Malik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36098718?v=4",
+      "profile": "https://up2dul.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "haikelz",
+      "name": "ハキム",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77146709?v=4",
+      "profile": "https://haikel.my.id",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
