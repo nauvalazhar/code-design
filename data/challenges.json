@@ -1,5 +1,37 @@
 [
   {
+    "name": "NFT",
+    "slug": "nft",
+    "description": "Get a glimpse of the world of NFTs with this sleek and stylish landing page design. Featuring a big hero component with a prominent search bar, this design showcases the latest auctions and top sellers, along with an overview of the different categories available. Whether you're an experienced NFT collector or just starting out, this landing page has everything you need to dive right in.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/nft.png",
+    "accent": "#A889FD",
+    "accent2": "#7545FA",
+    "figma": "https://www.figma.com/community/file/1203011565411594218",
+    "designer": {
+      "name": "Mahyu Aspant",
+      "avatar": "/mahyu.jpeg",
+      "url": "https://www.figma.com/@mahyuaspant"
+    }
+  },
+  {
+    "name": "Movies",
+    "slug": "movies",
+    "description": "This UI design is for a movie detail page that showcases all the relevant information about a particular film. The design features an eye-catching hero component with a large header image and movie title, along with sections for the storyline, rating, and more. The color palette is carefully selected to complement the movie's artwork and tone, and the typography is clear and easy to read. The overall look and feel of the design is modern and engaging, and it provides a great user experience for movie enthusiasts who are looking to learn more about their favorite films.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/movies.png",
+    "accent": "#ABBEF5",
+    "accent2": "#5380FF",
+    "figma": "https://www.figma.com/community/file/1205860363512453151",
+    "designer": {
+      "name": "Taufik Hidayatulloh",
+      "avatar": "/taufik.jpeg",
+      "url": "https://www.figma.com/@opik"
+    }
+  },
+  {
     "name": "Kourse",
     "slug": "kourse",
     "description": "The Kourse Hero component is a visually striking and highly functional element of an online course website. It features a clean and modern design, with a large headline on the left side and a featured course card on the right side. Under both the headline and course card, there are two key features that highlight the benefits and features of the online courses offered. The hero component is a key part of the website's overall aesthetic and user experience, and can be used to showcase the benefits and features of the online courses, including their quality, relevance, and convenience.",
@@ -9,19 +41,22 @@
     "accent": "#FBBC99",
     "accent2": "#FF5C00",
     "figma": "https://www.figma.com/community/file/1189172588130726972",
-    "figmaSrc": "https://www.figma.com/file/EYkXI217Wu38cJQItPRSC7/Kourse?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "The Malaka",
     "slug": "the-malaka",
-    "description": "The Malaka is a landing page for a book product. The design features a large hero section with a catchy headline and a 3D illustration of the book. The page also includes several sections such as a preface from the author, sample screenshots, testimonials, pricing information, and information about the author. The page is designed to be visually appealing and user-friendly, making it easy for visitors to learn more about the book and purchase a copy.",
+    "description": "The Malaka is a landing page for a book product. The design features a large hero section with a catchy headline and a 3D illustration of the book. The page also includes several sections such as a preface from the designer, sample screenshots, testimonials, pricing information, and information about the designer. The page is designed to be visually appealing and user-friendly, making it easy for visitors to learn more about the book and purchase a copy.",
     "difficulty": "Expert",
     "category": "Page",
     "image": "/the-malaka.png",
     "accent": "#90F7FE",
     "accent2": "#00BAC7",
-    "figma": "https://www.figma.com/community/file/1064953526065340295",
-    "figmaSrc": "https://www.figma.com/file/iayfzSBTLQlCh8dpdmzJzE/The-Malaka?node-id=0%3A1"
+    "figma": "https://www.figma.com/community/file/1064953526065340295"
   },
   {
     "name": "Priced",
@@ -32,8 +67,7 @@
     "image": "/priced.png",
     "accent": "#DBD6FF",
     "accent2": "#7C67FE",
-    "figma": "https://www.figma.com/community/file/1189234166168014977",
-    "figmaSrc": "https://www.figma.com/file/SRRXKEb0sC5MPO37wvG5No/Priced?node-id=0%3A1"
+    "figma": "https://www.figma.com/community/file/1189234166168014977"
   },
   {
     "name": "digidaw",
@@ -45,7 +79,11 @@
     "accent": "#9AFFE7",
     "accent2": "#FFB802",
     "figma": "https://www.figma.com/community/file/1189141799778804767",
-    "figmaSrc": "https://www.figma.com/file/dakpkqKUzIuSpL46lcdNNH/digidaw?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Jobless",
@@ -56,8 +94,7 @@
     "image": "/jobless.png",
     "accent": "#ACB5FF",
     "accent2": "#C274FF",
-    "figma": "https://www.figma.com/community/file/1189127953764369425",
-    "figmaSrc": "https://www.figma.com/file/r58sBL06Wy3NLdXGYJW1Op/Jobless-Hero?node-id=2%3A137"
+    "figma": "https://www.figma.com/community/file/1189127953764369425"
   },
   {
     "name": "Nowted",
@@ -69,7 +106,11 @@
     "accent": "#8688F3",
     "accent2": "#B490FF",
     "figma": "https://www.figma.com/community/file/1189112793273091079",
-    "figmaSrc": "https://www.figma.com/file/JZqCGy2h0hmvNZZ6zsdFYN/Nowted-Hero?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Enlighten",
@@ -81,7 +122,11 @@
     "accent": "#9CAEEC",
     "accent2": "#5A79E7",
     "figma": "https://www.figma.com/community/file/1188881154147948453",
-    "figmaSrc": "https://www.figma.com/file/Dasw4cxFHCcA9pgn2l5NtP/Enlighten?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Nowted App",
@@ -93,7 +138,11 @@
     "accent": "#8688F3",
     "accent2": "#B490FF",
     "figma": "https://www.figma.com/community/file/1188856976000269208",
-    "figmaSrc": "https://www.figma.com/file/LwPIAaSZ0CfS2hP2XI3fAI/Nowted?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Holadok",
@@ -105,7 +154,11 @@
     "accent": "#9BEAE0",
     "accent2": "#647DD4",
     "figma": "https://www.figma.com/community/file/1186316679638101335",
-    "figmaSrc": "https://www.figma.com/file/5xrMcbg7oDlAoDvsmK5tvz/Holadok-Hero?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Testimoni",
@@ -117,7 +170,11 @@
     "accent": "#FEA080",
     "accent2": "#E248D5",
     "figma": "https://www.figma.com/community/file/1186278277855305013",
-    "figmaSrc": "https://www.figma.com/file/q5Q8aPVKblMEhgHvuXkrTr/Testimoni?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "ChatFlow Landing",
@@ -129,7 +186,11 @@
     "accent": "#63B0F8",
     "accent2": "#FCC47D",
     "figma": "https://www.figma.com/community/file/1186225915682214172",
-    "figmaSrc": "https://www.figma.com/file/visTahQ2LVJJpuXRUnoeVF/ChatFlow-Landing"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "ChatFlow",
@@ -141,7 +202,11 @@
     "accent": "#C6BDFA",
     "accent2": "#FB72C7",
     "figma": "https://www.figma.com/community/file/1186160562744519943",
-    "figmaSrc": "https://www.figma.com/file/kQnaKUqs0qe3c9IN6nvFTY/ChatFlow?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Profile Hover",
@@ -153,7 +218,11 @@
     "accent": "#65EFE7",
     "accent2": "#BBA9F6",
     "figma": "https://www.figma.com/community/file/1185936637370242220",
-    "figmaSrc": "https://www.figma.com/file/8RzeQ9nok1b1uo4d0yAamG/Profile-Hover?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Pricy",
@@ -165,7 +234,11 @@
     "accent": "#88D4FF",
     "accent2": "#00A3FF",
     "figma": "https://www.figma.com/community/file/1185998177179693269",
-    "figmaSrc": "https://www.figma.com/file/mzbVJBHUyJX1lq8Jrnk3MI/Pricy?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Faceless",
@@ -177,7 +250,11 @@
     "accent": "#6DDAF1",
     "accent2": "#1FB1D0",
     "figma": "https://www.figma.com/community/file/1185928405696612520",
-    "figmaSrc": "https://www.figma.com/file/z77goq6ZcrHFFos7YkItYh/Faceless?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Musix Player",
@@ -189,7 +266,11 @@
     "accent": "#FDCFA6",
     "accent2": "#A395FC",
     "figma": "https://www.figma.com/community/file/1185892344067377288",
-    "figmaSrc": "https://www.figma.com/file/Pyk1yKsCXjS8GTT0GTOn3y/Musix-Player?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Comments",
@@ -201,7 +282,11 @@
     "accent": "#8CCAFF",
     "accent2": "#0089FF",
     "figma": "https://www.figma.com/community/file/1185876619562059904",
-    "figmaSrc": "https://www.figma.com/file/ihivCSgFJzy0b0enVEcy2G/Comment-Section?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Hoster Support",
@@ -213,7 +298,11 @@
     "accent": "#C1C1FC",
     "accent2": "#8888FF",
     "figma": "https://www.figma.com/community/file/1185627568002793481",
-    "figmaSrc": "https://www.figma.com/file/7uIgrTYBax6tUztH5NrEGw/Support?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Twitter Embed",
@@ -225,7 +314,11 @@
     "accent": "#AADFFE",
     "accent2": "#1DA1F2",
     "figma": "https://www.figma.com/community/file/1185598379810917358",
-    "figmaSrc": "https://www.figma.com/file/mFhzl1obc63HyosDZ2PmNc/Twitter-Embed?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Swiftship",
@@ -237,7 +330,11 @@
     "accent": "#A1B0FF",
     "accent2": "#7288FF",
     "figma": "https://www.figma.com/community/file/1185561395612371921",
-    "figmaSrc": "https://www.figma.com/file/u7D8QzULj94X3930C6AoV0/Swiftship?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "The Starter",
@@ -249,7 +346,11 @@
     "accent": "#FBF2A3",
     "accent2": "#A281FE",
     "figma": "https://www.figma.com/community/file/1184411948334356434",
-    "figmaSrc": "https://www.figma.com/file/ARc3xjGuIoCitSkFwpCmut/The-Starter?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Grolin",
@@ -261,7 +362,11 @@
     "accent": "#F4C195",
     "accent2": "#FC728B",
     "figma": "https://www.figma.com/community/file/1107456640392351621",
-    "figmaSrc": "https://www.figma.com/file/TkjxsbaMju2LfoFGT9WaTI/Grolin?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "The Zeitplan",
@@ -273,7 +378,11 @@
     "accent": "#FDB6AA",
     "accent2": "#FF745E",
     "figma": "https://www.figma.com/community/file/1061304266818856605",
-    "figmaSrc": "https://www.figma.com/file/jULoJBpYK9LqoBepKCluUS/The-Zeitplan?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Wumbo",
@@ -285,7 +394,11 @@
     "accent": "#ABCFFF",
     "accent2": "#6FA2FA",
     "figma": "https://www.figma.com/community/file/1061539222183309028",
-    "figmaSrc": "https://www.figma.com/file/hVhEaadudGLPzRRHTmjeOg/Wumbo?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Authed",
@@ -297,7 +410,11 @@
     "accent": "#C3C0FD",
     "accent2": "#8179FD",
     "figma": "https://www.figma.com/community/file/1061307506373261985",
-    "figmaSrc": "https://www.figma.com/file/C4ZVWrkqdzaFuwxbXGpi8R/Authed?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Collosal",
@@ -309,7 +426,11 @@
     "accent": "#BAB4FF",
     "accent2": "#9969FF",
     "figma": "https://www.figma.com/community/file/1061303456713302684",
-    "figmaSrc": "https://www.figma.com/file/WYu8WgRrDyv4stvstpeIdR/Collosal?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Chat n' rechat",
@@ -321,7 +442,11 @@
     "accent": "#CDD8FF",
     "accent2": "#4A72FF",
     "figma": "https://www.figma.com/community/file/1061306005803309728",
-    "figmaSrc": "https://www.figma.com/file/ebX3gwCPlQICyfL3aWBdMR/Chat-n'-rechat?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "MSTSKP",
@@ -333,7 +458,11 @@
     "accent": "#FFD8A5",
     "accent2": "#FFA32A",
     "figma": "https://www.figma.com/community/file/1064536438320565974",
-    "figmaSrc": "https://www.figma.com/file/JaCPT2ARqN4TMqUQW5MTbS/MSTSKP?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Epictetus",
@@ -345,7 +474,11 @@
     "accent": "#C0C6D1",
     "accent2": "#879DC2",
     "figma": "https://www.figma.com/community/file/1061308766782882467",
-    "figmaSrc": "https://www.figma.com/file/vkkN5QNQmOi1YSmYKaCmIY/Epictetus?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "The Sugiharto's",
@@ -357,6 +490,10 @@
     "accent": "#9CFFE7",
     "accent2": "#2BA386",
     "figma": "https://www.figma.com/community/file/1061308081642950306",
-    "figmaSrc": "https://www.figma.com/file/YTtSUNjosWzUp8X3XFpvF7/The-Sugiharto's?node-id=0%3A1"
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   }
 ]
