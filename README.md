@@ -49,6 +49,33 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+## UI Designers
+
+<table width="100%">
+  <tr>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fnauval.jpg&w=128&q=75" alt="Nauval"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ftaufik.jpeg&w=128&q=75" alt="Taufik Hidayatulloh"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fmahyu.jpeg&w=128&q=75" alt="Mahyu Aspant"></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Nauval</b>
+      <br>
+      <a href="https://www.figma.com/@mhd">Visit Profile</a>
+    </td>
+    <td align="center">
+      <b>Taufik Hidayatulloh</b>
+      <br>
+      <a href="https://www.figma.com/@opik">Visit Profile</a>
+    </td>
+    <td align="center">
+      <b>Mahyu Aspant</b>
+      <br>
+      <a href="https://www.figma.com/@mahyuaspant">Visit Profile</a>
+    </td>
+  </tr>
+</table>
+
 ## 🤝 Contributing
 
 First of all, thank you for taking your valuable time to contribute.
