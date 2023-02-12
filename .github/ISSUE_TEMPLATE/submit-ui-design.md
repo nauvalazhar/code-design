@@ -6,6 +6,7 @@ labels: ui design contribs
 assignees: nauvalazhar
 
 ---
+Make sure you have read our [contributing guidelines](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING_DESIGN.md) before submitting this issue.
 
 **Name**
 Your UI design project name. Must be short.
