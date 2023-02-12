@@ -56,7 +56,12 @@
     "image": "/the-malaka.png",
     "accent": "#90F7FE",
     "accent2": "#00BAC7",
-    "figma": "https://www.figma.com/community/file/1064953526065340295"
+    "figma": "https://www.figma.com/community/file/1064953526065340295",
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Priced",
@@ -67,7 +72,12 @@
     "image": "/priced.png",
     "accent": "#DBD6FF",
     "accent2": "#7C67FE",
-    "figma": "https://www.figma.com/community/file/1189234166168014977"
+    "figma": "https://www.figma.com/community/file/1189234166168014977",
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "digidaw",
@@ -94,7 +104,12 @@
     "image": "/jobless.png",
     "accent": "#ACB5FF",
     "accent2": "#C274FF",
-    "figma": "https://www.figma.com/community/file/1189127953764369425"
+    "figma": "https://www.figma.com/community/file/1189127953764369425",
+    "designer": {
+      "name": "Nauval",
+      "avatar": "/nauval.jpg",
+      "url": "https://www.figma.com/@mhd"
+    }
   },
   {
     "name": "Nowted",
