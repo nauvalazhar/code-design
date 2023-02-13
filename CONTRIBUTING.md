@@ -53,3 +53,7 @@ To help the maintainers review your changes, you could follow the following tips
 - Please put any link reference if you think that would help the maintainers
 
 Currently, the only maintainer is [@nauvalazhar](https://github.com/nauvalazhar), so if your pull request has not been reviewed within 24 hours, feel free to mention him on Twitter or any other platform that he lives on.
+
+---
+
+Thank you for any kind of contribution to the project, it helps us to grow the project faster!
