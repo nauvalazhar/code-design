@@ -43,3 +43,13 @@ Worth noting, please **do not** implement any new feature without opening a new 
 ### Commit Your Changes
 
 You need to follow [conventional commits](https://www.conventionalcommits.org/) for your commit message before you push all the changes.
+
+### Submit Pull Request
+
+To help the maintainers review your changes, you could follow the following tips:
+- Write a detailed description if you made several changes in a single pull request
+- You may make changes to some component's interactivity, please attach a related Gif or video so that the maintainers know the expected behavior
+- Please attach a screenshot if your changes related to the UI in general
+- Please put any link reference if you think that would help the maintainers
+
+Currently, the only maintainer is [@nauvalazhar](https://github.com/nauvalazhar), so if your pull request has not been reviewed within 24 hours, feel free to mention him on Twitter or any other platform that he lives on.
