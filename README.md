@@ -76,27 +76,11 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
   </tr>
 </table>
 
-## 🤝 Contributing
+## Contributing
 
-First of all, thank you for taking your valuable time to contribute.
+See our [contributing](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING.md) document for more information and UI design contributions, please consult the [UI Design Contribution Guideline](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING_DESIGN.md) document.
 
-1. Fork this repository
-2. Find an issue
-3. Make a pull request
 
-You may use Yarn as your package manager:
-
-```bash
-# install dependency
-yarn
-# run local server development
-yarn dev
-```
-
-### Tech-stack
-- [Next JS](https://beta.nextjs.org/docs) - The React Framework for the Web
-- [Tailwind](https://tailwindcss.com/) - A utility-first CSS framework packed with classes
-- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components for building high‑quality design systems and web apps in React.
 
 ## License
 [MIT License](https://github.com/nauvalazhar/code-design/blob/main/LICENSE)
