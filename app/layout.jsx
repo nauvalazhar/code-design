@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className="bg-[var(--primary-blue)]">
-        <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 lg:px-0 xl:w-[1140px]">
+        <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 xl:px-0 xl:w-[1140px]">
           <Header />
           <main className="py-10">{children}</main>
           <footer className="text-brand text-center text-xl">
