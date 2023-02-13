@@ -11,7 +11,7 @@ That's why we've created a platform that offers a wide variety of challenges, in
 
 We understand that everyone has different levels of experience and expertise, which is why we've included a subjective difficulty rating for each challenge. This allows you to choose challenges that are appropriate for your current skill level, and gradually work your way up as you improve.
 
-We also understand that the website is in a very early stage and far from being stable. Our focus is on getting the website visible as soon as possible, which is why we don't currently offer pre-exported assets and specific objectives for the challenges. However, we provide Figma design files for each challenge, which you can learn how the designs work and use to export any assets you need.
+We also understand that the website is in a very early stage and far from being stable (see our [roadmap](https://github.com/nauvalazhar/code-design/issues/12)). Our focus is on getting the website visible as soon as possible, which is why we don't currently offer pre-exported assets and specific objectives for the challenges. However, we provide Figma design files for each challenge, which you can learn how the designs work and use to export any assets you need.
 
 We hope that Code The Design will serve as a valuable resource for you as you work to improve your skills and become a more confident and capable developer. Happy coding!
 
