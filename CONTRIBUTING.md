@@ -40,3 +40,6 @@ There are no formal steps that you need to follow to contribute, but here are so
 
 Worth noting, please **do not** implement any new feature without opening a new issue first and have disscussion with the maintainers.
 
+### Commit Your Changes
+
+You need to follow [conventional commits](https://www.conventionalcommits.org/) for your commit message before you push all the changes.
