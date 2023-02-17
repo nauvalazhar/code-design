@@ -54,25 +54,31 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
 
 <table width="100%">
   <tr>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fnauval.jpg&w=128&q=75" alt="Nauval"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ftaufik.jpeg&w=128&q=75" alt="Taufik Hidayatulloh"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fmahyu.jpeg&w=128&q=75" alt="Mahyu Aspant"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fnauval.jpg&w=128&q=75" width="100" alt="Nauval"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ftaufik.jpeg&w=128&q=75" width="100" alt="Taufik Hidayatulloh"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fmahyu.jpeg&w=128&q=75" width="100" alt="Mahyu Aspant"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ffauzan.jpeg&w=128&q=75" width="100" alt="Muhammad Fauzan Alkhairi"></td>
   </tr>
   <tr>
-    <td align="center">
-      <b>Nauval</b>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Nauval</b></sub>
       <br>
-      <a href="https://www.figma.com/@mhd">Visit Profile</a>
+      <sub><a href="https://www.figma.com/@mhd">Visit Profile</a></sub>
     </td>
-    <td align="center">
-      <b>Taufik Hidayatulloh</b>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Taufik Hidayatulloh</b></sub>
       <br>
-      <a href="https://www.figma.com/@opik">Visit Profile</a>
+      <sub><a href="https://www.figma.com/@opik">Visit Profile</a></sub>
     </td>
-    <td align="center">
-      <b>Mahyu Aspant</b>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Mahyu Aspant</b></sub>
       <br>
-      <a href="https://www.figma.com/@mahyuaspant">Visit Profile</a>
+      <sub><a href="https://www.figma.com/@mahyuaspant">Visit Profile</a></sub>
+    </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Muhammad Fauzan Alkhairi</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@muhammadfauzana">Visit Profile</a></sub>
     </td>
   </tr>
 </table>
