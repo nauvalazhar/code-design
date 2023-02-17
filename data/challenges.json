@@ -1,5 +1,37 @@
 [
   {
+    "name": "Hangeulin",
+    "slug": "hangeulin",
+    "description": "Discover a new way to learn Korean with our language landing page. With a big hero section featuring stunning illustrations, a video element showcasing our top features, pricing options to suit any budget, testimonials from our satisfied learners, and a call-to-action to join our community, you'll be well on your way to speaking Korean fluently.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/hangeulin.png",
+    "accent": "#FFDF87",
+    "accent2": "#F4C237",
+    "figma": "https://www.figma.com/community/file/1207962513945950554",
+    "designer": {
+      "name": "Muhammad Fauzan Alkhairi",
+      "avatar": "/fauzan.jpeg",
+      "url": "https://www.figma.com/@muhammadfauzana"
+    }
+  },
+  {
+    "name": "Clone Netflix",
+    "slug": "clone-netflix",
+    "description": "A sleek and modern streaming service design, featuring a stunning hero section, an easy-to-navigate list of features, handpicked featured shows, and a clear pricing and subscription callout. Perfect for any streaming service looking to give their platform a fresh new look.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/clone-netflix.png",
+    "accent": "#FA6A74",
+    "accent2": "#CA1622",
+    "figma": "https://www.figma.com/community/file/1207958204889189717",
+    "designer": {
+      "name": "Muhammad Fauzan Alkhairi",
+      "avatar": "/fauzan.jpeg",
+      "url": "https://www.figma.com/@muhammadfauzana"
+    }
+  },
+  {
     "name": "NFT",
     "slug": "nft",
     "description": "Get a glimpse of the world of NFTs with this sleek and stylish landing page design. Featuring a big hero component with a prominent search bar, this design showcases the latest auctions and top sellers, along with an overview of the different categories available. Whether you're an experienced NFT collector or just starting out, this landing page has everything you need to dive right in.",
