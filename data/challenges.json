@@ -1,20 +1,21 @@
 [
   {
-    "name": "Hangeulin",
-    "slug": "hangeulin",
-    "description": "Discover a new way to learn Korean with our language landing page. With a big hero section featuring stunning illustrations, a video element showcasing our top features, pricing options to suit any budget, testimonials from our satisfied learners, and a call-to-action to join our community, you'll be well on your way to speaking Korean fluently.",
+    "name": "Agency",
+    "slug": "agency",
+    "description": "Agency landing page with a modern and clean layout, this page features a striking hero section with a large image and bold call-to-action, along with easy-to-scan service descriptions. The featured projects section showcases the agency's best work, while the pricing and team sections provide important information about rates and expertise. Testimonials, blog content, and client logos add social proof, and a newsletter signup helps keep users engaged.",
     "difficulty": "Intermediate",
     "category": "Page",
-    "image": "/hangeulin.png",
-    "accent": "#FFDF87",
-    "accent2": "#F4C237",
-    "figma": "https://www.figma.com/community/file/1207962513945950554",
+    "image": "/agency.png",
+    "accent": "#FFE479",
+    "accent2": "#FACC15",
+    "figma": "https://www.figma.com/community/file/1208800587833558237",
     "designer": {
-      "name": "Muhammad Fauzan Alkhairi",
-      "avatar": "/fauzan.jpeg",
-      "url": "https://www.figma.com/@muhammadfauzana"
+      "name": "Rafiq Al Hafizh Adha",
+      "avatar": "/rafiq.png",
+      "url": "https://www.figma.com/@rafiqadha"
     }
   },
+
   {
     "name": "Clone Netflix",
     "slug": "clone-netflix",
@@ -25,6 +26,22 @@
     "accent": "#FA6A74",
     "accent2": "#CA1622",
     "figma": "https://www.figma.com/community/file/1207958204889189717",
+    "designer": {
+      "name": "Muhammad Fauzan Alkhairi",
+      "avatar": "/fauzan.jpeg",
+      "url": "https://www.figma.com/@muhammadfauzana"
+    }
+  },
+  {
+    "name": "Hangeulin",
+    "slug": "hangeulin",
+    "description": "Discover a new way to learn Korean with our language landing page. With a big hero section featuring stunning illustrations, a video element showcasing our top features, pricing options to suit any budget, testimonials from our satisfied learners, and a call-to-action to join our community, you'll be well on your way to speaking Korean fluently.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/hangeulin.png",
+    "accent": "#FFDF87",
+    "accent2": "#F4C237",
+    "figma": "https://www.figma.com/community/file/1207962513945950554",
     "designer": {
       "name": "Muhammad Fauzan Alkhairi",
       "avatar": "/fauzan.jpeg",
