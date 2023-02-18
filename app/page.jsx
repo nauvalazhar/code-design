@@ -26,7 +26,8 @@ export default function Home() {
         <p className="text-brand text-2xl leading-relaxed">Difficulty</p>
         <DropdownDifficulties onChange={setDifficultyFilter} />
         <p className="text-brand text-2xl leading-relaxed">
-          /{challenges.length} challanges
+          /{challenges.length}{' '}
+          {challenges.length > 1 ? 'challenges' : 'challenge'}
         </p>
       </div>
       {challenges.map(
