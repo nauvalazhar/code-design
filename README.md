@@ -57,6 +57,7 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fnauval.jpg&w=128&q=75" width="100" alt="Nauval"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ftaufik.jpeg&w=128&q=75" width="100" alt="Taufik Hidayatulloh"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fmahyu.jpeg&w=128&q=75" width="100" alt="Mahyu Aspant"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ffauzan.jpeg&w=128&q=75" width="100" alt="Muhammad Fauzan Alkhairi"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Frafiq.png&w=128&q=75" width="100" alt="Rafiq Al Hafizh Adha"></td>
   </tr>
   <tr>
