@@ -9,10 +9,10 @@ assignees: nauvalazhar
 Make sure you have read our [contributing guidelines](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING_DESIGN.md) before submitting this issue.
 
 **Name**
-Your UI design project name. Must be short.
+Construction Website | Jhontraktor Clone
 
 **Figma Community URL**
-Your UI design URL to the Figma community.
+https://www.figma.com/community/file/1209577571885853711
 
 **Your Figma Profile**
-The URL of your Figma profile. For example, https://figma.com/@mhd
+https://www.figma.com/@brainstewstudio
