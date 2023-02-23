@@ -130,28 +130,34 @@ async function Page({ params: { slug } }) {
               'bg-[#FF508F] shadow-solid'
             )}
           >
-            <h2 className="text-2xl font-semibold">UI Designer</h2>
-            <div className="flex items-center mt-4">
-              <Image
-                src={challenge.designer.avatar}
-                alt={challenge.designer.name}
-                width={60}
-                height={60}
-                className="border-4 border-black object-cover rounded-full"
-              />
-              <div className="ml-4">
-                <h3 className="text-xl font-semibold mb-1">
-                  {challenge.designer.name}
-                </h3>
-                <a
-                  href={challenge.designer.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center hover:underline"
-                >
-                  Visit Profile <ExternalLink width={18} className="ml-2" />
-                </a>
-              </div>
+            <h2 className="text-2xl font-semibold">
+              UI {challenge.designer.length > 1 ? 'designers' : 'designer'}
+            </h2>
+            <div className="mt-4">
+              {challenge.designer.map(designer => (
+                <div key={designer.name} className="flex items-center mt-4">
+                  <Image
+                    src={designer.avatar}
+                    alt={designer.name}
+                    width={60}
+                    height={60}
+                    className="border-4 border-black object-cover rounded-full"
+                  />
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold mb-1">
+                      {designer.name}
+                    </h3>
+                    <a
+                      href={designer.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:underline"
+                    >
+                      Visit Profile <ExternalLink width={18} className="ml-2" />
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
