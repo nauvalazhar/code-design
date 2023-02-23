@@ -1,5 +1,23 @@
 [
   {
+    "name": "Destinize",
+    "slug": "destinize",
+    "description": "Discover your next dream vacation spot with our Destinize. Featuring a stunning hero illustration and easy-to-use reservation and find place features, you can find the perfect getaway in no time. Check out our gallery and blog for inspiration, and hear from happy travelers in our testimonial section. Have questions? Our FAQ has got you covered.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/destinize.png",
+    "accent": "#A9C0FB",
+    "accent2": "#749BFE",
+    "figma": "https://www.figma.com/community/file/1210601516714970320",
+    "designer": [
+      {
+        "name": "Syauqizaidan Khairan Khalaf",
+        "avatar": "/syauqi.jpeg",
+        "url": "https://www.figma.com/@syaufy"
+      }
+    ]
+  },
+  {
     "name": "Evenity",
     "slug": "evenity",
     "description": "Evenity is an event management landing page that's sure to impress. With a striking hero section, informative 'about' section, venues showcases, past featured events, events schedule, and partner section, it's the ideal platform to promote your event management services.",
