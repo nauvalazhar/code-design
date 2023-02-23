@@ -1,5 +1,21 @@
 [
   {
+    "name": "Evenity",
+    "slug": "evenity",
+    "description": "Evenity is an event management landing page that's sure to impress. With a striking hero section, informative 'about' section, venues showcases, past featured events, events schedule, and partner section, it's the ideal platform to promote your event management services.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/evenity.png",
+    "accent": "#C889DC",
+    "accent2": "#D13FFF",
+    "figma": "https://www.figma.com/community/file/1210265697580558125",
+    "designer": {
+      "name": "Rafiq Al Hafizh Adha",
+      "avatar": "/rafiq.png",
+      "url": "https://www.figma.com/@rafiqadha"
+    }
+  },
+  {
     "name": "Agency",
     "slug": "agency",
     "description": "Agency landing page with a modern and clean layout, this page features a striking hero section with a large image and bold call-to-action, along with easy-to-scan service descriptions. The featured projects section showcases the agency's best work, while the pricing and team sections provide important information about rates and expertise. Testimonials, blog content, and client logos add social proof, and a newsletter signup helps keep users engaged.",
