@@ -9,7 +9,7 @@ assignees: nauvalazhar
 Make sure you have read our [contributing guidelines](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING_DESIGN.md) before submitting this issue.
 
 **Name**
-Construction Website | Jhontraktor Clone
+Construction Website | Jhontraktor Clone 
 
 **Figma Community URL**
 https://www.figma.com/community/file/1209577571885853711
