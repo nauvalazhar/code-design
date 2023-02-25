@@ -1,5 +1,41 @@
 [
   {
+    "name": "Bertumbuh",
+    "slug": "bertumbuh",
+    "description": "",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/bertumbuh.png",
+    "accent": "#D3FDF9",
+    "accent2": "#72E8DD",
+    "figma": "https://www.figma.com/community/file/1210968203740282497",
+    "designer": [
+      {
+        "name": "Dimas Rizky Maulana",
+        "avatar": "/dimas.jpeg",
+        "url": "https://www.figma.com/@dimasrizkym"
+      }
+    ]
+  },
+  {
+    "name": "Adoptme",
+    "slug": "adoptme",
+    "description": "Adopting a pet has never been easier! Check out Adoptme, our new pet adoption website. With a simple and intuitive interface, you can easily browse through pets up for adoption, sponsor your favorite furry friend, and learn about our mission to help animals in need.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/adoptme.png",
+    "accent": "#C7D4E7",
+    "accent2": "#8CA8D0",
+    "figma": "https://www.figma.com/community/file/1210923071730191941",
+    "designer": [
+      {
+        "name": "Yohana Marlina",
+        "avatar": "/yohana.jpeg",
+        "url": "https://www.figma.com/@yohanamarlina"
+      }
+    ]
+  },
+  {
     "name": "Destinize",
     "slug": "destinize",
     "description": "Discover your next dream vacation spot with our Destinize. Featuring a stunning hero illustration and easy-to-use reservation and find place features, you can find the perfect getaway in no time. Check out our gallery and blog for inspiration, and hear from happy travelers in our testimonial section. Have questions? Our FAQ has got you covered.",
