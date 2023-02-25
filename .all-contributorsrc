@@ -93,6 +93,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "mahdanidn",
+      "name": "M. Mahdani Rahmatullah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50037482?v=4",
+      "profile": "https://github.com/mahdanidn",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
