@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 import Meta from './Meta';
 
+const MAX_DESC_LENGTH = 100;
+
 function Challenge({
   name,
   shortDescription,
@@ -34,7 +36,8 @@ function Challenge({
         <div className="order-2 w-full lg:order-1 lg:w-5/12">
           <h2 className="mb-2 font-display text-2xl lg:text-4xl">{name}</h2>
           <p className="mb-10 text-xl leading-tight text-black/60">
-            {shortDescription}
+            {shortDescription}{' '}
+            {shortDescription.length === MAX_DESC_LENGTH && '...'}
           </p>
           <Link
             href={`/challenge/${slug}`}
