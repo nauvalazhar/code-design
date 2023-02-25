@@ -7,6 +7,8 @@ import challengesData from 'data/challenges.json';
 import Challenge from 'components/Challenge';
 import DropdownDifficulties from 'components/DropdownDifficulties';
 
+const MAX_DESC_LENGTH = 100;
+
 export default function Home() {
   const [difficultyFilter, setDifficultyFilter] = useState('All');
   // just in case
@@ -46,7 +48,7 @@ export default function Home() {
             image={image}
             name={name}
             slug={slug}
-            shortDescription={description.substring(0, 100)}
+            shortDescription={description.substring(0, MAX_DESC_LENGTH)}
             difficulty={difficulty}
             category={category}
             accent={accent}
