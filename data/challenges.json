@@ -2,7 +2,7 @@
   {
     "name": "Edufree",
     "slug": "edufree",
-    "description": "",
+    "description": "Edufree is a free education website that provides access to quality education for everyone. The design includes a visually appealing hero section with an illustration that represents the website's mission, followed by a section that highlights the website's partners and impressive statistics. The features section provides a glimpse of the website's offerings, while the about section gives more information about the organization. The recommended courses section helps users find the most relevant courses for their needs, and the testimonial section showcases feedback from happy users. The FAQ section answers common questions, and the register section allows users to sign up for the website. Finally, the blog section provides valuable insights and updates about the website's offerings.",
     "difficulty": "Intermediate",
     "category": "Page",
     "image": "/edufree.png",
@@ -20,7 +20,7 @@
   {
     "name": "Bertumbuh",
     "slug": "bertumbuh",
-    "description": "",
+    "description": "Bertumbuh is a trees planting organization website, featuring a hero section with an illustration of a tree and a call-to-action button, a section showcasing the total number of planted trees, an about section, a section explaining the importance of planting trees, a contributor section, a news section, and a newsletter.",
     "difficulty": "Intermediate",
     "category": "Page",
     "image": "/bertumbuh.png",
