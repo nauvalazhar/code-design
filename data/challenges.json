@@ -1,5 +1,23 @@
 [
   {
+    "name": "Edufree",
+    "slug": "edufree",
+    "description": "",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/edufree.png",
+    "accent": "#CCCEFF",
+    "accent2": "#FCD980",
+    "figma": "https://www.figma.com/community/file/1210964542508506746",
+    "designer": [
+      {
+        "name": "Dimas Rizky Maulana",
+        "avatar": "/dimas.jpeg",
+        "url": "https://www.figma.com/@dimasrizkym"
+      }
+    ]
+  },
+  {
     "name": "Bertumbuh",
     "slug": "bertumbuh",
     "description": "",
