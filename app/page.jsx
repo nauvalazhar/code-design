@@ -8,6 +8,8 @@ import challengesData from 'data/challenges.json';
 import Challenge from 'components/Challenge';
 import DropdownDifficulties from 'components/DropdownDifficulties';
 
+const MAX_DESC_LENGTH = 100;
+
 export default function Home() {
   const categories = ['All Categories', 'App', 'Component', 'Page'];
   const [difficultyFilter, setDifficultyFilter] = useState('All');
