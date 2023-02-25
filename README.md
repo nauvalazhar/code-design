@@ -1,7 +1,7 @@
 # codedesign.dev
 
 ![License](https://img.shields.io/github/license/nauvalazhar/code-design?style=flat-square) ![top](https://img.shields.io/github/languages/top/nauvalazhar/code-design?style=flat-square) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
 
@@ -34,6 +34,7 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://haikel.my.id"><img src="https://avatars.githubusercontent.com/u/77146709?v=4?s=100" width="100px;" alt="ハキム"/><br /><sub><b>ハキム</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=haikelz" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/iamyuu"><img src="https://avatars.githubusercontent.com/u/45778229?v=4?s=100" width="100px;" alt="Yusuf"/><br /><sub><b>Yusuf</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=iamyuu" title="Code">💻</a> <a href="#design-iamyuu" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mahdanidn"><img src="https://avatars.githubusercontent.com/u/50037482?v=4?s=100" width="100px;" alt="M. Mahdani Rahmatullah"/><br /><sub><b>M. Mahdani Rahmatullah</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=mahdanidn" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
