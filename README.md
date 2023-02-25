@@ -60,8 +60,8 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fmahyu.jpeg&w=128&q=75" width="100" alt="Mahyu Aspant"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ffauzan.jpeg&w=128&q=75" width="100" alt="Muhammad Fauzan Alkhairi"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Frafiq.png&w=128&q=75" width="100" alt="Rafiq Al Hafizh Adha"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fsyauqi.jpeg&w=128&q=75" width="100" alt="Syauqizaidan Khairan Khalaf
-"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fsyauqi.jpeg&w=128&q=75" width="100" alt="Syauqizaidan Khairan Khalaf"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fyohana.jpeg&w=128&q=75" width="100" alt="Yohana Marlina"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
@@ -93,6 +93,33 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <sub><b>Syauqizaidan Khairan Khalaf</b></sub>
       <br>
       <sub><a href="https://www.figma.com/@syaufy">Visit Profile</a></sub>
+    </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Yohana Marlina</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@yohanamarlina">Visit Profile</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fdimas.jpeg&w=128&q=75" width="100" alt="Dimas Rizky Maulana"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fglenn.jpeg&w=128&q=75" width="100" alt="Glenn Vhalado"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fbrainstew.jpeg&w=128&q=75" width="100" alt="BrainStew Studio"></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Dimas Rizky Maulana</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@dimasrizkym">Visit Profile</a></sub>
+    </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Glenn Vhalado</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@glennvhalado">Visit Profile</a></sub>
+    </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>BrainStew Studio</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@brainstewstudio">Visit Profile</a></sub>
     </td>
   </tr>
 </table>
