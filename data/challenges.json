@@ -1,5 +1,41 @@
 [
   {
+    "name": "Construction",
+    "slug": "Construction",
+    "description": "This new construction landing page design features a hero section with an engaging illustration background, a small stats section to showcase the company's success, and an experience section to highlight the team's expertise. The \"How We Work\" section provides a glimpse into the company's approach to construction projects, while the \"Featured Projects\" section showcases the company's portfolio. Testimonials from satisfied clients add social proof, and visitors can easily request a quote or get in touch via the \"Send a Quote\" and \"Contact\" sections.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/construction.png",
+    "accent": "#FFA873",
+    "accent2": "#FF7420",
+    "figma": "https://www.figma.com/community/file/1209577571885853711",
+    "designer": [
+      {
+        "name": "BrainStew Studio",
+        "avatar": "/brainstew.jpeg",
+        "url": "https://www.figma.com/@brainstewstudio"
+      }
+    ]
+  },
+  {
+    "name": "Bubble Bash",
+    "slug": "bubble-bash",
+    "description": "This agency landing page design features a striking hero section with bold text and a captivating image below it. A small stats section provides some key numbers to showcase the agency's success. The 'Our Services' section highlights the various services offered by the agency, while the 'Recent Projects' section displays some of the agency's most recent and impressive work. Testimonials from satisfied clients lend credibility to the agency's expertise. A clear callout encourages visitors to take action and get in touch.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/bubble-bash.png",
+    "accent": "#8DEFC2",
+    "accent2": "#34E392",
+    "figma": "https://www.figma.com/community/file/1210888180615972372",
+    "designer": [
+      {
+        "name": "Glenn Vhalado",
+        "avatar": "/glenn.jpeg",
+        "url": "https://www.figma.com/@glennvhalado"
+      }
+    ]
+  },
+  {
     "name": "Edufree",
     "slug": "edufree",
     "description": "Edufree is a free education website that provides access to quality education for everyone. The design includes a visually appealing hero section with an illustration that represents the website's mission, followed by a section that highlights the website's partners and impressive statistics. The features section provides a glimpse of the website's offerings, while the about section gives more information about the organization. The recommended courses section helps users find the most relevant courses for their needs, and the testimonial section showcases feedback from happy users. The FAQ section answers common questions, and the register section allows users to sign up for the website. Finally, the blog section provides valuable insights and updates about the website's offerings.",
