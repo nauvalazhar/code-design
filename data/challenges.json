@@ -1,5 +1,23 @@
 [
   {
+    "name": "Suxz",
+    "slug": "suxz",
+    "description": "This online course platform features a captivating hero section with an illustration on the right and a prominent call-to-action button. Below the hero section, you'll find a comprehensive list of available classes. The \"About Us\" section provides a brief overview of the platform's mission and values. The platform's partnerships with reputable companies are highlighted in the \"Companies Partners\" section. Testimonials from satisfied alumni add credibility to the platform in the \"Testimonials\" section. Finally, a clear and compelling call-to-action is displayed at the bottom of the page, encouraging visitors to take the next step in their education.",
+    "difficulty": "Intermediate",
+    "category": "Page",
+    "image": "/suxz.png",
+    "accent": "#CDC9FD",
+    "accent2": "#A39BF9",
+    "figma": "https://www.figma.com/community/file/1211276735395024758",
+    "designer": [
+      {
+        "name": "Irham Shidiq",
+        "avatar": "/irham.jpeg",
+        "url": "https://www.figma.com/@irhammshidiq"
+      }
+    ]
+  },
+  {
     "name": "Construction",
     "slug": "Construction",
     "description": "This new construction landing page design features a hero section with an engaging illustration background, a small stats section to showcase the company's success, and an experience section to highlight the team's expertise. The \"How We Work\" section provides a glimpse into the company's approach to construction projects, while the \"Featured Projects\" section showcases the company's portfolio. Testimonials from satisfied clients add social proof, and visitors can easily request a quote or get in touch via the \"Send a Quote\" and \"Contact\" sections.",
