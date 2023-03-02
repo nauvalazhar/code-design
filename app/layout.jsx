@@ -5,6 +5,7 @@ import clsx from 'clsx';
 
 import { AnalyticsWrapper } from 'components/Analytics';
 import Header from 'components/Header';
+import ScrollToTop from 'components/ScrollToTop';
 
 const fontDisplay = Fredoka_One({
   variable: '--font-display',
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
             <p>Powered by Vercel</p>
           </footer>
         </main>
+        <ScrollToTop />
         <AnalyticsWrapper />
       </body>
     </html>
