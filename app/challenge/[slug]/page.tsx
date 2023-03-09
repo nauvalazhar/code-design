@@ -1,21 +1,20 @@
-import clsx from 'clsx';
-import { Interfaces } from 'doodle-icons';
-import { ExternalLink } from 'lucide-react';
-import Image from 'next/image';
-
-import challenges from 'data/challenges.json';
-
-import FigmaPreview from 'components/FigmaPreview';
-import Meta from 'components/Meta';
+import clsx from "clsx";
+import FigmaPreview from "components/FigmaPreview";
+import Meta from "components/Meta";
+import challenges from "data/challenges.json";
+import { Interfaces } from "doodle-icons";
+import { ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { CSSProperties } from "react";
 
 export async function generateStaticParams() {
-  return challenges.map(challenge => ({
-    slug: challenge.slug
+  return challenges.map((challenge) => ({
+    slug: challenge.slug,
   }));
 }
 
 async function getChallenge(slug) {
-  const challenge = challenges.find(c => c.slug === slug);
+  const challenge = challenges.find((c) => c.slug === slug);
 
   return challenge;
 }
@@ -26,7 +25,7 @@ async function Page({ params: { slug } }) {
   return (
     <div
       style={{
-        '--accent': challenge.accent
+        "--accent": challenge.accent,
       }}
     >
       <FigmaPreview src={challenge.figma} />
@@ -35,9 +34,9 @@ async function Page({ params: { slug } }) {
         <div className="w-full lg:w-8/12">
           <div
             className={clsx(
-              'relative p-10 lg:p-20',
-              'border-4 border-black bg-[var(--accent)]',
-              'shadow-solid'
+              "relative p-10 lg:p-20",
+              "border-4 border-black bg-[var(--accent)]",
+              "shadow-solid"
             )}
           >
             <h1 className="font-display text-2xl lg:text-4xl">
@@ -76,9 +75,9 @@ async function Page({ params: { slug } }) {
         <div className="w-full space-y-10 lg:w-4/12">
           <div
             className={clsx(
-              'relative px-10 py-10',
-              'border-4 border-black bg-brand',
-              'shadow-solid'
+              "relative px-10 py-10",
+              "border-4 border-black bg-brand",
+              "shadow-solid"
             )}
           >
             <a
@@ -107,10 +106,10 @@ async function Page({ params: { slug } }) {
           </div>
           <div
             className={clsx(
-              'relative px-10 py-10',
-              'border-4 border-black bg-[#00FABE]',
-              'space-y-8',
-              'shadow-solid'
+              "relative px-10 py-10",
+              "border-4 border-black bg-[#00FABE]",
+              "space-y-8",
+              "shadow-solid"
             )}
           >
             <Meta
@@ -126,15 +125,15 @@ async function Page({ params: { slug } }) {
           </div>
           <div
             className={clsx(
-              'px-10 py-10 border-4 border-black',
-              'bg-[#FF508F] shadow-solid'
+              "px-10 py-10 border-4 border-black",
+              "bg-[#FF508F] shadow-solid"
             )}
           >
             <h2 className="text-2xl font-semibold">
-              UI {challenge.designer.length > 1 ? 'designers' : 'designer'}
+              UI {challenge.designer.length > 1 ? "designers" : "designer"}
             </h2>
             <div className="mt-4">
-              {challenge.designer.map(designer => (
+              {challenge.designer.map((designer) => (
                 <div key={designer.name} className="flex items-center mt-4">
                   <Image
                     src={designer.avatar}
