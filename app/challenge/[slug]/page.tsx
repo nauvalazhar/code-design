@@ -1,11 +1,11 @@
 import clsx from "clsx";
 import FigmaPreview from "components/FigmaPreview";
 import Meta from "components/Meta";
-import challenges from "data/challenges.json";
+import challenges from "data/challenges";
 import { Interfaces } from "doodle-icons";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import { CSSProperties } from "react";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   return challenges.map((challenge) => ({
@@ -21,6 +21,10 @@ async function getChallenge(slug) {
 
 async function Page({ params: { slug } }) {
   const challenge = await getChallenge(slug);
+
+  if (!challenge) {
+    notFound();
+  }
 
   return (
     <div

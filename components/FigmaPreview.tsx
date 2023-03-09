@@ -1,11 +1,14 @@
 "use client";
 
+import clsx from "clsx";
+import { Interfaces } from "doodle-icons";
+import { useState } from "react";
 
-import clsx from 'clsx';
-import { Interfaces } from 'doodle-icons';
-import { useState } from 'react';
+export interface FigmaPreviewProps {
+  src: string;
+}
 
-export default function FigmaPreview({ src }) {
+export default function FigmaPreview({ src }: FigmaPreviewProps) {
   const [loading, setLoading] = useState(true);
   const id = src.split(/\//).pop();
 

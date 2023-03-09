@@ -1,29 +1,31 @@
-'use client';
+"use client";
 
-import clsx from 'clsx';
-import { useMemo, useState } from 'react';
-
-import challengesData from 'data/challenges.json';
-
-import Challenge from 'components/Challenge';
-import DropdownDifficulties from 'components/DropdownDifficulties';
+import clsx from "clsx";
+import Challenge from "components/Challenge";
+import DropdownDifficulties from "components/DropdownDifficulties";
+import challengesData from "data/challenges";
+import { Difficulty } from "data/difficulties";
+import { useMemo, useState } from "react";
 
 const MAX_DESC_LENGTH = 100;
 
+export type Category = "All Categories" | "App" | "Component" | "Page";
+
 export default function Home() {
-  const categories = ['All Categories', 'App', 'Component', 'Page'];
-  const [difficultyFilter, setDifficultyFilter] = useState('All');
-  const [categoryFilter, setCategoryFilter] = useState('All Categories');
+  const categories: Category[] = ["All Categories", "App", "Component", "Page"];
+  const [difficultyFilter, setDifficultyFilter] = useState<Difficulty>("All");
+  const [categoryFilter, setCategoryFilter] =
+    useState<Category>("All Categories");
   // just in case
   const challenges = useMemo(
     () =>
-      difficultyFilter === 'All' && categoryFilter === 'All Categories'
+      difficultyFilter === "All" && categoryFilter === "All Categories"
         ? challengesData
         : challengesData.filter(
-            challenge =>
-              (difficultyFilter === 'All' ||
+            (challenge) =>
+              (difficultyFilter === "All" ||
                 challenge.difficulty === difficultyFilter) &&
-              (categoryFilter === 'All Categories' ||
+              (categoryFilter === "All Categories" ||
                 challenge.category === categoryFilter)
           ),
     [categoryFilter, difficultyFilter]
@@ -35,18 +37,18 @@ export default function Home() {
         <p className="text-brand text-2xl leading-relaxed">Difficulty</p>
         <DropdownDifficulties onChange={setDifficultyFilter} />
         <p className="text-brand text-2xl leading-relaxed">
-          /{challenges.length}{' '}
-          {challenges.length > 1 ? 'challenges' : 'challenge'}
+          /{challenges.length}{" "}
+          {challenges.length > 1 ? "challenges" : "challenge"}
         </p>
       </div>
       <div className="flex flex-wrap gap-5">
-        {categories.map(category => (
+        {categories.map((category) => (
           <button
             key={category}
             type="button"
             className={clsx(
-              'px-5 py-2 bg-brand font-bold',
-              categoryFilter === category && 'border-4 border-black'
+              "px-5 py-2 bg-brand font-bold",
+              categoryFilter === category && "border-4 border-black"
             )}
             onClick={() => setCategoryFilter(category)}
           >
@@ -64,7 +66,7 @@ export default function Home() {
             category,
             accent,
             accent2,
-            slug
+            slug,
           }) => (
             <Challenge
               key={name}
