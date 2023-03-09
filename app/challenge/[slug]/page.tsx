@@ -7,19 +7,25 @@ import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+interface Params {
+  params: {
+    slug: string;
+  };
+}
+
 export async function generateStaticParams() {
   return challenges.map((challenge) => ({
     slug: challenge.slug,
   }));
 }
 
-async function getChallenge(slug) {
+async function getChallenge(slug: string) {
   const challenge = challenges.find((c) => c.slug === slug);
 
   return challenge;
 }
 
-async function Page({ params: { slug } }) {
+async function Page({ params: { slug } }: Params) {
   const challenge = await getChallenge(slug);
 
   if (!challenge) {
