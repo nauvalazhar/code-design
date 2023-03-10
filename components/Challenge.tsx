@@ -3,9 +3,18 @@ import { Arrow, Interfaces } from 'doodle-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Challenge as TChallenge } from 'data/challenges';
+
 import Meta from './Meta';
 
 const MAX_DESC_LENGTH = 100;
+
+export type ChallengeProps = Pick<
+  TChallenge,
+  'name' | 'difficulty' | 'category' | 'accent' | 'accent2' | 'image' | 'slug'
+> & {
+  shortDescription: string;
+};
 
 function Challenge({
   name,
@@ -16,7 +25,7 @@ function Challenge({
   accent2,
   image,
   slug
-}) {
+}: ChallengeProps) {
   const rotation =
     Math.ceil(Math.random() * 3) * (Math.round(Math.random()) ? 1 : -1);
 

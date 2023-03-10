@@ -2,11 +2,18 @@ import clsx from 'clsx';
 import { Interfaces } from 'doodle-icons';
 import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
-import challenges from 'data/challenges.json';
+import challenges from 'data/challenges';
 
 import FigmaPreview from 'components/FigmaPreview';
 import Meta from 'components/Meta';
+
+type Params = {
+  params: {
+    slug: string;
+  };
+};
 
 export async function generateStaticParams() {
   return challenges.map(challenge => ({
@@ -14,14 +21,18 @@ export async function generateStaticParams() {
   }));
 }
 
-async function getChallenge(slug) {
+async function getChallenge(slug: string) {
   const challenge = challenges.find(c => c.slug === slug);
 
   return challenge;
 }
 
-async function Page({ params: { slug } }) {
+async function Page({ params: { slug } }: Params) {
   const challenge = await getChallenge(slug);
+
+  if (!challenge) {
+    notFound();
+  }
 
   return (
     <div

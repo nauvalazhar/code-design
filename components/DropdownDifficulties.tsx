@@ -3,15 +3,19 @@
 import * as Dropdown from '@radix-ui/react-dropdown-menu';
 import clsx from 'clsx';
 import { ChevronDown } from 'lucide-react';
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 
-import difficulties from 'data/difficulties.json';
+import difficulties, { Difficulty } from 'data/difficulties';
 
-function DropdownDifficulties({ onChange }) {
-  const difficulty = ['All', ...difficulties.map(d => d.name)];
+export type DropdownDifficultiesProps = {
+  onChange: Dispatch<SetStateAction<Difficulty>>;
+};
+
+function DropdownDifficulties({ onChange }: DropdownDifficultiesProps) {
+  const difficulty: Difficulty[] = ['All', ...difficulties.map(d => d.name)];
   const [difficultyFilter, setDifficultyFilter] = useState(difficulty[0]);
 
-  function clickHandle(diff) {
+  function clickHandle(diff: Difficulty) {
     setDifficultyFilter(diff);
 
     onChange(diff);

@@ -3,17 +3,21 @@
 import clsx from 'clsx';
 import { useMemo, useState } from 'react';
 
-import challengesData from 'data/challenges.json';
+import challengesData from 'data/challenges';
+import { Difficulty } from 'data/difficulties';
 
 import Challenge from 'components/Challenge';
 import DropdownDifficulties from 'components/DropdownDifficulties';
 
 const MAX_DESC_LENGTH = 100;
 
+export type Category = 'All Categories' | 'App' | 'Component' | 'Page';
+
 export default function Home() {
-  const categories = ['All Categories', 'App', 'Component', 'Page'];
-  const [difficultyFilter, setDifficultyFilter] = useState('All');
-  const [categoryFilter, setCategoryFilter] = useState('All Categories');
+  const categories: Category[] = ['All Categories', 'App', 'Component', 'Page'];
+  const [difficultyFilter, setDifficultyFilter] = useState<Difficulty>('All');
+  const [categoryFilter, setCategoryFilter] =
+    useState<Category>('All Categories');
   // just in case
   const challenges = useMemo(
     () =>

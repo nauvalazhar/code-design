@@ -5,17 +5,17 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: 'var(--font-sans)',
-        display: 'var(--font-display)',
+        display: 'var(--font-display)'
       },
       colors: {
         brand: {
-          DEFAULT: '#FFD466',
-        },
+          DEFAULT: '#FFD466'
+        }
       },
       boxShadow: {
-        solid: '15px 15px 0 #000',
-      },
-    },
+        solid: '15px 15px 0 #000'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };

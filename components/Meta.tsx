@@ -1,4 +1,12 @@
-export default function Meta({ icon: Icon, name, value }) {
+import { ElementType, SVGProps } from 'react';
+
+export type MetaProps = {
+  icon: ElementType<SVGProps<SVGSVGElement>>;
+  name: string;
+  value: string;
+};
+
+export default function Meta({ icon: Icon, name, value }: MetaProps) {
   return (
     <div className="flex items-start">
       <Icon width={30} className="mt-2 text-black/40" />

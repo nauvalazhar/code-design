@@ -2,6 +2,7 @@ import 'tailwindcss/tailwind.css';
 
 import { Fredoka_One, Patrick_Hand } from '@next/font/google';
 import clsx from 'clsx';
+import { PropsWithChildren } from 'react';
 
 import { AnalyticsWrapper } from 'components/Analytics';
 import Header from 'components/Header';
@@ -19,7 +20,7 @@ const fontSans = Patrick_Hand({
   subsets: ['latin']
 });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html
       lang="en"

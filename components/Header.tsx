@@ -4,8 +4,17 @@ import clsx from 'clsx';
 import { Files, Interfaces, Logos } from 'doodle-icons';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ElementType, ReactElement, ReactNode, SVGProps } from 'react';
 
-function NavItem({ href, icon: Icon, children, active }) {
+// #region NavItem
+export type NavItemProps = {
+  href: string;
+  icon: ElementType<SVGProps<SVGSVGElement>>;
+  children: ReactNode;
+  active?: boolean;
+};
+
+function NavItem({ href, icon: Icon, children, active }: NavItemProps) {
   return (
     <Link
       href={href}
@@ -20,6 +29,7 @@ function NavItem({ href, icon: Icon, children, active }) {
     </Link>
   );
 }
+// #endregion NavItem
 
 function Header() {
   const pathname = usePathname();
