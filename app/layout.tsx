@@ -1,21 +1,23 @@
-import "tailwindcss/tailwind.css";
-import { Fredoka_One, Patrick_Hand } from "@next/font/google";
-import clsx from "clsx";
-import { AnalyticsWrapper } from "components/Analytics";
-import Header from "components/Header";
-import ScrollToTop from "components/ScrollToTop";
-import { PropsWithChildren } from "react";
+import 'tailwindcss/tailwind.css';
+
+import { Fredoka_One, Patrick_Hand } from '@next/font/google';
+import clsx from 'clsx';
+import { PropsWithChildren } from 'react';
+
+import { AnalyticsWrapper } from 'components/Analytics';
+import Header from 'components/Header';
+import ScrollToTop from 'components/ScrollToTop';
 
 const fontDisplay = Fredoka_One({
-  variable: "--font-display",
-  weight: "400",
-  subsets: ["latin"],
+  variable: '--font-display',
+  weight: '400',
+  subsets: ['latin']
 });
 
 const fontSans = Patrick_Hand({
-  variable: "--font-sans",
-  weight: "400",
-  subsets: ["latin"],
+  variable: '--font-sans',
+  weight: '400',
+  subsets: ['latin']
 });
 
 export default function RootLayout({ children }: PropsWithChildren) {
@@ -24,7 +26,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       lang="en"
       className={clsx(fontDisplay.variable, fontSans.variable)}
       style={{
-        "--primary-blue": "#1F4290",
+        '--primary-blue': '#1F4290'
       }}
     >
       {/*

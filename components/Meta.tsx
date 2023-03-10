@@ -1,10 +1,10 @@
-import { ElementType, SVGProps } from "react";
+import { ElementType, SVGProps } from 'react';
 
-export interface MetaProps {
+export type MetaProps = {
   icon: ElementType<SVGProps<SVGSVGElement>>;
   name: string;
   value: string;
-}
+};
 
 export default function Meta({ icon: Icon, name, value }: MetaProps) {
   return (

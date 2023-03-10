@@ -1,31 +1,31 @@
 export type Difficulty =
-  | "All"
-  | "Beginner"
-  | "Easy"
-  | "Intermediate"
-  | "Advanced"
-  | "Expert"
-  | "Master";
+  | 'All'
+  | 'Beginner'
+  | 'Easy'
+  | 'Intermediate'
+  | 'Advanced'
+  | 'Expert'
+  | 'Master';
 
-const difficulties: Record<"name", Difficulty>[] = [
+const difficulties: Record<'name', Difficulty>[] = [
   {
-    name: "Beginner",
+    name: 'Beginner'
   },
   {
-    name: "Easy",
+    name: 'Easy'
   },
   {
-    name: "Intermediate",
+    name: 'Intermediate'
   },
   {
-    name: "Advanced",
+    name: 'Advanced'
   },
   {
-    name: "Expert",
+    name: 'Expert'
   },
   {
-    name: "Master",
-  },
+    name: 'Master'
+  }
 ];
 
 export default difficulties;

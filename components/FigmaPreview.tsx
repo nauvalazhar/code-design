@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import clsx from "clsx";
-import { Interfaces } from "doodle-icons";
-import { useState } from "react";
+import clsx from 'clsx';
+import { Interfaces } from 'doodle-icons';
+import { useState } from 'react';
 
-export interface FigmaPreviewProps {
+export type FigmaPreviewProps = {
   src: string;
-}
+};
 
 export default function FigmaPreview({ src }: FigmaPreviewProps) {
   const [loading, setLoading] = useState(true);
@@ -19,17 +19,17 @@ export default function FigmaPreview({ src }: FigmaPreviewProps) {
   return (
     <div
       className={clsx(
-        "relative mb-10 bg-black lg:mb-20",
-        "border-4 border-black",
-        "shadow-solid"
+        'relative mb-10 bg-black lg:mb-20',
+        'border-4 border-black',
+        'shadow-solid'
       )}
     >
       {loading && (
         <div
           className={clsx(
-            "absolute inset-0",
-            "flex flex-col items-center justify-center gap-6 lg:gap-10",
-            "text-brand"
+            'absolute inset-0',
+            'flex flex-col items-center justify-center gap-6 lg:gap-10',
+            'text-brand'
           )}
         >
           <Interfaces.Zap

@@ -1,16 +1,20 @@
 import clsx from 'clsx';
-import { Challenge } from 'data/challenges';
 import { Arrow, Interfaces } from 'doodle-icons';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { Challenge as TChallenge } from 'data/challenges';
 
 import Meta from './Meta';
 
 const MAX_DESC_LENGTH = 100;
 
-export interface ChallengeProps extends Pick<Challenge, 'name' | 'difficulty' | 'category' | 'accent' | 'accent2' | 'image' | 'slug'> {
+export type ChallengeProps = Pick<
+  TChallenge,
+  'name' | 'difficulty' | 'category' | 'accent' | 'accent2' | 'image' | 'slug'
+> & {
   shortDescription: string;
-}
+};
 
 function Challenge({
   name,

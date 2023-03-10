@@ -10,7 +10,7 @@ module.exports = {
   importOrder: ['^data/(.*)$', '^components/(.*)$', '^[./]'],
   importOrderBuiltinModulesToTop: true,
   importOrderCaseInsensitive: true,
-  importOrderParserPlugins: ['jsx', 'decorators-legacy'],
+  importOrderParserPlugins: ['jsx', 'decorators-legacy', 'typescript'],
   importOrderMergeDuplicateImports: true,
   importOrderCombineTypeAndValueImports: true,
   importOrderSeparation: true,

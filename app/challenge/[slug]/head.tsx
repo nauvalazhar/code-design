@@ -1,8 +1,8 @@
-import challengeData from "data/challenges";
+import challengeData from 'data/challenges';
 
 export default async function Head({ params }) {
   const challenge = challengeData.find(
-    (challenge) => challenge.slug === params.slug
+    challenge => challenge.slug === params.slug
   );
 
   return (

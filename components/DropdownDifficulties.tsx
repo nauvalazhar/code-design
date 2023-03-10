@@ -1,17 +1,18 @@
-"use client";
+'use client';
 
-import * as Dropdown from "@radix-ui/react-dropdown-menu";
-import clsx from "clsx";
-import difficulties, { Difficulty } from "data/difficulties";
-import { ChevronDown } from "lucide-react";
-import { Dispatch, SetStateAction, useState } from "react";
+import * as Dropdown from '@radix-ui/react-dropdown-menu';
+import clsx from 'clsx';
+import { ChevronDown } from 'lucide-react';
+import { Dispatch, SetStateAction, useState } from 'react';
 
-export interface DropdownDifficultiesProps {
+import difficulties, { Difficulty } from 'data/difficulties';
+
+export type DropdownDifficultiesProps = {
   onChange: Dispatch<SetStateAction<Difficulty>>;
-}
+};
 
 function DropdownDifficulties({ onChange }: DropdownDifficultiesProps) {
-  const difficulty: Difficulty[] = ["All", ...difficulties.map((d) => d.name)];
+  const difficulty: Difficulty[] = ['All', ...difficulties.map(d => d.name)];
   const [difficultyFilter, setDifficultyFilter] = useState(difficulty[0]);
 
   function clickHandle(diff: Difficulty) {
@@ -35,8 +36,8 @@ function DropdownDifficulties({ onChange }: DropdownDifficultiesProps) {
             <Dropdown.Item
               key={i}
               className={clsx(
-                "hover:bg-brand/20 focus:bg-brand/50 relative cursor-default select-none truncate py-2 px-4 text-lg text-black/80 focus:outline-none",
-                diff === difficultyFilter && "bg-brand/50"
+                'hover:bg-brand/20 focus:bg-brand/50 relative cursor-default select-none truncate py-2 px-4 text-lg text-black/80 focus:outline-none',
+                diff === difficultyFilter && 'bg-brand/50'
               )}
               onClick={() => clickHandle(diff)}
             >
