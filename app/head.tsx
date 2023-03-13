@@ -26,13 +26,21 @@ export default function Head() {
         property="og:description"
         content="Level up your coding skills with hands-on design challenges."
       />
+      <meta
+        property="og:image"
+        content="https://codedesign.dev/code-design.png"
+      />
 
-      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://codedesign.dev/" />
       <meta property="twitter:title" content="Code The Design" />
       <meta
         property="twitter:description"
         content="Level up your coding skills with hands-on design challenges."
+      />
+      <meta
+        property="twitter:image"
+        content="https://codedesign.dev/code-design.png"
       />
     </>
   );
