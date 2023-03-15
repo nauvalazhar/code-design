@@ -1,6 +1,6 @@
 module.exports = {
-  // Lint & Prettify JSX and JS files
-  '**/*.(jsx|js)': filenames => [
+  // Lint & Prettify TSX, TS, JSX, and JS files
+  '**/*.(tsx|ts|jsx|js)': filenames => [
     `yarn lint`,
     `yarn prettier --config ./.prettier.config.js -w ${filenames.join(' ')}`
   ],
