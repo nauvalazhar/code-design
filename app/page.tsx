@@ -75,7 +75,7 @@ export default function Home() {
               image={image}
               name={name}
               slug={slug}
-              shortDescription={description.substring(0, 100)}
+              shortDescription={description.substring(0, MAX_DESC_LENGTH)}
               difficulty={difficulty}
               category={category}
               accent={accent}
