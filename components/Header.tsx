@@ -44,7 +44,7 @@ function Header() {
       <div className="w-full lg:w-auto">
         <Link
           href={'/'}
-          className="mb-2 font-display text-3xl uppercase italic lg:text-5xl"
+          className="mb-2 font-display text-3xl uppercase italic lg:text-5xl hover:text-[var(--accent)]"
         >
           Code The Design
         </Link>
@@ -53,7 +53,7 @@ function Header() {
         </div>
         <p className="mt-4">
           <a
-            className="text-xl text-brand underline"
+            className="text-xl text-brand underline hover:text-[var(--accent)]"
             href="https://github.com/nauvalazhar/code-design"
             target="_blank"
             rel="noreferrer"

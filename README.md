@@ -2,8 +2,10 @@
 
 ![License](https://img.shields.io/github/license/nauvalazhar/code-design?style=flat-square) ![top](https://img.shields.io/github/languages/top/nauvalazhar/code-design?style=flat-square) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+![Last Commit](https://img.shields.io/github/last-commit/nauvalazhar/code-design?style=flat-square)
 
 As a developer, it's important to continually challenge yourself and improve your skills. Code The Design was created with this goal in mind. We believe that the best way to learn and grow is by tackling real-life projects and challenges, rather than just following along with tutorials or practicing with contrived exercises.
 
@@ -142,7 +144,6 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
 
 See our [contributing](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING.md) document for more information and UI design contributions, please consult the [UI Design Contribution Guideline](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING_DESIGN.md) document.
 
-
-
 ## License
+
 [MIT License](https://github.com/nauvalazhar/code-design/blob/main/LICENSE)
