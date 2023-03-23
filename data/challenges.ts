@@ -1,5 +1,6 @@
-import { Difficulty } from './difficulties';
 import { Category } from 'app/page';
+
+import { Difficulty } from './difficulties';
 
 export type Challenge = {
   name: string;
@@ -20,6 +21,26 @@ export type Challenge = {
 
 const challenges: Challenge[] = [
   {
+    name: 'Agenone',
+    slug: 'agenone',
+    description:
+      'This digital agency landing website features a bold hero section with clear benefits, a comprehensive services section to showcase their offerings, an experience statistic to highlight their expertise, a portfolio of their past projects, testimonials from satisfied clients, and a prominent call-to-action to encourage potential clients to take the next step.',
+    difficulty: 'Intermediate',
+    category: 'Page',
+    image: '/agenone.png',
+    accent: '#B1FCDD',
+    accent2: '#7ADCB3',
+    figma:
+      'https://www.figma.com/community/file/1220307995673140735/Agenone---Creative-Digital-Agency-Landing-Page',
+    designer: [
+      {
+        name: 'Muhammad Afin',
+        avatar: '/afin.jpeg',
+        url: 'https://www.figma.com/@maafin_ui'
+      }
+    ]
+  },
+  {
     name: 'Omah',
     slug: 'omah',
     description:
@@ -34,9 +55,9 @@ const challenges: Challenge[] = [
       {
         name: 'Dzaki Muzhaffar',
         avatar: '/dzaki.jpeg',
-        url: 'https://www.figma.com/@dzakiimuzh',
-      },
-    ],
+        url: 'https://www.figma.com/@dzakiimuzh'
+      }
+    ]
   },
   {
     name: 'Suxz',
@@ -53,9 +74,9 @@ const challenges: Challenge[] = [
       {
         name: 'Irham Shidiq',
         avatar: '/irham.jpeg',
-        url: 'https://www.figma.com/@irhammshidiq',
-      },
-    ],
+        url: 'https://www.figma.com/@irhammshidiq'
+      }
+    ]
   },
   {
     name: 'Construction',
@@ -72,9 +93,9 @@ const challenges: Challenge[] = [
       {
         name: 'BrainStew Studio',
         avatar: '/brainstew.jpeg',
-        url: 'https://www.figma.com/@brainstewstudio',
-      },
-    ],
+        url: 'https://www.figma.com/@brainstewstudio'
+      }
+    ]
   },
   {
     name: 'Bubble Bash',
@@ -91,9 +112,9 @@ const challenges: Challenge[] = [
       {
         name: 'Glenn Vhalado',
         avatar: '/glenn.jpeg',
-        url: 'https://www.figma.com/@glennvhalado',
-      },
-    ],
+        url: 'https://www.figma.com/@glennvhalado'
+      }
+    ]
   },
   {
     name: 'Edufree',
@@ -110,9 +131,9 @@ const challenges: Challenge[] = [
       {
         name: 'Dimas Rizky Maulana',
         avatar: '/dimas.jpeg',
-        url: 'https://www.figma.com/@dimasrizkym',
-      },
-    ],
+        url: 'https://www.figma.com/@dimasrizkym'
+      }
+    ]
   },
   {
     name: 'Bertumbuh',
@@ -129,9 +150,9 @@ const challenges: Challenge[] = [
       {
         name: 'Dimas Rizky Maulana',
         avatar: '/dimas.jpeg',
-        url: 'https://www.figma.com/@dimasrizkym',
-      },
-    ],
+        url: 'https://www.figma.com/@dimasrizkym'
+      }
+    ]
   },
   {
     name: 'Adoptme',
@@ -148,9 +169,9 @@ const challenges: Challenge[] = [
       {
         name: 'Yohana Marlina',
         avatar: '/yohana.jpeg',
-        url: 'https://www.figma.com/@yohanamarlina',
-      },
-    ],
+        url: 'https://www.figma.com/@yohanamarlina'
+      }
+    ]
   },
   {
     name: 'Destinize',
@@ -167,9 +188,9 @@ const challenges: Challenge[] = [
       {
         name: 'Syauqizaidan Khairan Khalaf',
         avatar: '/syauqi.jpeg',
-        url: 'https://www.figma.com/@syaufy',
-      },
-    ],
+        url: 'https://www.figma.com/@syaufy'
+      }
+    ]
   },
   {
     name: 'Evenity',
@@ -186,14 +207,14 @@ const challenges: Challenge[] = [
       {
         name: 'Rafiq Al Hafizh Adha',
         avatar: '/rafiq.png',
-        url: 'https://www.figma.com/@rafiqadha',
+        url: 'https://www.figma.com/@rafiqadha'
       },
       {
         name: 'Taufik Hidayatulloh',
         avatar: '/taufik.jpeg',
-        url: 'https://www.figma.com/@opik',
-      },
-    ],
+        url: 'https://www.figma.com/@opik'
+      }
+    ]
   },
   {
     name: 'Agency',
@@ -210,9 +231,9 @@ const challenges: Challenge[] = [
       {
         name: 'Rafiq Al Hafizh Adha',
         avatar: '/rafiq.png',
-        url: 'https://www.figma.com/@rafiqadha',
-      },
-    ],
+        url: 'https://www.figma.com/@rafiqadha'
+      }
+    ]
   },
 
   {
@@ -230,9 +251,9 @@ const challenges: Challenge[] = [
       {
         name: 'Muhammad Fauzan Alkhairi',
         avatar: '/fauzan.jpeg',
-        url: 'https://www.figma.com/@muhammadfauzana',
-      },
-    ],
+        url: 'https://www.figma.com/@muhammadfauzana'
+      }
+    ]
   },
   {
     name: 'Hangeulin',
@@ -249,9 +270,9 @@ const challenges: Challenge[] = [
       {
         name: 'Muhammad Fauzan Alkhairi',
         avatar: '/fauzan.jpeg',
-        url: 'https://www.figma.com/@muhammadfauzana',
-      },
-    ],
+        url: 'https://www.figma.com/@muhammadfauzana'
+      }
+    ]
   },
   {
     name: 'NFT',
@@ -268,9 +289,9 @@ const challenges: Challenge[] = [
       {
         name: 'Mahyu Aspant',
         avatar: '/mahyu.jpeg',
-        url: 'https://www.figma.com/@mahyuaspant',
-      },
-    ],
+        url: 'https://www.figma.com/@mahyuaspant'
+      }
+    ]
   },
   {
     name: 'Movies',
@@ -287,9 +308,9 @@ const challenges: Challenge[] = [
       {
         name: 'Taufik Hidayatulloh',
         avatar: '/taufik.jpeg',
-        url: 'https://www.figma.com/@opik',
-      },
-    ],
+        url: 'https://www.figma.com/@opik'
+      }
+    ]
   },
   {
     name: 'Kourse',
@@ -306,9 +327,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'The Malaka',
@@ -325,9 +346,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Priced',
@@ -344,9 +365,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'digidaw',
@@ -363,9 +384,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Jobless',
@@ -382,9 +403,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Nowted',
@@ -401,9 +422,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Enlighten',
@@ -420,9 +441,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Nowted App',
@@ -439,9 +460,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Holadok',
@@ -458,9 +479,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Testimoni',
@@ -477,9 +498,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'ChatFlow Landing',
@@ -496,9 +517,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'ChatFlow',
@@ -515,9 +536,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Profile Hover',
@@ -534,9 +555,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Pricy',
@@ -553,9 +574,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Faceless',
@@ -572,9 +593,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Musix Player',
@@ -591,9 +612,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Comments',
@@ -610,9 +631,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Hoster Support',
@@ -629,9 +650,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Twitter Embed',
@@ -648,9 +669,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Swiftship',
@@ -667,9 +688,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'The Starter',
@@ -686,9 +707,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Grolin',
@@ -705,9 +726,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'The Zeitplan',
@@ -724,9 +745,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Wumbo',
@@ -743,9 +764,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Authed',
@@ -762,9 +783,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Collosal',
@@ -781,9 +802,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: "Chat n' rechat",
@@ -800,9 +821,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'MSTSKP',
@@ -819,9 +840,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: 'Epictetus',
@@ -838,9 +859,9 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
   },
   {
     name: "The Sugiharto's",
@@ -857,10 +878,10 @@ const challenges: Challenge[] = [
       {
         name: 'Nauval',
         avatar: '/nauval.jpg',
-        url: 'https://www.figma.com/@mhd',
-      },
-    ],
-  },
+        url: 'https://www.figma.com/@mhd'
+      }
+    ]
+  }
 ];
 
 export default challenges;
