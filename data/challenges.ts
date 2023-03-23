@@ -30,8 +30,7 @@ const challenges: Challenge[] = [
     image: '/agenone.png',
     accent: '#B1FCDD',
     accent2: '#7ADCB3',
-    figma:
-      'https://www.figma.com/community/file/1220307995673140735/Agenone---Creative-Digital-Agency-Landing-Page',
+    figma: 'https://www.figma.com/community/file/1220307995673140735',
     designer: [
       {
         name: 'Muhammad Afin',
