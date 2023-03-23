@@ -107,7 +107,8 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fglenn.jpeg&w=128&q=75" width="100" alt="Glenn Vhalado"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fbrainstew.jpeg&w=128&q=75" width="100" alt="BrainStew Studio"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Firham.jpeg&w=128&q=75" width="100" alt="Irham Shidiq"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fdzaki.jpeg&w=128&q=75" width="100" alt="Dzaki Muzhaffar"></td>  
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fdzaki.jpeg&w=128&q=75" width="100" alt="Dzaki Muzhaffar"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fafin.jpeg&w=128&q=75" width="100" alt="Muhammad Afin"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
@@ -135,14 +136,17 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <br>
       <sub><a href="https://www.figma.com/@dzakiimuzh">Visit Profile</a></sub>
     </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Muhammad Afin</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@maafin_ui">Visit Profile</a></sub>
+    </td>
   </tr>
 </table>
 
 ## Contributing
 
 See our [contributing](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING.md) document for more information and UI design contributions, please consult the [UI Design Contribution Guideline](https://github.com/nauvalazhar/code-design/blob/main/CONTRIBUTING_DESIGN.md) document.
-
-
 
 ## License
 [MIT License](https://github.com/nauvalazhar/code-design/blob/main/LICENSE)
