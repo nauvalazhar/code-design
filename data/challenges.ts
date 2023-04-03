@@ -21,6 +21,25 @@ export type Challenge = {
 
 const challenges: Challenge[] = [
   {
+    name: 'Tailor',
+    slug: 'tailor',
+    description:
+      'The UI design for a tailor landing page boasts a stunning hero section, an informative benefits section, a persuasive testimonial section, and a clear services section. This tailor-made design strikes the perfect balance between aesthetics and functionality, helping you to attract and convert visitors into customers and take your business to new heights!',
+    difficulty: 'Intermediate',
+    category: 'Page',
+    image: '/tailor.png',
+    accent: '#DCD1FF',
+    accent2: '#B299FF',
+    figma: 'https://www.figma.com/community/file/1222591392920510949',
+    designer: [
+      {
+        name: 'Arie',
+        avatar: '/arie.jpeg',
+        url: 'https://www.figma.com/@ariar'
+      }
+    ]
+  },
+  {
     name: 'Agenone',
     slug: 'agenone',
     description:
