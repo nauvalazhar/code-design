@@ -109,6 +109,7 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Firham.jpeg&w=128&q=75" width="100" alt="Irham Shidiq"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fdzaki.jpeg&w=128&q=75" width="100" alt="Dzaki Muzhaffar"></td>
     <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fafin.jpeg&w=128&q=75" width="100" alt="Muhammad Afin"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Farie.jpeg&w=128&q=75" width="100" alt="Arie"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
@@ -140,6 +141,11 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <sub><b>Muhammad Afin</b></sub>
       <br>
       <sub><a href="https://www.figma.com/@maafin_ui">Visit Profile</a></sub>
+    </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Arie</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@ariar">Visit Profile</a></sub>
     </td>
   </tr>
 </table>
