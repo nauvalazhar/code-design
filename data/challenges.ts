@@ -21,6 +21,44 @@ export type Challenge = {
 
 const challenges: Challenge[] = [
   {
+    name: 'Team Collaboration',
+    slug: 'team-collaboration',
+    description:
+      'Take your team collaboration platform to new heights with a cutting-edge UI design that features a stunning hero section with an eye-catching illustration, along with sections on clients, capabilities, features, integrations, customer support, testimonials, and email subscriptions.',
+    difficulty: 'Intermediate',
+    category: 'Page',
+    image: '/team-collaboration.png',
+    accent: '#D2D2FF',
+    accent2: '#8988F8',
+    figma: 'https://www.figma.com/community/file/1033884363291199985',
+    designer: [
+      {
+        name: 'Irvan Moses',
+        avatar: '/irvan.jpeg',
+        url: 'https://www.figma.com/@irvan'
+      }
+    ]
+  },
+  {
+    name: 'Online Learning',
+    slug: 'online-learning',
+    description:
+      "A sleek and modern UI design that features an eye-catching hero section with a stunning illustration, along with sections on tools, about, features, integrations, testimonials, and blog. This design file is the ultimate learning tool for developers of all levels, providing valuable insights into the latest trends and industry best practices. Whether you're a beginner or an experienced developer, this design file is the perfect resource to take your skills to the next level.",
+    difficulty: 'Intermediate',
+    category: 'Page',
+    image: '/online-learning.png',
+    accent: '#FFF3E4',
+    accent2: '#F48C06',
+    figma: 'https://www.figma.com/community/file/1029023791566203786',
+    designer: [
+      {
+        name: 'Irvan Moses',
+        avatar: '/irvan.jpeg',
+        url: 'https://www.figma.com/@irvan'
+      }
+    ]
+  },
+  {
     name: 'Tailor',
     slug: 'tailor',
     description:
