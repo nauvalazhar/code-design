@@ -29,10 +29,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
         '--primary-blue': '#1F4290'
       }}
     >
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
       <body className="bg-[var(--primary-blue)]">
         <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 xl:px-0 xl:w-[1140px]">
