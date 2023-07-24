@@ -21,6 +21,44 @@ export type Challenge = {
 
 const challenges: Challenge[] = [
   {
+    name: 'Al Nasr',
+    slug: 'al-nasr',
+    description:
+      'A beautifully designed website for al hajj and umrah travel agency. This design features a stunning hero section with an eye-catching image, services, packages, airways accomadation, facilities, testimonials, and gallery. This design is perfect for any travel agency looking to attract new customers and take their business to new heights!',
+    difficulty: 'Intermediate',
+    category: 'Page',
+    image: '/al-nasr.png',
+    accent: '#C1FFFA',
+    accent2: '#1DA599',
+    figma: 'https://www.figma.com/community/file/1261583437014427177',
+    designer: [
+      {
+        name: 'Rafiq Al Hafizh Adha',
+        avatar: '/rafiq.png',
+        url: 'https://www.figma.com/@rafiqadha'
+      }
+    ]
+  },
+  {
+    name: 'DressLy',
+    slug: 'dressLy',
+    description:
+      "Introducing our latest fashion landing website design! This captivating design includes a stunning hero section with an eye-catching image, a partner section featuring prestigious brands, a carefully curated top selection section, a showcase of our best-selling items, an easy-to-follow 'How to Order' section, and a newsletter sign-up to stay updated with the latest trends and exclusive offers.",
+    difficulty: 'Intermediate',
+    category: 'Page',
+    image: '/dressly.png',
+    accent: '#FDFDFD',
+    accent2: '#E09370',
+    figma: 'https://www.figma.com/community/file/1231249131456152871',
+    designer: [
+      {
+        name: 'Muhammad Fauzan Alkhairi',
+        avatar: '/fauzan.jpeg',
+        url: 'https://www.figma.com/@muhammadfauzana'
+      }
+    ]
+  },
+  {
     name: 'Team Collaboration',
     slug: 'team-collaboration',
     description:
