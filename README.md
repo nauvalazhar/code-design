@@ -149,13 +149,19 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Firvan.jpeg&w=128&q=75" width="100" alt="Arie"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Firvan.jpeg&w=128&q=75" width="100" alt="Irvan"></td>
+    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Falfian.jpeg&w=128&q=75" width="100" alt="Alfian"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
       <sub><b>Irvan Moses</b></sub>
       <br>
       <sub><a href="https://www.figma.com/@irvan">Visit Profile</a></sub>
+    </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Muhammad Alfian</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@alpi">Visit Profile</a></sub>
     </td>
   </tr>
 </table>
