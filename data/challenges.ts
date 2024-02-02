@@ -21,6 +21,25 @@ export type Challenge = {
 
 const challenges: Challenge[] = [
   {
+    name: 'Lidia',
+    slug: 'lidia',
+    description:
+      'Digital library landing page design with a modern and clean layout, this page features a striking hero section with a bold call-to-action, along with easy-to-scan service descriptions, reviews, and location sections.',
+    difficulty: 'Intermediate',
+    category: 'Page',
+    image: '/lidia.png',
+    accent: '#D3DDF7',
+    accent2: '#4475F2',
+    figma: 'https://www.figma.com/community/file/1334838385104638513',
+    designer: [
+      {
+        name: 'Muhammad Alfian',
+        avatar: '/alfian.jpeg',
+        url: 'https://www.figma.com/@alpi'
+      }
+    ]
+  },
+  {
     name: 'Al Nasr',
     slug: 'al-nasr',
     description:
