@@ -1,0 +1,10 @@
+# Top-most EditorConfig file
+root = true
+
+# Set default charset to UTF-8
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+# End of EditorConfig file

@@ -1,23 +1,21 @@
 import 'tailwindcss/tailwind.css';
-
-import { Fredoka_One, Patrick_Hand } from '@next/font/google';
 import clsx from 'clsx';
-import { PropsWithChildren } from 'react';
-
 import { AnalyticsWrapper } from 'components/Analytics';
 import Header from 'components/Header';
 import ScrollToTop from 'components/ScrollToTop';
+import { Fredoka, Patrick_Hand } from 'next/font/google';
+import { PropsWithChildren } from 'react';
 
-const fontDisplay = Fredoka_One({
+const fontDisplay = Fredoka({
   variable: '--font-display',
   weight: '400',
-  subsets: ['latin']
+  subsets: ['latin'],
 });
 
 const fontSans = Patrick_Hand({
   variable: '--font-sans',
   weight: '400',
-  subsets: ['latin']
+  subsets: ['latin'],
 });
 
 export default function RootLayout({ children }: PropsWithChildren) {
@@ -26,9 +24,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
       lang="en"
       className={clsx(fontDisplay.variable, fontSans.variable)}
       style={{
-        '--primary-blue': '#1F4290'
-      }}
-    >
+        '--primary-blue': '#1F4290',
+      }}>
       <head />
       <body className="bg-[var(--primary-blue)]">
         <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 xl:px-0 xl:w-[1140px]">
@@ -40,8 +37,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
               href="https://twitter.com/mhdnauvalazhar"
               target="_blank"
               className="border-brand border-b-2"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               Nauval
             </a>
             <p>Powered by Vercel</p>

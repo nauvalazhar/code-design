@@ -1,19 +1,21 @@
+import Meta from './Meta';
 import clsx from 'clsx';
+import { Challenge as TChallenge } from 'data/challenges';
 import { Arrow, Interfaces } from 'doodle-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Challenge as TChallenge } from 'data/challenges';
-
-import Meta from './Meta';
-
 const MAX_DESC_LENGTH = 100;
 
-export type ChallengeProps = Pick<
-  TChallenge,
-  'name' | 'difficulty' | 'category' | 'accent' | 'accent2' | 'image' | 'slug'
-> & {
+export type ChallengeProps = {
+  name: string;
   shortDescription: string;
+  difficulty: string;
+  category: string;
+  accent: string;
+  accent2: string;
+  image: string;
+  slug: string;
 };
 
 function Challenge({
@@ -24,7 +26,7 @@ function Challenge({
   accent,
   accent2,
   image,
-  slug
+  slug,
 }: ChallengeProps) {
   const rotation =
     Math.ceil(Math.random() * 3) * (Math.round(Math.random()) ? 1 : -1);
@@ -38,9 +40,8 @@ function Challenge({
       )}
       style={{
         '--accent': accent,
-        '--accent-2': accent2
-      }}
-    >
+        '--accent-2': accent2,
+      }}>
       <div className="flex flex-wrap gap-8 lg:gap-3">
         <div className="order-2 w-full lg:order-1 lg:w-5/12">
           <h2 className="mb-2 font-display text-2xl lg:text-4xl">{name}</h2>
@@ -54,8 +55,7 @@ function Challenge({
               'inline-flex items-center px-8 py-4',
               'font-display',
               'border-2 border-black bg-[var(--accent-2)]'
-            )}
-          >
+            )}>
             View Challenge
             <Arrow.ArrowRight width="20" className="ml-4" />
           </Link>
@@ -77,21 +77,18 @@ function Challenge({
             className="relative"
             style={{
               boxShadow: '10px 10px 0px var(--accent-2)',
-              transform: `rotate(${rotation}deg)`
-            }}
-          >
+              transform: `rotate(${rotation}deg)`,
+            }}>
             <div className="absolute -top-1 -left-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -top-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -left-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
-            <div className="aspect-[1.48/1] w-full">
+            <div className="aspect-[1.48/1] w-full relative">
               <Image
                 alt={name}
                 src={image}
-                placeholder="blur"
                 fill
                 className="border-4 border-black object-cover object-top"
-                blurDataURL={image.replace(/^\//g, '/thumbs/')}
               />
             </div>
           </div>

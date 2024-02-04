@@ -1,13 +1,12 @@
 import clsx from 'clsx';
+import FigmaPreview from 'components/FigmaPreview';
+import Meta from 'components/Meta';
+import challenges from 'data/challenges';
 import { Interfaces } from 'doodle-icons';
 import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-
-import challenges from 'data/challenges';
-
-import FigmaPreview from 'components/FigmaPreview';
-import Meta from 'components/Meta';
+import { getChallengeBySlug } from 'services/challenge-service';
 
 type Params = {
   params: {
@@ -15,20 +14,8 @@ type Params = {
   };
 };
 
-export async function generateStaticParams() {
-  return challenges.map(challenge => ({
-    slug: challenge.slug
-  }));
-}
-
-async function getChallenge(slug: string) {
-  const challenge = challenges.find(c => c.slug === slug);
-
-  return challenge;
-}
-
 async function Page({ params: { slug } }: Params) {
-  const challenge = await getChallenge(slug);
+  const [challenge] = await getChallengeBySlug({ slug });
 
   if (!challenge) {
     notFound();
@@ -37,9 +24,8 @@ async function Page({ params: { slug } }: Params) {
   return (
     <div
       style={{
-        '--accent': challenge.accent
-      }}
-    >
+        '--accent': challenge.accent,
+      }}>
       <FigmaPreview src={challenge.figma} />
 
       <div className="flex flex-wrap gap-10 lg:flex-nowrap">
@@ -49,8 +35,7 @@ async function Page({ params: { slug } }: Params) {
               'relative p-10 lg:p-20',
               'border-4 border-black bg-[var(--accent)]',
               'shadow-solid'
-            )}
-          >
+            )}>
             <h1 className="font-display text-2xl lg:text-4xl">
               {challenge.name}
             </h1>
@@ -90,14 +75,12 @@ async function Page({ params: { slug } }: Params) {
               'relative px-10 py-10',
               'border-4 border-black bg-brand',
               'shadow-solid'
-            )}
-          >
+            )}>
             <a
               href={challenge.figma}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-4 border-2 border-black bg-[#2AE876] py-4 text-2xl"
-            >
+              className="flex items-center justify-center gap-4 border-2 border-black bg-[#2AE876] py-4 text-2xl">
               <Interfaces.Download
                 width={24}
                 height={24}
@@ -110,8 +93,7 @@ async function Page({ params: { slug } }: Params) {
               <a
                 href="https://creativecommons.org/licenses/by/4.0/"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 Read The License
               </a>
             </p>
@@ -122,8 +104,7 @@ async function Page({ params: { slug } }: Params) {
               'border-4 border-black bg-[#00FABE]',
               'space-y-8',
               'shadow-solid'
-            )}
-          >
+            )}>
             <Meta
               icon={Interfaces.Dashboard2}
               name="Difficulty"
@@ -139,13 +120,12 @@ async function Page({ params: { slug } }: Params) {
             className={clsx(
               'px-10 py-10 border-4 border-black',
               'bg-[#FF508F] shadow-solid'
-            )}
-          >
+            )}>
             <h2 className="text-2xl font-semibold">
-              UI {challenge.designer.length > 1 ? 'designers' : 'designer'}
+              UI {challenge.designers.length > 1 ? 'designers' : 'designer'}
             </h2>
             <div className="mt-4">
-              {challenge.designer.map(designer => (
+              {challenge.designers.map((designer) => (
                 <div key={designer.name} className="flex items-center mt-4">
                   <Image
                     src={designer.avatar}
@@ -159,11 +139,10 @@ async function Page({ params: { slug } }: Params) {
                       {designer.name}
                     </h3>
                     <a
-                      href={designer.url}
+                      href={designer.links[0].link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center hover:underline"
-                    >
+                      className="inline-flex items-center hover:underline">
                       Visit Profile <ExternalLink width={18} className="ml-2" />
                     </a>
                   </div>
