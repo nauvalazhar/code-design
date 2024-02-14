@@ -18,7 +18,7 @@ function NavItem({ href, icon: Icon, children, active }: NavItemProps) {
     <Link
       href={href}
       className={clsx(
-        'flex flex-1 flex-col items-center gap-2 lg:flex-auto',
+        'flex flex-1 items-center gap-2 lg:flex-auto',
         'text-lg hover:text-[var(--accent)] lg:text-2xl',
         active && 'text-[var(--accent)]'
       )}>
@@ -40,21 +40,9 @@ function Header() {
       <div className="w-full lg:w-auto">
         <Link
           href={'/'}
-          className="mb-2 font-display text-3xl uppercase italic lg:text-5xl">
-          Code The Design
+          className="mb-2 font-display text-3xl uppercase italic lg:text-4xl">
+          codedesign.dev
         </Link>
-        <div className="mt-1 text-xl leading-relaxed lg:w-7/12 lg:text-2xl">
-          Level up your coding skills with hands-on design challenges.
-        </div>
-        <p className="mt-4">
-          <a
-            className="text-xl text-brand underline"
-            href="https://github.com/nauvalazhar/code-design"
-            target="_blank"
-            rel="noreferrer">
-            Source on Github
-          </a>
-        </p>
       </div>
       <nav
         className={clsx(
@@ -65,7 +53,7 @@ function Header() {
         )}>
         <NavItem
           href="/challenges"
-          icon={Interfaces.Transform}
+          icon={Interfaces.Shape}
           active={pathname === '/challenges'}>
           Challenges
         </NavItem>
@@ -74,9 +62,6 @@ function Header() {
           icon={Files.FileContract}
           active={pathname === '/manual'}>
           Manual
-        </NavItem>
-        <NavItem href="https://twitter.com/mhdnauvalazhar" icon={Logos.Twitter}>
-          @mhdnauvalazhar
         </NavItem>
       </nav>
     </header>

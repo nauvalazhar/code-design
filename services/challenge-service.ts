@@ -1,3 +1,4 @@
+import 'server-only';
 import { SQL, count, eq, sql } from 'drizzle-orm';
 import { db } from 'lib/db';
 import { Category, categories } from 'schemas/categories';
@@ -100,6 +101,7 @@ export async function getChallenges({
     }
   }
 
+  paginationQuery.push(sql`ORDER BY ${challenges.createdAt} DESC`);
   paginationQuery.push(sql`LIMIT ${limit}`);
 
   if (offset > 0) {
@@ -159,4 +161,25 @@ export async function getChallengeBySlug({
   `;
 
   return db.execute(query);
+}
+
+export async function getChallengeIdBySlug(
+  slug: Challenge['slug']
+): Promise<Challenge['id']> {
+  try {
+    const challengesData = await db
+      .select({
+        id: challenges.id,
+      })
+      .from(challenges)
+      .where(eq(challenges.slug, slug));
+
+    if (challengesData.length) {
+      return challengesData[0].id;
+    }
+
+    return null;
+  } catch (e) {
+    console.log(e);
+  }
 }

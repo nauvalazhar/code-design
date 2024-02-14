@@ -1,6 +1,6 @@
 {
-  "id": "71655f96-45d8-4ae1-9469-baade0bb77f2",
-  "prevId": "5f000f52-7445-4ac2-a8f1-65e8aa49a608",
+  "id": "d1a7ed39-192c-41d6-b6dd-e1def4f41b75",
+  "prevId": "fe7f4a13-36a6-437b-8ab0-ec8bead796c1",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -17,6 +17,12 @@
         "name": {
           "name": "name",
           "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "value": {
+          "name": "value",
+          "type": "badge_values",
           "primaryKey": false,
           "notNull": false
         },
@@ -347,8 +353,253 @@
         }
       }
     },
-    "test": {
-      "name": "test",
+    "submission_techs": {
+      "name": "submission_techs",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "submission_id": {
+          "name": "submission_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tech_id": {
+          "name": "tech_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "submission_techs_submission_id_submissions_id_fk": {
+          "name": "submission_techs_submission_id_submissions_id_fk",
+          "tableFrom": "submission_techs",
+          "tableTo": "submissions",
+          "columnsFrom": [
+            "submission_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "submission_techs_tech_id_techs_id_fk": {
+          "name": "submission_techs_tech_id_techs_id_fk",
+          "tableFrom": "submission_techs",
+          "tableTo": "techs",
+          "columnsFrom": [
+            "tech_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "submission_techs_submission_id_tech_id_unique": {
+          "name": "submission_techs_submission_id_tech_id_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "submission_id",
+            "tech_id"
+          ]
+        }
+      }
+    },
+    "submission_users": {
+      "name": "submission_users",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "submission_id": {
+          "name": "submission_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "job": {
+          "name": "job",
+          "type": "job",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "submission_users_submission_id_submissions_id_fk": {
+          "name": "submission_users_submission_id_submissions_id_fk",
+          "tableFrom": "submission_users",
+          "tableTo": "submissions",
+          "columnsFrom": [
+            "submission_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "submission_users_user_id_users_id_fk": {
+          "name": "submission_users_user_id_users_id_fk",
+          "tableFrom": "submission_users",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "submissions": {
+      "name": "submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "challenge_id": {
+          "name": "challenge_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "slug": {
+          "name": "slug",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "repository": {
+          "name": "repository",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "demo": {
+          "name": "demo",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image": {
+          "name": "image",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "visibility": {
+          "name": "visibility",
+          "type": "visibility",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "'public'"
+        },
+        "phase": {
+          "name": "phase",
+          "type": "phase",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "'submitted'"
+        },
+        "note": {
+          "name": "note",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "submissions_challenge_id_challenges_id_fk": {
+          "name": "submissions_challenge_id_challenges_id_fk",
+          "tableFrom": "submissions",
+          "tableTo": "challenges",
+          "columnsFrom": [
+            "challenge_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "submissions_slug_unique": {
+          "name": "submissions_slug_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "slug"
+          ]
+        }
+      }
+    },
+    "techs": {
+      "name": "techs",
       "schema": "",
       "columns": {
         "id": {
@@ -359,6 +610,36 @@
         },
         "name": {
           "name": "name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "slug": {
+          "name": "slug",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "classification": {
+          "name": "classification",
+          "type": "classification",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "environment": {
+          "name": "environment",
+          "type": "environment",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "logo": {
+          "name": "logo",
           "type": "text",
           "primaryKey": false,
           "notNull": false
@@ -367,7 +648,22 @@
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "techs_name_unique": {
+          "name": "techs_name_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "name"
+          ]
+        },
+        "techs_slug_unique": {
+          "name": "techs_slug_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "slug"
+          ]
+        }
+      }
     },
     "user_badges": {
       "name": "user_badges",
@@ -471,6 +767,19 @@
         "link": {
           "name": "link",
           "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
           "primaryKey": false,
           "notNull": false
         }
@@ -602,6 +911,64 @@
     }
   },
   "enums": {
+    "badge_values": {
+      "name": "badge_values",
+      "values": {
+        "designer": "designer",
+        "reviewer": "reviewer",
+        "contributor": "contributor"
+      }
+    },
+    "job": {
+      "name": "job",
+      "values": {
+        "owner": "owner",
+        "collaborator": "collaborator",
+        "reviewer": "reviewer"
+      }
+    },
+    "phase": {
+      "name": "phase",
+      "values": {
+        "published": "published",
+        "submitted": "submitted",
+        "rejected": "rejected",
+        "archived": "archived"
+      }
+    },
+    "visibility": {
+      "name": "visibility",
+      "values": {
+        "public": "public",
+        "private": "private",
+        "unlisted": "unlisted"
+      }
+    },
+    "classification": {
+      "name": "classification",
+      "values": {
+        "language": "language",
+        "framework": "framework",
+        "style": "style",
+        "library": "library",
+        "database": "database",
+        "platform": "platform",
+        "service": "service",
+        "tool": "tool",
+        "os": "os",
+        "ide": "ide"
+      }
+    },
+    "environment": {
+      "name": "environment",
+      "values": {
+        "frontend": "frontend",
+        "backend": "backend",
+        "fullstack": "fullstack",
+        "mobile": "mobile",
+        "desktop": "desktop"
+      }
+    },
     "role": {
       "name": "role",
       "values": {

@@ -18,12 +18,21 @@ dotenv.config({
 async function dbMigrate() {
   console.log('Migrating database...');
   // const db = drizzle(sql);
-  const client = postgres(process.env.SUPABASE_URL, { prepare: false });
+  const client = postgres(process.env.SUPABASE_URL, {
+    prepare: false,
+    onnotice: (notice) => {
+      console.log(notice.message);
+    },
+  });
   const db = drizzle(client);
 
-  await migrate(db, {
-    migrationsFolder: './drizzle',
-  });
+  try {
+    await migrate(db, {
+      migrationsFolder: './drizzle',
+    });
+  } catch (error) {
+    console.error('Error migrating database:', error);
+  }
 
   client.end();
 

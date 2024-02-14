@@ -1,3 +1,4 @@
+import { relations } from 'drizzle-orm';
 import {
   pgTable,
   serial,
@@ -8,6 +9,7 @@ import {
   pgEnum,
   boolean,
 } from 'drizzle-orm/pg-core';
+import { userBadges } from 'schemas/user_badges';
 
 export const roleEnum = pgEnum('role', ['user', 'admin']);
 export const statusEnum = pgEnum('status', ['active', 'blocked']);

@@ -83,12 +83,12 @@ function Challenge({
             <div className="absolute -top-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -left-1 z-10 h-3 w-3 border-2 border-black bg-white" />
             <div className="absolute -bottom-1 -right-1 z-10 h-3 w-3 border-2 border-black bg-white" />
-            <div className="aspect-[1.48/1] w-full relative">
+            <div className="aspect-[1.48/1] object-cover w-full relative">
               <Image
                 alt={name}
-                src={image}
-                fill
+                src={`${image}?s=1000`}
                 className="border-4 border-black object-cover object-top"
+                fill
               />
             </div>
           </div>

@@ -24,6 +24,7 @@ const LoadMore = ({
   const searchParams = useSearchParams();
   const [moreNodes, setMoreNodes] = useState<React.JSX.Element[]>([]);
   const [offset, setOffset] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setMoreNodes([]);
@@ -31,11 +32,14 @@ const LoadMore = ({
   }, [pathname, searchParams]);
 
   async function handleClick() {
+    setLoading(true);
+
     const nextOffset = offset + limit;
     const data = await loadMoreAction(nextOffset, loadMoreParams);
 
     setMoreNodes((prev) => [...prev, data]);
     setOffset(nextOffset);
+    setLoading(false);
   }
 
   const hasMore = offset + limit < total;
@@ -53,7 +57,7 @@ const LoadMore = ({
         {moreNodes}
 
         {hasMore ? (
-          <Button className="w-full" onClick={handleClick}>
+          <Button className="w-full" onClick={handleClick} progress={loading}>
             Load More
           </Button>
         ) : null}

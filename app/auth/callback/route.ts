@@ -1,6 +1,6 @@
 import { encryptData, getSession } from 'lib/session';
 import { redirect } from 'next/navigation';
-import { createUser, findOrCreateUser, findUserByEmail } from 'services/user';
+import { findOrRegisterUser } from 'services/user-service';
 
 export async function GET(request: Request) {
   const session = await getSession();
@@ -44,7 +44,7 @@ export async function GET(request: Request) {
   });
   const emails = await resultEmails.json();
 
-  const [user] = await findOrCreateUser(userInfo.id, {
+  const [user] = await findOrRegisterUser({
     username: userInfo.login,
     email: emails.find((email: any) => email.primary)?.email,
     name: userInfo.name || userInfo.login,
