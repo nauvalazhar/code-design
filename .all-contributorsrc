@@ -120,6 +120,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "altafsyah",
+      "name": "Altaf Syah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57579846?v=4",
+      "profile": "https://github.com/altafsyah",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -127,5 +136,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "projectName": "code-design",
-  "projectOwner": "nauvalazhar"
+  "projectOwner": "nauvalazhar",
+  "commitType": "docs"
 }
