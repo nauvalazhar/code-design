@@ -111,6 +111,7 @@ async function Page({ params: { slug } }: Params) {
                 href="https://creativecommons.org/licenses/by/4.0/"
                 target="_blank"
                 rel="noreferrer"
+                className='underline font-medium'
               >
                 Read The License
               </a>
