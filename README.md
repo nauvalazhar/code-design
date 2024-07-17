@@ -1,7 +1,7 @@
 # codedesign.dev
 
 ![License](https://img.shields.io/github/license/nauvalazhar/code-design?style=flat-square) ![top](https://img.shields.io/github/languages/top/nauvalazhar/code-design?style=flat-square) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
 
@@ -37,6 +37,7 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mahdanidn"><img src="https://avatars.githubusercontent.com/u/50037482?v=4?s=100" width="100px;" alt="M. Mahdani Rahmatullah"/><br /><sub><b>M. Mahdani Rahmatullah</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=mahdanidn" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://alfanjauhari.com"><img src="https://avatars.githubusercontent.com/u/57592351?v=4?s=100" width="100px;" alt="Alfan Jauhari"/><br /><sub><b>Alfan Jauhari</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=alfanjauhari" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://sglkc.my.id"><img src="https://avatars.githubusercontent.com/u/31957516?v=4?s=100" width="100px;" alt="Seya"/><br /><sub><b>Seya</b></sub></a><br /><a href="https://github.com/nauvalazhar/code-design/commits?author=sglkc" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/altafsyah"><img src="https://avatars.githubusercontent.com/u/57579846?v=4?s=100" width="100px;" alt="Altaf Syah"/><br /><sub><b>Altaf Syah</b></sub></a><br /><a href="#design-altafsyah" title="Design">🎨</a></td>
     </tr>
   </tbody>
 </table>
