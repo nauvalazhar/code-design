@@ -1,17 +1,11 @@
 import clsx from 'clsx';
-import { getSession } from 'lib/session';
+
+import Box, { BoxTitle } from 'components/Box';
 
 export default async function Page() {
-  const session = await getSession();
-  console.log(session);
   return (
-    <div
-      className={clsx(
-        'relative p-10 lg:p-20',
-        'border-4 border-black bg-brand',
-        'shadow-solid'
-      )}>
-      <h1 className="font-display text-2xl lg:text-4xl">Manual</h1>
+    <Box>
+      <BoxTitle>Manual</BoxTitle>
       <div className="mt-4 space-y-6 text-xl lg:text-2xl">
         <h2 className="font-display text-xl lg:text-2xl">Motivation</h2>
         <p>
@@ -81,6 +75,6 @@ export default async function Page() {
           difference and help us to continue building a great product.
         </p>
       </div>
-    </div>
+    </Box>
   );
 }

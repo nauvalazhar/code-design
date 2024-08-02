@@ -5,24 +5,25 @@ import { cn } from 'lib/utils';
 import * as React from 'react';
 
 const buttonVariants = cva(
-  'flex font-display items-center justify-center gap-4',
+  'flex font-display items-center justify-center gap-4 uppercase',
   {
     variants: {
       variant: {
-        default: 'border-black bg-[#2AE876]',
+        default:
+          'border-transparent button-shadow button-text-shadow gradient-blue rounded-xl text-brand-light',
         secondary: 'border-black bg-orange-400',
-        danger: 'border-black bg-red-500 text-brand',
+        danger: 'border-black bg-red-500 text-brand'
       },
       size: {
         sm: 'border-2 px-4 py-2 text-lg',
         md: 'border-2 px-6 py-3 text-xl',
-        default: 'border-2 px-8 py-4 text-2xl',
-      },
+        default: 'border-2 px-8 py-4 text-xl'
+      }
     },
     defaultVariants: {
       variant: 'default',
-      size: 'default',
-    },
+      size: 'default'
+    }
   }
 );
 
@@ -53,9 +54,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         disabled={progress || disabled}
-        {...props}>
+        {...props}
+      >
         {progress ? (
-          <Interfaces.Sync className="animate-spin size-8" />
+          <Interfaces.Sync
+            className="animate-spin size-8"
+            fill="currentColor"
+          />
         ) : (
           children
         )}

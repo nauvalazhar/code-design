@@ -1,16 +1,17 @@
 'use client';
 
+import { useSearchParamsManipulator } from 'lib/hooks/useSearchParamsManipulator';
+import type { Difficulty } from 'schemas/difficulties';
+
 import {
   Select,
   SelectContent,
   SelectItem,
-  SelectTrigger,
+  SelectTrigger
 } from 'components/Select';
-import { useSearchParamsManipulator } from 'lib/utils';
-import type { Difficulty } from 'schemas/difficulties';
 
 const DifficultiesSelectorClient = ({
-  difficulties,
+  difficulties
 }: {
   difficulties: Difficulty[];
 }) => {
@@ -22,14 +23,15 @@ const DifficultiesSelectorClient = ({
     }
 
     setSearchParams({
-      difficulty,
+      difficulty
     });
   }
 
   return (
     <Select
       onValueChange={handleSelect}
-      value={searchParams.get('difficulty') || '-1'}>
+      value={searchParams.get('difficulty') || '-1'}
+    >
       <SelectTrigger placeholder="Difficulty" />
       <SelectContent>
         <SelectItem value="-1">Difficulty</SelectItem>

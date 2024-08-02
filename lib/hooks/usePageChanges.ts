@@ -1,7 +1,6 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
 export function usePageChanges(callback) {
@@ -10,5 +9,5 @@ export function usePageChanges(callback) {
 
   useEffect(() => {
     callback();
-  }, [pathname, searchParams]);
+  }, [pathname, searchParams, callback]);
 }

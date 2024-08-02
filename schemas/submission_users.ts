@@ -4,6 +4,7 @@ import {
   pgTable,
   serial,
   timestamp,
+  unique
 } from 'drizzle-orm/pg-core';
 import { submissions } from 'schemas/submissions';
 import { users } from 'schemas/users';
@@ -14,14 +15,20 @@ import { users } from 'schemas/users';
 // and the others are collaborators
 export const jobEnum = pgEnum('job', ['owner', 'collaborator', 'reviewer']);
 
-export const submissionUsers = pgTable('submission_users', {
-  id: serial('id').primaryKey(),
-  submissionId: integer('submission_id').references(() => submissions.id),
-  userId: integer('user_id').references(() => users.id),
-  job: jobEnum('job'),
-  createdAt: timestamp('created_at').defaultNow(),
-  updatedAt: timestamp('updated_at'),
-});
+export const submissionUsers = pgTable(
+  'submission_users',
+  {
+    id: serial('id').primaryKey(),
+    submissionId: integer('submission_id').references(() => submissions.id),
+    userId: integer('user_id').references(() => users.id),
+    job: jobEnum('job'),
+    createdAt: timestamp('created_at').defaultNow(),
+    updatedAt: timestamp('updated_at')
+  },
+  table => ({
+    submissionUserJob: unique().on(table.submissionId, table.userId, table.job)
+  })
+);
 
 export type SubmissionUser = typeof submissionUsers.$inferSelect;
 export type NewSubmissionUser = typeof submissionUsers.$inferInsert;

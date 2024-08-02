@@ -1,9 +1,19 @@
+import { redirect } from 'next/navigation';
+import { getAuthUser } from 'services/auth-service';
+
 import { BoxTitle } from 'components/Box';
 import { Field, Input, Label } from 'components/Form';
-import { getAuthUser } from 'services/auth-service';
+
+export const metadata = {
+  title: 'Profile'
+};
 
 export default async function Page() {
   const user = await getAuthUser();
+
+  if (true) {
+    redirect('/construction');
+  }
 
   return (
     <>
@@ -21,7 +31,7 @@ export default async function Page() {
         <Input value={user.createdAt.toDateString()} readOnly />
       </Field>
       <p className="text-xl">
-        We're still working on this page. Currently you can only view your
+        We&apos;re still working on this page. Currently you can only view your
         profile.
       </p>
     </>

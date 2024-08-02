@@ -1,16 +1,17 @@
 'use client';
 
+import { useSearchParamsManipulator } from 'lib/hooks/useSearchParamsManipulator';
+import type { Category } from 'schemas/categories';
+
 import {
   Select,
   SelectContent,
   SelectItem,
-  SelectTrigger,
+  SelectTrigger
 } from 'components/Select';
-import { useSearchParamsManipulator } from 'lib/utils';
-import type { Category } from 'schemas/categories';
 
 const CategoriesSelectorClient = ({
-  categories,
+  categories
 }: {
   categories: Category[];
 }) => {
@@ -22,14 +23,15 @@ const CategoriesSelectorClient = ({
     }
 
     setSearchParams({
-      category,
+      category
     });
   }
 
   return (
     <Select
       onValueChange={handleSelect}
-      value={searchParams.get('category') || '-1'}>
+      value={searchParams.get('category') || '-1'}
+    >
       <SelectTrigger placeholder="Category" />
       <SelectContent>
         <SelectItem value="-1">Category</SelectItem>

@@ -1,9 +1,10 @@
 'use client';
 
-import { Button } from 'components/Button';
 import { Files } from 'doodle-icons';
 import Image from 'next/image';
-import { type ElementType, type SVGProps, useRef, useState } from 'react';
+import { useRef, useState, type ElementType, type SVGProps } from 'react';
+
+import { Button } from 'components/Button';
 
 type FileUploadProps = {
   name: string;
@@ -14,7 +15,7 @@ type FileUploadProps = {
 const FileUpload = ({
   name,
   icon: Icon = Files.File,
-  defaultValue,
+  defaultValue
 }: FileUploadProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [, setFile] = useState<File | null>(null);
@@ -61,6 +62,7 @@ const FileUpload = ({
       </Button>
 
       {preview && (
+        // @ts-ignore
         <img
           src={preview}
           alt="Preview"

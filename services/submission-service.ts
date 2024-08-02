@@ -1,30 +1,32 @@
 import 'server-only';
+
 import { createClient } from '@supabase/supabase-js';
 import {
-  getTableColumns,
-  eq,
-  SQL,
   and,
-  isNull,
   desc,
+  eq,
+  getTableColumns,
+  isNull,
   notInArray,
+  SQL
 } from 'drizzle-orm';
 import { alias } from 'drizzle-orm/pg-core';
 import { db } from 'lib/db';
 import { storage } from 'lib/storage';
 import { generateUniqueName } from 'lib/utils';
 import { Challenge, challenges } from 'schemas/challenges';
-import { TechIds, submissionTechs } from 'schemas/submission_techs';
-import { submissionUsers } from 'schemas/submission_users';
+import { submissionTechs, TechIds } from 'schemas/submission_techs';
+import { SubmissionUser, submissionUsers } from 'schemas/submission_users';
 import {
-  type NewSubmission,
-  submissions,
   Submission,
+  submissions,
+  type NewSubmission
 } from 'schemas/submissions';
-import { type Tech, techs } from 'schemas/techs';
+import { techs, type Tech } from 'schemas/techs';
 import { User, users } from 'schemas/users';
 import { getAuthId } from 'services/auth-service';
 import { getChallengeIdBySlug } from 'services/challenge-service';
+import { pointsAddition } from 'services/point_service';
 
 /**
  * Create a new submission
@@ -48,28 +50,28 @@ export async function createSubmission({
   const submissionValues: NewSubmission = {
     ...submission,
     slug: generateUniqueName(),
-    challengeId,
+    challengeId
   };
   const userId = await getAuthId();
 
   try {
-    await db.transaction(async (trx) => {
+    await db.transaction(async trx => {
       const [insertSubmission] = await trx
         .insert(submissions)
         .values(submissionValues)
         .returning();
 
       await trx.insert(submissionTechs).values(
-        techs.map((tech) => ({
+        techs.map(tech => ({
           submissionId: insertSubmission.id,
-          techId: tech,
+          techId: tech
         }))
       );
 
       await trx.insert(submissionUsers).values({
         submissionId: insertSubmission.id,
         userId,
-        job: 'owner',
+        job: 'owner'
       });
     });
   } catch (error) {
@@ -91,15 +93,19 @@ type SubmissionUpdateForm = Pick<
   imageOld?: string;
 };
 
-export async function updateSubmission({
-  id,
-  image,
-  techs,
-  imageOld,
-  phase,
-  note,
-  ...submission
-}: SubmissionUpdateForm) {
+export async function updateSubmission(
+  {
+    id,
+    image,
+    techs,
+    imageOld,
+    phase,
+    note,
+    ...submission
+  }: SubmissionUpdateForm,
+  isReview = false
+) {
+  const reviewerId = await getAuthId();
   let imagePath = typeof image === 'string' ? image : '';
 
   if (image instanceof Blob) {
@@ -111,7 +117,24 @@ export async function updateSubmission({
   }
 
   try {
-    await db.transaction(async (trx) => {
+    await db.transaction(async trx => {
+      const submissionUsersOwner = alias(submissionUsers, 'owner');
+
+      const [selectSubmission] = await trx
+        .select({
+          phase: submissions.phase,
+          ownerId: submissionUsersOwner.userId
+        })
+        .from(submissions)
+        .leftJoin(
+          submissionUsersOwner,
+          and(
+            eq(submissions.id, submissionUsersOwner.submissionId),
+            eq(submissionUsersOwner.job, 'owner')
+          )
+        )
+        .where(eq(submissions.id, id));
+
       await trx
         .delete(submissionTechs)
         .where(
@@ -124,9 +147,9 @@ export async function updateSubmission({
       await trx
         .insert(submissionTechs)
         .values(
-          techs.map((tech) => ({
+          techs.map(tech => ({
             submissionId: id,
-            techId: tech,
+            techId: tech
           }))
         )
         .onConflictDoNothing();
@@ -135,10 +158,32 @@ export async function updateSubmission({
         ...(imagePath && { image: imagePath }),
         ...(phase && { phase }),
         ...(note && { note }),
-        ...submission,
+        ...submission
       };
 
       await trx.update(submissions).set(data).where(eq(submissions.id, id));
+
+      if (isReview) {
+        await trx
+          .insert(submissionUsers)
+          .values({
+            submissionId: id,
+            userId: reviewerId,
+            job: 'reviewer'
+          })
+          .onConflictDoNothing({
+            target: [
+              submissionUsers.submissionId,
+              submissionUsers.userId,
+              submissionUsers.job
+            ]
+          });
+
+        if (selectSubmission.phase == 'submitted' && phase == 'published') {
+          await pointsAddition(selectSubmission.ownerId, 'submission');
+          await pointsAddition(reviewerId, 'review');
+        }
+      }
     });
   } catch (error) {
     console.error('Error updating submission', error);
@@ -195,7 +240,7 @@ type GetSubmissionsParams = {
 };
 
 export async function getSubmissions({
-  where,
+  where
 }: GetSubmissionsParams = {}): Promise<GetSubmissionsResult[]> {
   const userId = await getAuthId();
   const whereClause: SQL[] = [];
@@ -205,7 +250,7 @@ export async function getSubmissions({
     .select({
       ...getTableColumns(submissions),
       challenge: getTableColumns(challenges),
-      user: getTableColumns(users),
+      user: getTableColumns(users)
     })
     .from(submissions)
     .leftJoin(challenges, eq(submissions.challengeId, challenges.id))
@@ -247,7 +292,10 @@ export async function getSubmissions({
  * Get submission by slug
  */
 
-type GetSubmissionBySlugResult = Submission & { techs: Tech[] };
+type GetSubmissionBySlugResult = Submission & {
+  techs: Tech[];
+  reviewer: SubmissionUser;
+};
 
 export async function getSubmissionBySlug(
   slug: Submission['slug']
@@ -260,14 +308,25 @@ export async function getSubmissionBySlug(
 
   const techsData = await db
     .select({
-      ...getTableColumns(techs),
+      ...getTableColumns(techs)
     })
     .from(submissionTechs)
     .innerJoin(techs, eq(submissionTechs.techId, techs.id))
     .where(eq(submissionTechs.submissionId, submissionData.id));
 
+  const [reivewerData] = await db
+    .select()
+    .from(submissionUsers)
+    .where(
+      and(
+        eq(submissionUsers.submissionId, submissionData.id),
+        eq(submissionUsers.job, 'reviewer')
+      )
+    );
+
   return {
     ...submissionData,
     techs: techsData,
+    reviewer: reivewerData
   };
 }

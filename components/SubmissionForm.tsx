@@ -1,16 +1,29 @@
 'use client';
 
 import {
-  SubmissionMode,
   handleCreateSubmission,
   handleUpdateSubmission,
+  loadTechs,
+  SubmissionMode
 } from 'app/actions';
-import { loadTechs } from 'app/actions';
+import { Interfaces } from 'doodle-icons';
+import dumpingDoodle from 'public/DumpingDoodle.png';
+import { useState } from 'react';
+import { useFormState, useFormStatus } from 'react-dom';
+import { techIdsSchema } from 'schemas/submission_techs';
+import {
+  insertSubmissionSchema,
+  phaseEnums,
+  Submission
+} from 'schemas/submissions';
+import type { Tech } from 'schemas/techs';
+import { z } from 'zod';
+
 import { Button } from 'components/Button';
 import EmptyState, {
   EmptyStateDescription,
   EmptyStateImage,
-  EmptyStateTitle,
+  EmptyStateTitle
 } from 'components/EmptyState';
 import FileUpload from 'components/FileUpload';
 import {
@@ -20,35 +33,22 @@ import {
   FieldMessage,
   Input,
   Label,
-  Textarea,
+  Textarea
 } from 'components/Form';
 import {
   Select,
   SelectContent,
   SelectItem,
-  SelectTrigger,
+  SelectTrigger
 } from 'components/Select';
 import TechSelector from 'components/TechSelector';
-import { Interfaces } from 'doodle-icons';
-import Image from 'next/image';
-import dumpingDoodle from 'public/DumpingDoodle.png';
-import { useState } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
-import { techIdsSchema } from 'schemas/submission_techs';
-import {
-  Submission,
-  insertSubmissionSchema,
-  phaseEnums,
-} from 'schemas/submissions';
-import type { Tech } from 'schemas/techs';
-import { z } from 'zod';
 
 const initialState: {
   success: boolean | undefined;
   error?: z.inferFlattenedErrors<typeof insertSubmissionSchema>['fieldErrors'] &
     z.inferFlattenedErrors<typeof techIdsSchema>['fieldErrors'];
 } = {
-  success: undefined,
+  success: undefined
 };
 
 type SubmissionFormProps = {
@@ -67,12 +67,12 @@ const SubmissionForm = ({
   challenge,
   submissionId,
   defaultValues,
-  mode = 'create',
+  mode = 'create'
 }: SubmissionFormProps) => {
-  let action = handleCreateSubmission.bind(null, challenge);
+  let action = handleCreateSubmission.bind(null, challenge, mode);
 
   if (mode === 'edit' || mode === 'review') {
-    action = handleUpdateSubmission.bind(null, submissionId);
+    action = handleUpdateSubmission.bind(null, submissionId, mode);
   }
 
   const [state, formAction] = useFormState(action, initialState);
@@ -83,6 +83,8 @@ const SubmissionForm = ({
   function handlePhaseChange(value: Submission['phase']) {
     setPhase(value);
   }
+
+  const phases = phaseEnums.filter(phase => phase !== 'submitted');
 
   if (state.success) {
     return (
@@ -185,14 +187,17 @@ const SubmissionForm = ({
             <Select
               onValueChange={handlePhaseChange}
               name="phase"
-              value={phase}>
+              value={phase}
+            >
               <SelectTrigger placeholder="Select Phase" />
               <SelectContent>
                 <SelectItem value="-1" disabled>
                   Select Phase
                 </SelectItem>
-                {phaseEnums.map((phase) => (
-                  <SelectItem value={phase}>{phase}</SelectItem>
+                {phases.map(phase => (
+                  <SelectItem key={phase} value={phase}>
+                    {phase}
+                  </SelectItem>
                 ))}
               </SelectContent>
               <FieldMessage message={state.error?.phase} />

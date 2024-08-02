@@ -1,3 +1,4 @@
+// @ts-ignore
 import challengeData from 'data/challenges';
 
 export default async function Head({ params }) {
@@ -30,7 +31,10 @@ export default async function Head({ params }) {
         content={`https://codedesign.dev/challenge/${challenge.slug}`}
       />
       <meta property="og:site_name" content="codedesign.dev" />
-      <meta property="og:title" content={`${challenge?.name} – Code The Design`} />
+      <meta
+        property="og:title"
+        content={`${challenge?.name} – Code The Design`}
+      />
       <meta
         property="og:description"
         content={challenge?.description.slice(0, 155)}

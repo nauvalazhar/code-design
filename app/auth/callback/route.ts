@@ -1,6 +1,6 @@
 import { encryptData, getSession } from 'lib/session';
 import { redirect } from 'next/navigation';
-import { findOrRegisterUser } from 'services/user-service';
+import { getOrRegisterUser } from 'services/user-service';
 
 export async function GET(request: Request) {
   const session = await getSession();
@@ -14,13 +14,13 @@ export async function GET(request: Request) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
+        Accept: 'application/json'
       },
       body: JSON.stringify({
         client_id: process.env.GITHUB_ID,
         client_secret: process.env.GITHUB_SECRET,
-        code,
-      }),
+        code
+      })
     }
   );
 
@@ -32,19 +32,19 @@ export async function GET(request: Request) {
 
   const resultUser = await fetch('https://api.github.com/user', {
     headers: {
-      Authorization: `Bearer ${result.access_token}`,
-    },
+      Authorization: `Bearer ${result.access_token}`
+    }
   });
   const userInfo = await resultUser.json();
 
   const resultEmails = await fetch('https://api.github.com/user/emails', {
     headers: {
-      Authorization: `Bearer ${result.access_token}`,
-    },
+      Authorization: `Bearer ${result.access_token}`
+    }
   });
   const emails = await resultEmails.json();
 
-  const [user] = await findOrRegisterUser({
+  const [user] = await getOrRegisterUser({
     username: userInfo.login,
     email: emails.find((email: any) => email.primary)?.email,
     name: userInfo.name || userInfo.login,
@@ -54,8 +54,8 @@ export async function GET(request: Request) {
     hireable: userInfo.hireable,
     refreshToken: await encryptData({
       token: result.refresh_token,
-      expires: result.refresh_token_expires_in,
-    }),
+      expires: result.refresh_token_expires_in
+    })
   });
 
   session.token = result.access_token;

@@ -2,12 +2,12 @@
 
 import { redirect } from 'next/navigation';
 import { techIdsSchema } from 'schemas/submission_techs';
-import { NewSubmission, insertSubmissionSchema } from 'schemas/submissions';
+import { insertSubmissionSchema, NewSubmission } from 'schemas/submissions';
 import { Tech } from 'schemas/techs';
 import { isUserReviewer } from 'services/auth-service';
 import {
   createSubmission,
-  updateSubmission,
+  updateSubmission
 } from 'services/submission-service';
 import { getTechs } from 'services/tech-service';
 
@@ -15,6 +15,7 @@ export type SubmissionMode = 'create' | 'edit' | 'review';
 
 export async function handleCreateSubmission(
   challenge: string,
+  mode: SubmissionMode,
   prevState: any,
   formData: FormData
 ) {
@@ -26,24 +27,24 @@ export async function handleCreateSubmission(
   const parse = insertSubmissionSchema.safeParse({
     demo,
     repository,
-    description,
+    description
   });
 
   if (parse.success === false) {
     return {
       success: false,
-      error: parse.error.flatten().fieldErrors,
+      error: parse.error.flatten().fieldErrors
     };
   }
 
   const parseTechs = techIdsSchema.safeParse({
-    techs,
+    techs
   });
 
   if (parseTechs.success === false) {
     return {
       success: false,
-      error: parseTechs.error.flatten().fieldErrors,
+      error: parseTechs.error.flatten().fieldErrors
     };
   }
 
@@ -52,16 +53,17 @@ export async function handleCreateSubmission(
     repository,
     description,
     challenge,
-    techs: parseTechs.data.techs,
+    techs: parseTechs.data.techs
   });
 
   return {
-    success: true,
+    success: true
   };
 }
 
 export async function handleUpdateSubmission(
   submissionId: NewSubmission['id'],
+  mode: SubmissionMode,
   prevState: any,
   formData: FormData
 ) {
@@ -80,38 +82,41 @@ export async function handleUpdateSubmission(
     description,
     image,
     phase,
-    note,
+    note
   });
 
   if (parse.success === false) {
     return {
       success: false,
-      error: parse.error.flatten().fieldErrors,
+      error: parse.error.flatten().fieldErrors
     };
   }
 
   const parseTechs = techIdsSchema.safeParse({
-    techs,
+    techs
   });
 
   if (parseTechs.success === false) {
     return {
       success: false,
-      error: parseTechs.error.flatten().fieldErrors,
+      error: parseTechs.error.flatten().fieldErrors
     };
   }
 
-  await updateSubmission({
-    id: submissionId,
-    demo,
-    repository,
-    description,
-    phase,
-    note,
-    image,
-    techs: parseTechs.data.techs,
-    imageOld,
-  });
+  await updateSubmission(
+    {
+      id: submissionId,
+      demo,
+      repository,
+      description,
+      phase,
+      note,
+      image,
+      techs: parseTechs.data.techs,
+      imageOld
+    },
+    mode === 'review'
+  );
 
   const isReviewer = await isUserReviewer();
 
@@ -127,7 +132,7 @@ export async function loadTechs(search): Promise<Tech[]> {
   return getTechs({
     limit: 5,
     where: {
-      search,
-    },
+      search
+    }
   });
 }

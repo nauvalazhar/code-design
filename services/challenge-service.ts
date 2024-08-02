@@ -1,10 +1,11 @@
 import 'server-only';
-import { SQL, count, eq, sql } from 'drizzle-orm';
+
+import { count, eq, SQL, sql } from 'drizzle-orm';
 import { db } from 'lib/db';
-import { Category, categories } from 'schemas/categories';
+import { categories, Category } from 'schemas/categories';
 import { challengeDesigners } from 'schemas/challenge_designers';
 import { Challenge, challenges } from 'schemas/challenges';
-import { Difficulty, difficulties } from 'schemas/difficulties';
+import { difficulties, Difficulty } from 'schemas/difficulties';
 import { UserLink, userLinks } from 'schemas/user_links';
 import { User, users } from 'schemas/users';
 
@@ -39,11 +40,13 @@ export type GetChallengesReturn = Promise<{
 export async function getChallenges({
   limit = 10,
   offset = 0,
-  where,
+  where
 }: GetChallengesParams = {}): GetChallengesReturn {
   const joinChunks = sql`
     INNER JOIN ${difficulties} ON ${challenges.difficultyId} = ${difficulties.id}
     INNER JOIN ${categories} ON ${challenges.categoryId} = ${categories.id}
+    INNER JOIN ${challengeDesigners} ON ${challenges.id} = ${challengeDesigners.challengeId}
+    INNER JOIN ${users} ON ${challengeDesigners.userId} = ${users.id}
   `;
 
   const fromChunks = sql`FROM ${challenges}`;
@@ -53,7 +56,8 @@ export async function getChallenges({
     SELECT 
       challenges.*, 
       difficulties.name as difficulty,
-      categories.name as category
+      categories.name as category,
+      json_agg(users) as designers
     ${fromChunks}
     ${joinChunks}
   `);
@@ -101,6 +105,10 @@ export async function getChallenges({
     }
   }
 
+  paginationQuery.push(
+    sql`GROUP BY ${challenges.id}, ${difficulties.name}, ${categories.name}`
+  );
+
   paginationQuery.push(sql`ORDER BY ${challenges.createdAt} DESC`);
   paginationQuery.push(sql`LIMIT ${limit}`);
 
@@ -117,7 +125,7 @@ export async function getChallenges({
   return {
     challenges: data,
     total: Number(countData[0].count),
-    limit,
+    limit
   };
 }
 
@@ -132,7 +140,7 @@ export type GetChallengeBySlugParams = {
 export type GetChallengeBySlugReturn = Promise<JoinedChallenge[]>;
 
 export async function getChallengeBySlug({
-  slug,
+  slug
 }: GetChallengeBySlugParams): GetChallengeBySlugReturn {
   const query = sql`
     SELECT 
@@ -169,7 +177,7 @@ export async function getChallengeIdBySlug(
   try {
     const challengesData = await db
       .select({
-        id: challenges.id,
+        id: challenges.id
       })
       .from(challenges)
       .where(eq(challenges.slug, slug));

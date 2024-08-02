@@ -1,12 +1,17 @@
 import { SubmissionMode } from 'app/actions';
-import Box, { BoxTitle } from 'components/Box';
-import SubmissionForm from 'components/SubmissionForm';
 import { notFound } from 'next/navigation';
-import { isUserReviewer } from 'services/auth-service';
+import { getAuthId, isUserReviewer } from 'services/auth-service';
 import { getSubmissionBySlug } from 'services/submission-service';
 
+import Box, { BoxTitle } from 'components/Box';
+import SubmissionForm from 'components/SubmissionForm';
+
+export const metadata = {
+  title: 'Submission'
+};
+
 export default async function Page({
-  params: { params },
+  params: { params }
 }: {
   params: { params: string[] };
 }) {
@@ -14,12 +19,16 @@ export default async function Page({
   let mode = (params[1] || 'edit') as SubmissionMode;
   const submission = await getSubmissionBySlug(slug);
   const isReviewer = isUserReviewer();
+  const userId = await getAuthId();
 
   if (isReviewer) {
     mode = 'review';
   }
 
-  if (mode === 'review' && !isReviewer) {
+  if (
+    (mode === 'review' && !isReviewer) ||
+    (submission.reviewer && submission.reviewer?.userId !== userId)
+  ) {
     notFound();
   }
 
@@ -36,7 +45,7 @@ export default async function Page({
           phase: submission.phase,
           note: submission.note,
           image: submission.image,
-          techs: submission.techs,
+          techs: submission.techs
         }}
         mode={mode}
       />

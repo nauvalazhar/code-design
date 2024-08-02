@@ -1,9 +1,13 @@
-import Challenges from 'components/Challenges';
-import Designers from 'components/Designers';
 import { Arrow, Interfaces } from 'doodle-icons';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
+import sectionHeaderQuests from 'public/section-header-quests.png';
 import { getChallenges } from 'services/challenge-service';
+
+import Challenges from 'components/Challenges';
+import Designers from 'components/Designers';
+import { SectionTitle } from 'components/SectionTitle';
 
 export const metadata: Metadata = {
   title:
@@ -17,50 +21,33 @@ export const metadata: Metadata = {
     siteName: 'codedesign.dev',
     title: 'codedesign.dev',
     description: 'Level up your coding skills with hands-on design challenges.',
-    images: ['https://codedesign.dev/code-design.png'],
-  },
+    images: ['https://codedesign.dev/code-design.png']
+  }
 };
 
 export default async function Home() {
   const { challenges } = await getChallenges({
-    limit: 1,
+    limit: 2
   });
 
   return (
     <section className="flex flex-col">
       <div className="flex mb-10">
-        <Interfaces.Shape
-          className="w-10 text-orange-300"
-          fill="currentColor"
-        />
-        <div className="ml-6">
-          <h2 className="text-3xl text-orange-400 mb-2">Latest Challenge</h2>
-          <p className="text-lg text-orange-200">
-            Level up your coding skills with hands-on design challenges.
-          </p>
-        </div>
+        <SectionTitle>Challenges</SectionTitle>
         <Link
           href="/challenges"
-          className="ml-auto self-center text-orange-400 text-2xl flex items-center hover:text-orange-200">
-          View All Challenges
+          className="ml-auto self-center text-brand text-2xl flex items-center hover:opacity-80"
+        >
+          View all challenges
           <Arrow.ArrowRight fill="currentColor" className="ml-4 w-8" />
         </Link>
       </div>
-      <Challenges challenges={challenges} />
+      <div className="grid grid-cols-2 gap-8">
+        <Challenges challenges={challenges} />
+      </div>
 
-      <div className="flex">
-        <Interfaces.PenTool
-          className="w-10 text-green-300 mt-4"
-          fill="currentColor"
-        />
-        <div className="ml-6">
-          <h2 className="text-3xl text-green-400 mt-20 mb-2">Pixel Pioneers</h2>
-          <p className="text-lg text-green-200 mb-10">
-            Awarded to users who contribute outstanding UI/UX designs. This
-            badge recognizes those who are setting trends and pushing the
-            boundaries of digital design.
-          </p>
-        </div>
+      <div className="flex mt-20 mb-10">
+        <SectionTitle variant="rose">Designers</SectionTitle>
       </div>
       <Designers />
     </section>

@@ -8,8 +8,8 @@ const Box = (props: BoxProps) => {
     <div
       className={clsx(
         'relative p-10 lg:p-20',
-        'border-4 border-black bg-brand',
-        'shadow-solid'
+        'border-4 border-black bg-brand-light',
+        'shadow-solid text-brand-dark'
       )}
       {...props}
     />
@@ -21,7 +21,10 @@ type BoxTitleProps = React.HTMLAttributes<HTMLHeadingElement>;
 export const BoxTitle = ({ className, ...props }: BoxTitleProps) => {
   return (
     <h1
-      className={clsx('mb-8 font-display text-2xl lg:text-4xl', className)}
+      className={clsx(
+        'mb-8 font-display text-brand-dark text-2xl lg:text-4xl text-shadow',
+        className
+      )}
       {...props}
     />
   );
@@ -35,7 +38,7 @@ export const BoxDescription = ({ children }: { children: React.ReactNode }) => {
 
 export const BoxTabs = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex mb-14 overflow-x-auto scrollbar-hide -mt-20 -mx-20">
+    <div className="flex mb-14 overflow-x-auto scrollbar-hide -mt-20 -mx-20 text-black">
       {children}
     </div>
   );
@@ -62,7 +65,8 @@ export const BoxTab = ({
         'focus:outline-none focus-visible:ring-0',
         active ? 'bg-yellow-400' : 'bg-yellow-300'
       )}
-      {...props}>
+      {...props}
+    >
       {children}
     </Comp>
   );

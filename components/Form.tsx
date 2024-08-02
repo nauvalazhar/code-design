@@ -1,4 +1,4 @@
-import { VariantProps, cva } from 'class-variance-authority';
+import { cva, VariantProps } from 'class-variance-authority';
 import { Asterisk } from 'lucide-react';
 
 export const Field = ({
@@ -35,7 +35,7 @@ export const Label = ({ children, ...props }: LabelProps) => {
 };
 
 export const inputStyle = cva(
-  'w-full px-4 py-2 border-4 border-black text-2xl focus:outline-none focus-visible:ring-0'
+  'w-full px-4 py-2 border-4 border-black text-2xl focus:outline-none focus-visible:ring-0 text-black'
 );
 
 type InputProps = VariantProps<typeof inputStyle> &

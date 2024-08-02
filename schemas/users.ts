@@ -1,15 +1,13 @@
-import { relations } from 'drizzle-orm';
 import {
+  bigint,
+  boolean,
+  pgEnum,
   pgTable,
   serial,
-  varchar,
   text,
   timestamp,
-  bigint,
-  pgEnum,
-  boolean,
+  varchar
 } from 'drizzle-orm/pg-core';
-import { userBadges } from 'schemas/user_badges';
 
 export const roleEnum = pgEnum('role', ['user', 'admin']);
 export const statusEnum = pgEnum('status', ['active', 'blocked']);
@@ -26,8 +24,9 @@ export const users = pgTable('users', {
   role: roleEnum('role').default('user'),
   refreshToken: text('refresh_token'),
   status: statusEnum('status').default('active'),
+  points: bigint('points', { mode: 'number' }).default(0),
   createdAt: timestamp('created_at').defaultNow(),
-  updatedAt: timestamp('updated_at'),
+  updatedAt: timestamp('updated_at')
 });
 
 export type User = typeof users.$inferSelect;

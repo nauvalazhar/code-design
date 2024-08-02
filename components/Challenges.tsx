@@ -1,6 +1,7 @@
+import { getChallenges, JoinedChallenge } from 'services/challenge-service';
+
 import { Button } from 'components/Button';
 import Challenge from 'components/Challenge';
-import { JoinedChallenge, getChallenges } from 'services/challenge-service';
 
 const Challenges = ({ challenges }: { challenges: JoinedChallenge[] }) => {
   return (
@@ -8,24 +9,24 @@ const Challenges = ({ challenges }: { challenges: JoinedChallenge[] }) => {
       {challenges.map(
         ({
           name,
-          description,
           image,
           accent,
           accent2,
           slug,
           category,
           difficulty,
+          designers
         }) => (
           <Challenge
             key={name}
             image={image}
             name={name}
             slug={slug}
-            shortDescription={description.substring(0, 100)}
             difficulty={difficulty}
             category={category}
             accent={accent}
             accent2={accent2}
+            designers={designers.map(({ name }) => name)}
           />
         )
       )}

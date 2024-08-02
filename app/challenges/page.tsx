@@ -1,33 +1,39 @@
+import {
+  getChallenges,
+  type GetChallengesParams
+} from 'services/challenge-service';
+
 import CategoriesSelector from 'components/CategoriesSelector';
 import Challenges from 'components/Challenges';
 import DifficultiesSelector from 'components/DifficultiesSelector';
 import LoadMore from 'components/LoadMore';
-import {
-  type GetChallengesParams,
-  getChallenges,
-} from 'services/challenge-service';
+import { SectionTitle } from 'components/SectionTitle';
+
+export const metadata = {
+  title: 'Challenges'
+};
 
 async function loadMore(offset, params) {
   'use server';
 
   const { challenges } = await getChallenges({
     ...params,
-    offset,
+    offset
   });
 
   return <Challenges challenges={challenges} />;
 }
 
 export default async function Page({
-  searchParams,
+  searchParams
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const dataParams: GetChallengesParams = {
     where: {
       difficultyId: Number(searchParams.difficulty) || undefined,
-      categoryId: Number(searchParams.category) || undefined,
-    },
+      categoryId: Number(searchParams.category) || undefined
+    }
   };
 
   const { challenges, limit, total } = await getChallenges(dataParams);
@@ -35,7 +41,8 @@ export default async function Page({
   return (
     <section className="flex flex-col">
       <div className="flex flex-wrap items-center gap-3 lg:gap-5 mb-10">
-        <div>
+        <SectionTitle>Challenges</SectionTitle>
+        <div className="ml-auto">
           <DifficultiesSelector />
         </div>
         <div>
@@ -48,7 +55,8 @@ export default async function Page({
         loadMoreParams={dataParams}
         limit={limit}
         total={total}
-        className="space-y-10">
+        className="grid grid-cols-2 gap-8"
+      >
         <Challenges challenges={challenges} />
       </LoadMore>
     </section>
