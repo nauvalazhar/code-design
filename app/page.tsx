@@ -1,93 +1,55 @@
-'use client';
+import { Arrow, Interfaces } from 'doodle-icons';
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import sectionHeaderQuests from 'public/section-header-quests.png';
+import { getChallenges } from 'services/challenge-service';
 
-import clsx from 'clsx';
-import { useMemo, useState } from 'react';
+import Challenges from 'components/Challenges';
+import Designers from 'components/Designers';
+import { SectionTitle } from 'components/SectionTitle';
 
-import challengesData from 'data/challenges';
-import { Difficulty } from 'data/difficulties';
+export const metadata: Metadata = {
+  title:
+    'Level up your coding skills with hands-on design challenges – codedesign.dev',
+  description: 'Level up your coding skills with hands-on design challenges.',
+  keywords: 'code the design, design with figma, design web, design challange',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://codedesign.dev/',
+    siteName: 'codedesign.dev',
+    title: 'codedesign.dev',
+    description: 'Level up your coding skills with hands-on design challenges.',
+    images: ['https://codedesign.dev/code-design.png']
+  }
+};
 
-import Challenge from 'components/Challenge';
-import DropdownDifficulties from 'components/DropdownDifficulties';
-
-const MAX_DESC_LENGTH = 100;
-
-export type Category = 'All Categories' | 'App' | 'Component' | 'Page';
-
-export default function Home() {
-  const categories: Category[] = ['All Categories', 'App', 'Component', 'Page'];
-  const [difficultyFilter, setDifficultyFilter] = useState<Difficulty>('All');
-  const [categoryFilter, setCategoryFilter] =
-    useState<Category>('All Categories');
-  // just in case
-  const challenges = useMemo(
-    () =>
-      difficultyFilter === 'All' && categoryFilter === 'All Categories'
-        ? challengesData
-        : challengesData.filter(
-            challenge =>
-              (difficultyFilter === 'All' ||
-                challenge.difficulty === difficultyFilter) &&
-              (categoryFilter === 'All Categories' ||
-                challenge.category === categoryFilter)
-          ),
-    [categoryFilter, difficultyFilter]
-  );
+export default async function Home() {
+  const { challenges } = await getChallenges({
+    limit: 2
+  });
 
   return (
-    <section className="flex flex-col space-y-10">
-      <div className="flex flex-wrap items-center gap-3 lg:gap-5">
-        <p className="text-brand text-2xl leading-relaxed">Difficulty</p>
-        <DropdownDifficulties onChange={setDifficultyFilter} />
-        <p className="text-brand text-2xl leading-relaxed">
-          /{challenges.length}{' '}
-          {challenges.length > 1 ? 'challenges' : 'challenge'}
-        </p>
+    <section className="flex flex-col">
+      <div className="flex mb-10">
+        <SectionTitle>Challenges</SectionTitle>
+        <Link
+          href="/challenges"
+          className="ml-auto self-center text-brand text-2xl flex items-center hover:opacity-80"
+        >
+          View all challenges
+          <Arrow.ArrowRight fill="currentColor" className="ml-4 w-8" />
+        </Link>
       </div>
-      <div className="flex flex-wrap gap-5">
-        {categories.map(category => (
-          <button
-            key={category}
-            type="button"
-            className={clsx(
-              'px-5 py-2 bg-brand font-bold',
-              categoryFilter === category && 'border-4 border-black'
-            )}
-            onClick={() => setCategoryFilter(category)}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="grid grid-cols-2 gap-8">
+        <Challenges challenges={challenges} />
       </div>
-      {challenges.length ? (
-        challenges.map(
-          ({
-            name,
-            description,
-            image,
-            difficulty,
-            category,
-            accent,
-            accent2,
-            slug
-          }) => (
-            <Challenge
-              key={name}
-              image={image}
-              name={name}
-              slug={slug}
-              shortDescription={description.substring(0, MAX_DESC_LENGTH)}
-              difficulty={difficulty}
-              category={category}
-              accent={accent}
-              accent2={accent2}
-            />
-          )
-        )
-      ) : (
-        <div className="p-12 bg-white/50 text-center">
-          <span className="font-bold">No Design Result</span>
-        </div>
-      )}
+
+      <div className="flex mt-20 mb-10">
+        <SectionTitle variant="rose">Designers</SectionTitle>
+      </div>
+      <Designers />
     </section>
   );
 }

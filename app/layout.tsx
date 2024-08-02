@@ -1,24 +1,35 @@
 import 'tailwindcss/tailwind.css';
 
-import { Fredoka_One, Patrick_Hand } from '@next/font/google';
 import clsx from 'clsx';
+import { Metadata } from 'next';
+import { Fredoka, Patrick_Hand } from 'next/font/google';
 import { PropsWithChildren } from 'react';
 
 import { AnalyticsWrapper } from 'components/Analytics';
-import Header from 'components/Header';
 import ScrollToTop from 'components/ScrollToTop';
 
-const fontDisplay = Fredoka_One({
+import './globals.css';
+
+import Sidebar from 'components/Sidebar';
+
+const fontDisplay = Fredoka({
   variable: '--font-display',
-  weight: '400',
+  weight: '500',
   subsets: ['latin']
 });
 
-const fontSans = Patrick_Hand({
+const fontSans = Fredoka({
   variable: '--font-sans',
-  weight: '400',
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin']
 });
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s – codedesign.dev',
+    default: 'Untitled'
+  }
+};
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
@@ -26,26 +37,33 @@ export default function RootLayout({ children }: PropsWithChildren) {
       lang="en"
       className={clsx(fontDisplay.variable, fontSans.variable)}
       style={{
-        '--primary-blue': '#1F4290'
+        '--primary-blue': '#050F24'
       }}
     >
-      <head />
-      <body className="bg-[var(--primary-blue)]">
-        <main className="mx-auto px-6 pt-10 pb-40 lg:py-20 xl:px-0 xl:w-[1140px]">
-          <Header />
-          <main className="py-10">{children}</main>
-          <footer className="text-brand text-center text-xl">
+      <body>
+        <main className="flex p-20">
+          <Sidebar />
+          <div className="pl-80 w-full">
+            <div className="pl-10">{children}</div>
+          </div>
+          {/*<footer className="text-brand text-center text-xl">
             <p>Copyright &copy; {new Date().getFullYear()} </p>
             <a
               href="https://twitter.com/mhdnauvalazhar"
               target="_blank"
               className="border-brand border-b-2"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               Nauval
             </a>
             <p>Powered by Vercel</p>
-          </footer>
+            <a
+              className="text-xl text-brand underline"
+              href="https://github.com/nauvalazhar/code-design"
+              target="_blank"
+              rel="noreferrer">
+              Source on Github
+            </a>
+          </footer>*/}
         </main>
         <ScrollToTop />
         <AnalyticsWrapper />

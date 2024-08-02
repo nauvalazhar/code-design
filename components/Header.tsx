@@ -2,11 +2,12 @@
 
 import clsx from 'clsx';
 import { Files, Interfaces, Logos } from 'doodle-icons';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ElementType, ReactElement, ReactNode, SVGProps } from 'react';
+import logo from 'public/codedesign-logo.png';
+import { ElementType, ReactNode, SVGProps } from 'react';
 
-// #region NavItem
 export type NavItemProps = {
   href: string;
   icon: ElementType<SVGProps<SVGSVGElement>>;
@@ -19,7 +20,7 @@ function NavItem({ href, icon: Icon, children, active }: NavItemProps) {
     <Link
       href={href}
       className={clsx(
-        'flex flex-1 flex-col items-center gap-2 lg:flex-auto',
+        'flex flex-1 items-center gap-2 lg:flex-auto',
         'text-lg hover:text-[var(--accent)] lg:text-2xl',
         active && 'text-[var(--accent)]'
       )}
@@ -29,7 +30,6 @@ function NavItem({ href, icon: Icon, children, active }: NavItemProps) {
     </Link>
   );
 }
-// #endregion NavItem
 
 function Header() {
   const pathname = usePathname();
@@ -44,23 +44,10 @@ function Header() {
       <div className="w-full lg:w-auto">
         <Link
           href={'/'}
-          className="mb-2 font-display text-3xl uppercase italic lg:text-5xl"
+          className="mb-2 font-display text-3xl uppercase italic lg:text-4xl"
         >
-          Code The Design
+          <Image src={logo} alt="codedesign.dev logo" width={315} />
         </Link>
-        <div className="mt-1 text-xl leading-relaxed lg:w-7/12 lg:text-2xl">
-          Level up your coding skills with hands-on design challenges.
-        </div>
-        <p className="mt-4">
-          <a
-            className="text-xl text-brand underline"
-            href="https://github.com/nauvalazhar/code-design"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Source on Github
-          </a>
-        </p>
       </div>
       <nav
         className={clsx(
@@ -70,7 +57,11 @@ function Header() {
           'border-t-4 border-black lg:border-none'
         )}
       >
-        <NavItem href="/" icon={Interfaces.Transform} active={pathname === '/'}>
+        <NavItem
+          href="/challenges"
+          icon={Interfaces.Shape}
+          active={pathname === '/challenges'}
+        >
           Challenges
         </NavItem>
         <NavItem
@@ -79,9 +70,6 @@ function Header() {
           active={pathname === '/manual'}
         >
           Manual
-        </NavItem>
-        <NavItem href="https://twitter.com/mhdnauvalazhar" icon={Logos.Twitter}>
-          @mhdnauvalazhar
         </NavItem>
       </nav>
     </header>

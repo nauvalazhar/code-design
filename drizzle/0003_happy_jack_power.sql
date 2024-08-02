@@ -1,0 +1,1 @@
+ALTER TYPE "classification" ADD VALUE 'style';

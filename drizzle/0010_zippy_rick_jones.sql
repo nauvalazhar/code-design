@@ -1,0 +1,1 @@
+ALTER TABLE "submission_techs" ADD CONSTRAINT "submission_techs_submission_id_tech_id_unique" UNIQUE("submission_id","tech_id");
