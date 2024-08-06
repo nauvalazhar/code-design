@@ -58,13 +58,13 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
 
 <table width="100%">
   <tr>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fnauval.jpg&w=128&q=75" width="100" alt="Nauval"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ftaufik.jpeg&w=128&q=75" width="100" alt="Taufik Hidayatulloh"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fmahyu.jpeg&w=128&q=75" width="100" alt="Mahyu Aspant"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Ffauzan.jpeg&w=128&q=75" width="100" alt="Muhammad Fauzan Alkhairi"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Frafiq.png&w=128&q=75" width="100" alt="Rafiq Al Hafizh Adha"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fsyauqi.jpeg&w=128&q=75" width="100" alt="Syauqizaidan Khairan Khalaf"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fyohana.jpeg&w=128&q=75" width="100" alt="Yohana Marlina"></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/14899175?v=4" width="100" alt="Nauval"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/taufik.jpeg" width="100" alt="Taufik Hidayatulloh"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/mahyu.jpeg" width="100" alt="Mahyu Aspant"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/fauzan.jpeg" width="100" alt="Muhammad Fauzan Alkhairi"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/rafiq.png" width="100" alt="Rafiq Al Hafizh Adha"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/syauqi.jpeg" width="100" alt="Syauqizaidan Khairan Khalaf"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/yohana.jpeg" width="100" alt="Yohana Marlina"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
@@ -104,13 +104,13 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fdimas.jpeg&w=128&q=75" width="100" alt="Dimas Rizky Maulana"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fglenn.jpeg&w=128&q=75" width="100" alt="Glenn Vhalado"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fbrainstew.jpeg&w=128&q=75" width="100" alt="BrainStew Studio"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Firham.jpeg&w=128&q=75" width="100" alt="Irham Shidiq"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fdzaki.jpeg&w=128&q=75" width="100" alt="Dzaki Muzhaffar"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Fafin.jpeg&w=128&q=75" width="100" alt="Muhammad Afin"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Farie.jpeg&w=128&q=75" width="100" alt="Arie"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/dimas.jpeg" width="100" alt="Dimas Rizky Maulana"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/glenn.jpeg" width="100" alt="Glenn Vhalado"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/brainstew.jpeg" width="100" alt="BrainStew Studio"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/irham.jpeg" width="100" alt="Irham Shidiq"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/dzaki.jpeg" width="100" alt="Dzaki Muzhaffar"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/afin.jpeg" width="100" alt="Muhammad Afin"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/arie.jpeg" width="100" alt="Arie"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
@@ -150,8 +150,8 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Firvan.jpeg&w=128&q=75" width="100" alt="Irvan"></td>
-    <td align="center"><img src="https://codedesign.dev/_next/image?url=%2Falfian.jpeg&w=128&q=75" width="100" alt="Alfian"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/irvan.jpeg" width="100" alt="Irvan"></td>
+    <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/alfian.jpeg" width="100" alt="Alfian"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
@@ -173,3 +173,4 @@ See our [contributing](https://github.com/nauvalazhar/code-design/blob/main/CONT
 
 ## License
 [MIT License](https://github.com/nauvalazhar/code-design/blob/main/LICENSE)
+
