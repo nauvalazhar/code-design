@@ -120,7 +120,7 @@ async function Page({ params: { slug } }: Params) {
             <div className="mt-4">
               {challenge.designers.map(designer => (
                 <div key={designer.name} className="flex items-center mt-4">
-                  <Image
+                  <img
                     src={designer.avatar}
                     alt={designer.name}
                     width={60}

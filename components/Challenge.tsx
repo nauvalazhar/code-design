@@ -38,14 +38,11 @@ function Challenge({
           boxShadow: '6px 6px 0 var(--accent-2)'
         }}
       >
-        <div className="aspect-[1.48/1] object-cover w-full relative">
-          <Image
-            alt={name}
-            src={`${image}?s=1000`}
-            className="border-4 border-black object-cover object-top"
-            fill
-          />
-        </div>
+        <img
+          alt={name}
+          src={`${image}?s=1000`}
+          className="border-4 border-black object-cover object-top aspect-[1.48/1] object-cover w-full"
+        />
         <h2 className="mt-6 text-black font-semibold mb-2 text-3xl">{name}</h2>
         <p className="text-black">
           Design by <span className="font-semibold">{designers[0]}</span>{' '}
