@@ -152,6 +152,7 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
   <tr>
     <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/irvan.jpeg" width="100" alt="Irvan"></td>
     <td align="center"><img src="https://code-design-avo7jempo-nauvals-projects-a308cc0f.vercel.app/users/alfian.jpeg" width="100" alt="Alfian"></td>
+    <td align="center"><img src="https://mwzzrmbvlkcquvnwsijg.supabase.co/storage/v1/object/public/codedesign/users/fadhil.jpeg" width="100" alt="Fadhil"></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="14.28%">
@@ -163,6 +164,11 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <sub><b>Muhammad Alfian</b></sub>
       <br>
       <sub><a href="https://www.figma.com/@alpi">Visit Profile</a></sub>
+    </td>
+    <td align="center" valign="top" width="14.28%">
+      <sub><b>Fadhil</b></sub>
+      <br>
+      <sub><a href="https://www.figma.com/@fdhlnrzzmn">Visit Profile</a></sub>
     </td>
   </tr>
 </table>
