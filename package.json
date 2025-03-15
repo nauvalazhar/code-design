@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preview": "opennextjs-cloudflare && wrangler dev",
+    "deploy": "opennextjs-cloudflare && wrangler deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^0.5.0",
@@ -49,6 +52,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^17.2.0",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
+    "@opennextjs/cloudflare": "^0.5.11",
     "@types/node": "18.15.0",
     "@types/react": "^18.2.51",
     "drizzle-kit": "^0.20.14",
@@ -56,6 +60,7 @@
     "lint-staged": "^15.2.1",
     "prettier": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.2.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "wrangler": "^4.0.0"
   }
 }
