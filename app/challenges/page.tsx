@@ -38,6 +38,8 @@ export default async function Page({
 
   const { challenges, limit, total } = await getChallenges(dataParams);
 
+  console.log(challenges.find(challenge => challenge.id === 52));
+
   return (
     <section className="flex flex-col">
       <div className="flex flex-wrap items-center gap-3 lg:gap-5 mb-10">
