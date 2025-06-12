@@ -88,11 +88,6 @@ We hope that Code The Design will serve as a valuable resource for you as you wo
       <sub><a href="https://www.figma.com/@muhammadfauzana">Visit Profile</a></sub>
     </td>
     <td align="center" valign="top" width="14.28%">
-      <sub><b>Rafiq Al Hafizh Adha</b></sub>
-      <br>
-      <sub><a href="https://www.figma.com/@rafiqadha">Visit Profile</a></sub>
-    </td>
-    <td align="center" valign="top" width="14.28%">
       <sub><b>Syauqizaidan Khairan Khalaf</b></sub>
       <br>
       <sub><a href="https://www.figma.com/@syaufy">Visit Profile</a></sub>
